@@ -16,7 +16,7 @@ export default function Title() {
     <div className=''>
             <div className='flex flex-col md:flex-row justify-center items-center  mb-5'>
                 <Avatar className='md:translate-x-20'>
-                    <AvatarImage src="./image/pp.png" alt="photo de profils" />
+                    <AvatarImage src="./image/pp.jpg" alt="photo de profils" />
                     <AvatarFallback>KG</AvatarFallback>
                 </Avatar>
                 <Badge variant="outline" className='bg-white py-1 -translate-y-4 md:translate-x-14 -rotate-6 flex gap-2'> Kevine Ghossoub <span className="inline-block animate-wave"><p className='text-xl'>👋🏽</p></span> </Badge>
