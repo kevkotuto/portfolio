@@ -23,7 +23,7 @@ export default function InfoPerso() {
       sms: "Bonjour, j'ai bien reçu votre demande. Je vous contacterai dans les plus brefs délais.",
       type: "plain",
       channel: "generic",
-      api_key: "TLUXY7fntROVhKrMDrxyv6czg0JNPvH3aBodlAb1SdHdzDhFUKVybIxyO1XAnJ",
+      api_key: process.env.NEXT_PUBLIC_TERMI_API_KEY,
     };
 
     const notificationMessage = {
@@ -32,7 +32,7 @@ export default function InfoPerso() {
       sms: `Le numéro ${phoneNumber} souhaite être contacté.`,
       type: "plain",
       channel: "generic",
-      api_key: "TLUXY7fntROVhKrMDrxyv6czg0JNPvH3aBodlAb1SdHdzDhFUKVybIxyO1XAnJ",
+      api_key: process.env.NEXT_PUBLIC_TERMI_API_KEY,
     };
 
     try {
