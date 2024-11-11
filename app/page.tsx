@@ -11,6 +11,7 @@ const image = [
   { src: "/logo/3.png", alt: "Bernabe Ci" },
   { src: "/logo/4.png", alt: "Mr Bricolage Ci" },
   { src: "/logo/5.png", alt: "Moro" },
+  { src: "/logo/6.png", alt: "Bakeryshop Original" },
 ];
 
 export default function Home() {
@@ -26,7 +27,7 @@ export default function Home() {
             src={item.src}
             alt={item.alt}
             key={index}
-            className="w-32 h-32 object-cover"
+            className=" w-32 h-32 object-cover"
           />
         ))}
       </div>
@@ -40,13 +41,19 @@ export default function Home() {
           <div className="flex flex-row justify-start gap-2 mb-20 md:mb-0">
             <div className="border-l-2 sm:h-[62em] md:h-[800px] translate-y-2"></div>
             <div>
+            <div className=" flex justify-center items-center flex-col mt-5">
+                <Separator />
+                <Badge variant="outline" className="-translate-y-4 bg-white text-xl px-4 text-sm">
+                  Experience professionnelle
+                </Badge>
+            </div>
               <div className="flex flex-row gap-2 justify-start items-center mb-8">
                 <p className="text-2xl font-bold w-4 h-4 border bg-gray-800 rounded-full -translate-x-4 -translate-y-10"></p>
                 <div>
                   <div className="flex flex-row gap-2 justify-start items-center">
-                    <p>De 2023 à aujourd’hui</p>
+                    <p className="text-sm md:text-md">De 2023 à aujourd’hui</p>
                     <Separator orientation="vertical" className="h-4" />
-                    <p>Développeur Digital</p>
+                    <p className="text-sm md:text-md">Développeur Digital</p>
                   </div>
                   <p className="italic">Bernabé Côte d’Ivoire</p>
                   <p className="pl-4 text-sm">
@@ -61,9 +68,9 @@ export default function Home() {
                 <p className="text-2xl font-bold w-4 h-4 border bg-gray-800 rounded-full -translate-x-4 -translate-y-12"></p>
                 <div>
                   <div className="flex flex-row gap-2 justify-start items-center">
-                    <p>1 an</p>
+                    <p className="text-sm md:text-md">1 an</p>
                     <Separator orientation="vertical" className="h-4" />
-                    <p>Analyste Service Prix et Gestionnaire de Base Article</p>
+                    <p className="text-sm md:text-md">Analyste Service Prix et Gestionnaire de Base Article</p>
                   </div>
                   <p className="italic">Bernabé Côte d’Ivoire</p>
                   <p className="pl-4 text-sm">
@@ -80,9 +87,9 @@ export default function Home() {
                 <p className="text-2xl font-bold w-4 h-4 border bg-gray-800 rounded-full -translate-x-4 -translate-y-12"></p>
                 <div>
                   <div className="flex flex-row gap-2 justify-start items-center">
-                    <p>9 mois</p>
+                    <p className="text-sm md:text-md">9 mois</p>
                     <Separator orientation="vertical" className="h-4" />
-                    <p>Gestionnaire de Stock</p>
+                    <p className="text-sm md:text-md">Gestionnaire de Stock</p>
                   </div>
                   <p className="italic">Bernabé Côte d’Ivoire</p>
                   <p className="pl-4 text-sm">
@@ -98,9 +105,9 @@ export default function Home() {
                 <p className="text-2xl font-bold w-4 h-4 border bg-gray-800 rounded-full -translate-x-4 -translate-y-12"></p>
                 <div>
                   <div className="flex flex-row gap-2 justify-start items-center">
-                    <p>3 ans</p>
+                    <p className="text-sm md:text-md">3 ans</p>
                     <Separator orientation="vertical" className="h-4" />
-                    <p>Community Manager, Infographiste et Administrateur Système</p>
+                    <p className="text-sm md:text-md">Community Manager, Infographiste et Administrateur Système</p>
                   </div>
                   <p className="italic">Bakeryshop Originale</p>
                   <p className="pl-4 text-sm">
@@ -174,7 +181,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="p-10 flex justify-center items-center flex-col mt-20">
+        <div className="flex justify-center items-center flex-col mt-20">
           <Separator />
           <Badge variant="outline" className="-translate-y-4 bg-white rotate-3 text-xl px-4">
             Compétences Techniques

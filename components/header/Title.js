@@ -13,7 +13,8 @@ import { Typewriter } from 'react-simple-typewriter';
 export default function Title() {
   return (
     <div className=''>
-            <div className='flex flex-col md:flex-row justify-center items-center  mb-5'>
+            <div className='flex flex-col md:flex-row justify-center items-center mb-5'>
+
                 <Avatar className='md:translate-x-20'>
                     <AvatarImage src="./image/pp.jpg" alt="photo de profils" />
                     <AvatarFallback>KG</AvatarFallback>

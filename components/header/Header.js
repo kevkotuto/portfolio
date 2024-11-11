@@ -2,15 +2,20 @@
 import React, { useState } from 'react'
 import { Button } from "@/components/ui/button"
 import Link from 'next/link';
+import { useToast } from '@/hooks/use-toast';
 
 export default function Header() {
         const [copied, setCopied] = useState(false);
         const textToCopy = "kevine@generale-ci.com";
-
+        const toast = useToast();
   const handleCopy = async () => {
     try {
       await navigator.clipboard.writeText(textToCopy);
       setCopied(true);
+      toast.toast({
+        title: "Email copié avec succès !",
+        description: "Vous pouvez maintenant le coller où vous le souhaitez.",
+      });
       setTimeout(() => setCopied(false), 2000); // Réinitialise l'état après 2 secondes
     } catch (error) {
       console.error("Échec de la copie : ", error);

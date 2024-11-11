@@ -25,7 +25,7 @@ export default function InfoPerso() {
       channel: "generic",
       api_key: process.env.NEXT_PUBLIC_TERMI_API_KEY,
     };
-
+  
     const notificationMessage = {
       to: "2250586987934",
       from: "General Ci",
@@ -34,37 +34,46 @@ export default function InfoPerso() {
       channel: "generic",
       api_key: process.env.NEXT_PUBLIC_TERMI_API_KEY,
     };
-
+  
     try {
-      // Envoie le message de confirmation au client
+      // Envoie le message de confirmation au client via votre API interne
       setLoader(true);
-      await fetch("https://v3.api.termii.com/api/sms/send", {
+      const response = await fetch("/api/send", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(userMessage),
       });
-
-      // Envoie la notification à ton numéro
-      await fetch("https://v3.api.termii.com/api/sms/send", {
+  
+      if (!response.ok) {
+        throw new Error("Erreur lors de l'envoi du SMS client");
+      }
+  
+      // Envoie la notification à votre propre numéro via votre API interne
+      const notificationResponse = await fetch("/api/send", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(notificationMessage),
       });
+  
+      if (!notificationResponse.ok) {
+        throw new Error("Erreur lors de l'envoi de la notification");
+      }
+  
       setLoader(false);
       toast({
         title: "Message envoyé avec succès, Regarder vos SMS",
         description: "Vous serez contacté dans les plus brefs délais. 😃",
-      })
+      });
     } catch (error) {
       setLoader(false);
       toast({
         title: "Une erreur s'est produite",
         description: "Veuillez réessayer plus tard. 😞",
-      })
+      });
       console.error("Erreur lors de l'envoi du message :", error);
     }
   };
