@@ -8,9 +8,11 @@ import {
 import { Badge } from '../ui/badge'
 import { Button } from '../ui/button'
 import { Typewriter } from 'react-simple-typewriter';
+import { useRouter } from 'next/navigation'
 
 
 export default function Title() {
+  const route = useRouter()
   return (
     <div className=''>
             <div className='flex flex-col md:flex-row justify-center items-center mb-5'>
@@ -31,7 +33,7 @@ export default function Title() {
                 />
             </div>
             <div className='flex justify-center items-center gap-2 text-center mt-10'>
-                <Button>Parcourir Mes Projets</Button>
+                <Button onClick={() => route.push('/projets')}>Parcourir Mes Projets</Button>
             </div>
     </div>
   )
