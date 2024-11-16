@@ -2,6 +2,7 @@
 
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
+import { FileUpload } from '@/components/ui/file-upload';
 import { Input } from '@/components/ui/input';
 import { Loader2 } from 'lucide-react';
 
@@ -78,7 +79,7 @@ export default function Page() {
       </div>
 
       {/* Première Section */}
-      <div className="md:px-20 my-20 rounded-r-[5rem] bg-[#F3F2F1] dark:bg-[#1E1E1E] border-r-2 md:w-1/2">
+      <div className=" md:px-4 xl:px-20 my-20 rounded-r-[5rem] bg-[#F3F2F1] dark:bg-[#1E1E1E] border-r-2 md:w-1/2">
         <div className="p-4 w-full flex flex-col md:flex-row justify-between items-stretch gap-4">
           <img
             src="/projets/server.png"
@@ -100,7 +101,7 @@ export default function Page() {
               VRAM.
             </p>
             <p className="text-md font-semibold">
-              Vous avez quoi ? C'est dessus que ce site est hébergé !
+              Vous savez quoi ? C'est dessus que ce site est hébergé !
             </p>
           </div>
         </div>
@@ -108,7 +109,7 @@ export default function Page() {
 
       {/* Deuxième Section */}
       <div className="my-20 flex justify-end">
-        <div className="p-4 md:w-1/2 flex flex-col md:flex-row-reverse justify-between items-end gap-4 rounded-l-[5rem] bg-[#F3F2F1] dark:bg-[#1E1E1E] border-l-2 md:px-20">
+        <div className="p-4 md:w-1/2 flex flex-col md:flex-row-reverse justify-between items-end gap-4 rounded-l-[5rem] bg-[#F3F2F1] dark:bg-[#1E1E1E] border-l-2 xl:px-20 md:px-4">
           <img
             src="/logo/2.png"
             alt="projet"
@@ -133,33 +134,33 @@ export default function Page() {
       </div>
 
       {/* Troisième Section */}
-      <div className="md:px-20 my-20 rounded-r-[5rem] bg-[#F3F2F1] dark:bg-[#1E1E1E] border-r-2 md:w-1/2">
-        <div className="p-4 w-full flex flex-col md:flex-row justify-between items-stretch gap-4">
+      <div className="xl:px-20 md:px-4 my-20 rounded-r-[5rem] bg-[#F3F2F1] dark:bg-[#1E1E1E] border-r-2 md:w-3/4">
+        <div className="p-4 w-full flex flex-col xl:flex-row justify-between items-center gap-4">
           <img
             src="/projets/ai.png"
             alt="intelligence artificielle"
             className="object-cover rounded-sm h-[18rem] w-[18rem] shadow-md"
           />
-          <div className="flex flex-col justify-center gap-5">
-            <h2 className="text-2xl font-bold">
-              Ça c'est une intelligence artificielle !
-            </h2>
-            <p className="text-sm font-medium">
-              Je l'ai implémentée sur le serveur.
-              <br />
-              Elle peut décrire une image en un seul mot !
-              <br />
-              Tu veux ça dans ton projet ?
-              <br />
-              Contacte-moi !
-              <br />
-              Tu peux le tester ici :
-            </p>
+          <div className="flex flex-row justify-center items-center gap-5">
+            <div>
+              <h2 className="text-2xl font-bold">
+                Ça c'est une intelligence artificielle !
+              </h2>
+              <p className="text-sm font-medium">
+                Je l'ai implémentée sur le serveur.
+                <br />
+                Elle peut décrire une image en un seul mot !
+                <br />
+                Tu veux ça dans ton projet ?
+                <br />
+                Contacte-moi !
+                <br />
+                Tu peux le tester ici :
+              </p>
+            </div>
+          </div>
             <div className="flex flex-col gap-2">
-              <Input
-                type="file"
-                onChange={(e) => setFile(e.target.files[0])}
-              />
+              <FileUpload onChange={(files) => setFile(files[0])}  />
               <Button onClick={handleSubmit} disabled={loading}>
                 {loading ? (
                   <Loader2 className="mr-2 h-4 w-4 animate-spin" />
@@ -171,7 +172,6 @@ export default function Page() {
                 <p className="font-bold text-center text-xl">{caption}</p>
               )}
             </div>
-          </div>
         </div>
       </div>
 
@@ -198,7 +198,7 @@ export default function Page() {
               VRAM.
             </p>
             <p className="text-md font-semibold">
-              Vous avez quoi ? C'est dessus que ce site est hébergé !
+              Vous savez quoi ? C'est dessus que ce site est hébergé !
             </p>
           </div>
         </div>

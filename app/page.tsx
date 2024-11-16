@@ -159,7 +159,7 @@ export default function Home() {
                   <p className="text-center">Baccalauréat</p>
                 </CardContent>
               </Card>
-              <Card className="h-[200px] w-[180px] flex justify-center items-center">
+             {/* <Card className="h-[200px] w-[180px] flex justify-center items-center">
                 <CardContent className="flex flex-col justify-around items-center h-full">
                   <Avatar className=" w-24 h-24">
                     <AvatarFallback>BEPC</AvatarFallback>
@@ -167,16 +167,17 @@ export default function Home() {
                   <p className="text-center">Brevet d'Études <br /> du Premier Cycle</p>
                 </CardContent>
               </Card>
+              */}
             </div>
             <div className="flex flex-row gap-4 flex-wrap w-full justify-center items-center">
-              <Card className="h-[200px] w-[180px] flex justify-center items-center">
+               {/*<Card className="h-[200px] w-[180px] flex justify-center items-center">
                 <CardContent className="flex flex-col justify-around items-center h-full">
                   <Avatar className=" w-24 h-24">
                     <AvatarFallback>CEPE</AvatarFallback>
                   </Avatar>
                   <p className="text-center">Certificat d'Études <br /> Primaires Élémentaires</p>
                 </CardContent>
-              </Card>
+              </Card>  */}
             </div>
           </div>
         </div>
