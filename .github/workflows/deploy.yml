@@ -1,36 +1,19 @@
-name: Deploy to Server
+name: Deploy Portfolio
 
 on:
   push:
-    branches:
-      - main
+    branches: [main, master]
+  workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Copy files to server
-        uses: appleboy/scp-action@v0.1.0
+      - name: Deploy to Server
+        uses: appleboy/ssh-action@v1.0.3
         with:
-          host: 160.154.89.188
-          username: kevine
-          key: ${{ secrets.SSH_KEY }}
-          source: "."
-          target: "/portfolio"
-
-      - name: Run SSH command on server
-        uses: appleboy/ssh-action@v0.1.6
-        with:
-          host: 160.154.89.188
-          username: kevine
-          key: ${{ secrets.SSH_KEY }}
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.DEPLOY_SSH_KEY }}
           script: |
-            cd /portfolio
-            git pull origin main
-            npm install
-            npm run build
-            pm2 restart
+            /opt/scripts/deploy/deploy-portfolio.sh
