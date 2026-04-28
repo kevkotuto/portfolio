@@ -4,11 +4,166 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  
+  html, body, #__next, main {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+  
+  body {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  body:not(.dark) {
+    background-image: 
+      radial-gradient(circle at top right, rgba(61, 136, 238, 0.05), transparent 300px),
+      radial-gradient(circle at bottom left, rgba(255, 149, 149, 0.05), transparent 250px),
+      linear-gradient(to bottom right, rgba(230, 230, 255, 0.05), rgba(241, 241, 255, 0.08));
+  }
+  
+  body.dark {
+    background-image: 
+      radial-gradient(circle at top right, rgba(61, 136, 238, 0.1), transparent 400px),
+      radial-gradient(circle at bottom left, rgba(255, 111, 111, 0.08), transparent 300px),
+      linear-gradient(to bottom right, rgba(25, 25, 35, 0.8), rgba(11, 11, 20, 0.9));
+  }
+}
+
+@layer components {
+  .container {
+    @apply px-4 sm:px-6 lg:px-8 mx-auto;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  /* Styles modernes pour les cartes */
+  .gradient-card {
+    @apply rounded-xl overflow-hidden border border-primary/10;
+    background: linear-gradient(
+      135deg,
+      hsl(var(--background)) 0%,
+      hsl(var(--background)) 60%,
+      hsl(var(--primary) / 0.1) 100%
+    );
+    transition: all 0.3s ease;
+  }
+  
+  .gradient-card:hover {
+    border-color: hsl(var(--primary) / 0.2);
+    box-shadow: 0 10px 30px -5px hsl(var(--primary) / 0.1);
+  }
+  
+  /* Section avec dégradé subtil */
+  .gradient-section {
+    background: 
+      radial-gradient(
+        circle at top right,
+        hsl(var(--primary) / 0.08) 0%,
+        transparent 40%
+      ),
+      radial-gradient(
+        circle at bottom left,
+        hsl(var(--primary) / 0.05) 0%,
+        transparent 30%
+      );
+  }
+  
+  /* Animation de fond subtilement animé */
+  .gradient-animate {
+    background-size: 200% 200%;
+    animation: gradient-shift 15s ease infinite;
+    background-image: linear-gradient(
+      -45deg,
+      hsl(var(--background)) 0%,
+      hsl(var(--background)) 40%,
+      hsl(var(--primary) / 0.08) 70%,
+      hsl(var(--background)) 100%
+    );
+  }
+  
+  @keyframes gradient-shift {
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
+  }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+  .animation-delay-500 {
+    animation-delay: 500ms;
+  }
+  .animation-delay-600 {
+    animation-delay: 600ms;
+  }
+  .animation-delay-700 {
+    animation-delay: 700ms;
+  }
+  .animation-delay-800 {
+    animation-delay: 800ms;
+  }
+  .animation-delay-900 {
+    animation-delay: 900ms;
+  }
+  
+  /* Glassmorphism moderne */
+  .glass-effect {
+    @apply backdrop-blur-md border border-white/10;
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+  }
+  
+  .dark .glass-effect {
+    background: rgba(20, 20, 20, 0.2);
+    border-color: rgba(255, 255, 255, 0.05);
+  }
+  
+  /* Variation de glassmorphism plus intense */
+  .glass-card {
+    @apply rounded-xl backdrop-blur-lg;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+  }
+  
+  .dark .glass-card {
+    background: rgba(10, 10, 15, 0.75);
+    border-color: rgba(255, 255, 255, 0.03);
+  }
+  
+  /* Effet de néon pour les éléments mis en valeur */
+  .neon-glow {
+    box-shadow: 0 0 15px rgba(var(--neon-color, 61, 136, 238), 0.5);
+    border: 1px solid rgba(var(--neon-color, 61, 136, 238), 0.3);
+    transition: all 0.3s ease;
+  }
+  
+  .neon-glow:hover {
+    box-shadow: 0 0 25px rgba(var(--neon-color, 61, 136, 238), 0.7);
   }
 }
 
@@ -39,6 +194,13 @@ body {
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 2rem;
+    
+    /* Nouvelles couleurs dégradées */
+    --gradient-1: 210 100% 50%; /* Bleu */
+    --gradient-2: 230 100% 65%; /* Bleu clair */
+    --gradient-3: 325 100% 65%; /* Rose */
+    --gradient-4: 263 100% 65%; /* Violet */
+    --neon-color: 210, 100%, 50%; /* Pour l'effet néon */
   }
   .dark {
     --background: 0 0% 3.9%;
@@ -65,6 +227,13 @@ body {
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+    
+    /* Nouvelles couleurs dégradées pour le mode sombre */
+    --gradient-1: 210 100% 50%; /* Bleu */
+    --gradient-2: 230 100% 65%; /* Bleu clair */
+    --gradient-3: 325 100% 65%; /* Rose */
+    --gradient-4: 263 100% 65%; /* Violet */
+    --neon-color: 210, 80%, 50%; /* Pour l'effet néon */
   }
 }
 
@@ -75,4 +244,19 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Styles pour les patterns géométriques subtils */
+.bg-grid-pattern {
+  background-image: 
+    linear-gradient(to right, rgba(128, 128, 128, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(128, 128, 128, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.dark .bg-grid-pattern {
+  background-image: 
+    linear-gradient(to right, rgba(128, 128, 128, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(128, 128, 128, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
 }

@@ -8,6 +8,19 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '1rem',
+        sm: '2rem',
+        lg: '4rem',
+        xl: '5rem',
+        '2xl': '6rem',
+      },
+      screens: {
+        '2xl': '1400px',
+      },
+    },
     extend: {
       colors: {
         background: 'hsl(var(--background))',
@@ -58,6 +71,11 @@ const config: Config = {
       },
       animation: {
         wave: 'wave 1s ease-in-out infinite',
+        fadeIn: 'fadeIn 0.5s ease-in-out forwards',
+        slideInFromLeft: 'slideInFromLeft 0.5s ease-in-out forwards',
+        slideInFromRight: 'slideInFromRight 0.5s ease-in-out forwards',
+        slideInFromTop: 'slideInFromTop 0.5s ease-in-out forwards',
+        scale: 'scale 0.5s ease-in-out forwards',
       },
       keyframes: {
         wave: {
@@ -70,7 +88,38 @@ const config: Config = {
           '60%': { transform: 'rotate(0deg)' },
           '100%': { transform: 'rotate(0deg)' },
         },
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        slideInFromLeft: {
+          '0%': { transform: 'translateX(-20px)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+        slideInFromRight: {
+          '0%': { transform: 'translateX(20px)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+        slideInFromTop: {
+          '0%': { transform: 'translateY(-20px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        scale: {
+          '0%': { transform: 'scale(0.8)', opacity: '0' },
+          '100%': { transform: 'scale(1)', opacity: '1' },
+        },
       },
+      transitionDelay: {
+        '0': '0ms',
+        '200': '200ms',
+        '300': '300ms',
+        '400': '400ms',
+        '500': '500ms',
+        '600': '600ms',
+        '700': '700ms',
+        '800': '800ms',
+        '900': '900ms',
+      }
     },
   },
   plugins: [

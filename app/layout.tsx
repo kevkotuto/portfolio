@@ -4,6 +4,11 @@ import "./globals.css";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 import { Toaster } from "@/components/ui/toaster";
+import { ThemeProvider } from "@/components/theme/theme-provider";
+import CustomCursor from "@/components/ui/CustomCursor";
+import { cn } from "@/lib/utils";
+import ScrollToTop from "@/components/ui/ScrollToTop";
+import ScrollProvider from "@/components/providers/scroll-provider";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,17 +32,30 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr">
+    <html lang="fr" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased  h-full `}
+        className={cn(
+          "min-h-screen bg-background font-sans antialiased",
+          geistSans.variable,
+          geistMono.variable
+        )}
       >
-
-      <Header />
-        <main>
-          {children}
-        </main>
-        <Toaster />
-        <Footer />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <CustomCursor />
+          <Header />
+          <main className="flex-grow">
+            {children}
+          </main>
+          <Footer />
+          <Toaster />
+          <ScrollToTop />
+          <ScrollProvider />
+        </ThemeProvider>
       </body>
     </html>
   );
