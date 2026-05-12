@@ -1,335 +1,329 @@
-'use client'
-import React, { useState, useEffect } from 'react'
-import { Button } from "@/components/ui/button"
-import Link from 'next/link';
-import { useToast } from '@/hooks/use-toast';
-import { Mail, Copy, FileText, Menu, X, Github, Linkedin, Instagram, Home, Code, User, Briefcase } from 'lucide-react';
-import { ThemeSwitcher } from '@/components/theme/theme-switcher';
-import { usePathname } from 'next/navigation';
-import { motion, AnimatePresence } from 'motion/react';
+"use client";
 
-interface NavLink {
-  name: string;
-  href: string;
-  icon: React.ReactNode;
-}
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { motion, AnimatePresence } from "motion/react";
+import {
+  Mail,
+  Copy,
+  FileText,
+  Menu,
+  X,
+  Github,
+  Linkedin,
+  Instagram,
+  Home,
+  Code,
+  Check,
+} from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { ThemeSwitcher } from "@/components/theme/theme-switcher";
+import { useToast } from "@/hooks/use-toast";
+import { cn } from "@/lib/utils";
 
-// Menu des liens principaux
-const mainLinks: NavLink[] = [
-  { name: 'Accueil', href: '/', icon: <Home className="h-4 w-4" /> },
-  { name: 'Projets', href: '/projets', icon: <Code className="h-4 w-4" /> },
-  { name: 'Contact', href: '/contact', icon: <Mail className="h-4 w-4" /> },
-  // Liens internes avec # - commenter pour l'instant car la logique d'activation nécessite plus
-  // { name: 'À propos', href: '/#about', icon: <User className="h-4 w-4" /> },
-  // { name: 'Expérience', href: '/#experience', icon: <Briefcase className="h-4 w-4" /> },
+const EMAIL = "kevine@generale-ci.com";
+
+const mainLinks = [
+  { name: "Accueil", href: "/", icon: Home },
+  { name: "Projets", href: "/projets", icon: Code },
+  { name: "CV", href: "/cv", icon: FileText },
+  { name: "Contact", href: "/contact", icon: Mail },
 ];
 
-// Menu des réseaux sociaux
-const socialLinks: NavLink[] = [
-  { name: 'LinkedIn', href: 'https://www.linkedin.com/in/ghossoub-kevine-boudalha-184929263', icon: <Linkedin className="h-4 w-4" /> },
-  { name: 'GitHub', href: 'https://github.com/kevkotuto', icon: <Github className="h-4 w-4" /> },
-  { name: 'Instagram', href: 'https://www.instagram.com/kevine_ghoussoub', icon: <Instagram className="h-4 w-4" /> },
+const socialLinks = [
+  {
+    name: "GitHub",
+    href: "https://github.com/kevkotuto",
+    icon: Github,
+  },
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/in/ghossoub-kevine-boudalha-184929263",
+    icon: Linkedin,
+  },
+  {
+    name: "Instagram",
+    href: "https://www.instagram.com/kevine_ghoussoub",
+    icon: Instagram,
+  },
 ];
-
-const MotionButton = motion(Button);
-const MotionLink = motion(Link);
 
 export default function Header() {
-  const [copied, setCopied] = useState<boolean>(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
-  const [scrolled, setScrolled] = useState<boolean>(false);
-  const textToCopy: string = "kevine@generale-ci.com";
-  const { toast } = useToast();
+  const [copied, setCopied] = useState(false);
+  const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
-  
-  // Gérer le défilement
-  useEffect(() => {
-    const handleScroll = () => {
-      const isScrolled = window.scrollY > 10;
-      if (isScrolled !== scrolled) {
-        setScrolled(isScrolled);
-      }
-    };
+  const { toast } = useToast();
 
-    window.addEventListener('scroll', handleScroll);
-    // Nettoyage au démontage et fermeture du menu si ouvert
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-      setMobileMenuOpen(false);
-    };
-  }, [scrolled]);
-
-  // Fermer le menu mobile lors du changement de route
+  // Scroll
   useEffect(() => {
-    if (mobileMenuOpen) {
-      setMobileMenuOpen(false);
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  // Close on route change
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
+
+  // Lock body scroll when mobile menu open
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden";
+      return () => {
+        document.body.style.overflow = "";
+      };
     }
-  }, [pathname]); // Exécuter seulement si pathname change
-  
+  }, [open]);
+
   const handleCopy = async () => {
     try {
-      await navigator.clipboard.writeText(textToCopy);
+      await navigator.clipboard.writeText(EMAIL);
       setCopied(true);
-      toast({
-        title: "Email copié avec succès !",
-        description: "Vous pouvez maintenant le coller où vous le souhaitez.",
-      });
+      toast({ title: "Email copié", description: EMAIL });
       setTimeout(() => setCopied(false), 2000);
-    } catch (error) {
-      console.error("Échec de la copie : ", error);
-      toast({ 
-        title: "Erreur", 
-        description: "Impossible de copier l'email.", 
-        variant: "destructive"
-      });
+    } catch {
+      toast({ title: "Erreur", variant: "destructive" });
     }
   };
 
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen(!mobileMenuOpen);
-  };
-
-  // Effets de survol/clic réutilisables
-  const buttonHoverTap = { whileHover: { scale: 1.05, transition:{ duration: 0.2 } }, whileTap: { scale: 0.95 } };
-  const iconHoverTap = { whileHover: { scale: 1.1, transition:{ duration: 0.2 } }, whileTap: { scale: 0.9 } };
+  const isActive = (href: string) =>
+    href === "/" ? pathname === "/" : pathname.startsWith(href);
 
   return (
-    <motion.header 
-      initial={false} // Empêche l'animation initiale au chargement
-      animate={scrolled ? "scrolled" : "top"}
-      variants={{
-        top: { backgroundColor: 'rgba(var(--background-rgb), 0)', boxShadow: 'none' }, // Utiliser rgba pour transition
-        scrolled: { 
-          backgroundColor: 'rgba(var(--background-rgb), 0.65)', // Ajuster l'opacité
-          backdropFilter: 'blur(12px)',
-          boxShadow: '0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)' 
-        }
-      }}
-      transition={{ duration: 0.3, ease: 'easeOut' }}
-      className={`w-full sticky top-0 z-50 backdrop-blur-sm ${scrolled ? 'glass-effect' : ''}`}
-      style={{ '--background-rgb': 'var(--background)' } as React.CSSProperties} // Passer la variable CSS pour l'animation
-    >
-      <div className='container mx-auto flex h-16 items-center justify-between'>
-        {/* Partie Gauche: Logo + Nav Desktop */}
-        <div className='flex items-center gap-2'>
-          <MotionLink 
-            href="/" 
-            className='font-bold text-xl relative group'
-            {...iconHoverTap}
-          >
-            <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-              KG
-            </span>
-            {/* Soulignement animé */}
-            <motion.span 
-              className="absolute -bottom-1 left-0 h-0.5 bg-primary origin-left"
-              initial={{ scaleX: 0 }}
-              whileHover={{ scaleX: 1 }}
-              transition={{ duration: 0.3 }}
-            /> 
-          </MotionLink>
-          
-          <nav className='hidden md:flex items-center ml-6 lg:ml-8'>
-            <ul className='flex space-x-1'>
-              {mainLinks.map((link) => {
-                const isActive = pathname === link.href || 
-                               (link.href !== '/' && pathname.startsWith(link.href));
-                return (
-                  <li key={link.name}>
-                    <MotionButton 
-                      variant={isActive ? 'secondary' : 'ghost'} 
-                      size='sm' 
-                      asChild
-                      className='gap-1.5'
-                      {...buttonHoverTap}
-                    >
-                      <Link href={link.href}>
-                        {link.icon}
+    <>
+      <header
+        className={cn(
+          "fixed top-3 left-3 right-3 sm:top-4 sm:left-4 sm:right-4 z-50 mx-auto max-w-6xl rounded-2xl border border-transparent transition-all duration-300",
+          scrolled
+            ? "border-border/60 bg-background/70 backdrop-blur-xl shadow-sm"
+            : "bg-background/30 backdrop-blur-sm"
+        )}
+      >
+        <div className="flex h-14 items-center justify-between gap-2 px-3 sm:px-4">
+          {/* Logo + Desktop nav */}
+          <div className="flex items-center gap-1 min-w-0">
+            <Link
+              href="/"
+              aria-label="Accueil"
+              className="font-bold text-base sm:text-lg shrink-0 px-2 py-1 rounded-lg hover:bg-muted/60 transition-colors"
+            >
+              <span className="bg-gradient-to-br from-primary to-primary/50 bg-clip-text text-transparent">
+                KG
+              </span>
+              <span className="hidden sm:inline text-foreground">.dev</span>
+            </Link>
+
+            <nav className="hidden md:flex items-center ml-2" aria-label="Navigation principale">
+              <ul className="flex items-center gap-0.5">
+                {mainLinks.map((link) => {
+                  const Icon = link.icon;
+                  const active = isActive(link.href);
+                  return (
+                    <li key={link.name}>
+                      <Link
+                        href={link.href}
+                        className={cn(
+                          "flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors",
+                          active
+                            ? "bg-primary/10 text-primary"
+                            : "text-muted-foreground hover:text-foreground hover:bg-muted/60"
+                        )}
+                      >
+                        <Icon className="h-3.5 w-3.5" />
                         {link.name}
                       </Link>
-                    </MotionButton>
-                  </li>
+                    </li>
+                  );
+                })}
+              </ul>
+            </nav>
+          </div>
+
+          {/* Right side */}
+          <div className="flex items-center gap-1 sm:gap-2">
+            {/* Email pill (desktop only) */}
+            <button
+              type="button"
+              onClick={handleCopy}
+              className="hidden xl:flex items-center gap-1.5 px-3 h-9 rounded-lg border bg-muted/40 hover:bg-muted/60 text-xs text-muted-foreground transition-colors group cursor-pointer"
+              aria-label="Copier l'email"
+            >
+              <Mail className="h-3.5 w-3.5" />
+              <span className="max-w-[160px] truncate">{EMAIL}</span>
+              {copied ? (
+                <Check className="h-3 w-3 text-emerald-500" />
+              ) : (
+                <Copy className="h-3 w-3 opacity-60 group-hover:opacity-100" />
+              )}
+            </button>
+
+            {/* Socials (hidden on small) */}
+            <div className="hidden md:flex items-center gap-0.5">
+              {socialLinks.map((link) => {
+                const Icon = link.icon;
+                return (
+                  <Button
+                    key={link.name}
+                    variant="ghost"
+                    size="icon"
+                    asChild
+                    className="h-9 w-9 text-muted-foreground hover:text-primary"
+                  >
+                    <Link
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={link.name}
+                    >
+                      <Icon className="h-4 w-4" />
+                    </Link>
+                  </Button>
                 );
               })}
-            </ul>
-          </nav>
-        </div>
-        
-        {/* Partie Droite: Infos + Actions Desktop */}
-        <div className='hidden md:flex items-center gap-3 lg:gap-4'>
-          {/* Email Info */} 
-          <div className='flex items-center gap-1 bg-muted/60 rounded-full pl-3 pr-1 py-1 text-sm group'>
-            <Mail className='h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors duration-200 flex-shrink-0' />
-            <span className='text-muted-foreground hidden xl:inline'>{textToCopy}</span>
-            <MotionButton 
-              variant='ghost' 
-              size='icon' 
-              onClick={handleCopy} 
-              title="Copier l'email" 
-              className='h-7 w-7 flex-shrink-0'
-              {...iconHoverTap}
-              aria-label="Copier l'adresse email"
+            </div>
+
+            <ThemeSwitcher />
+
+            {/* CTA desktop */}
+            <Button
+              asChild
+              size="sm"
+              className="hidden md:inline-flex h-9 rounded-lg gap-1.5 ml-1"
             >
-              <Copy className={`h-3.5 w-3.5 transition-colors duration-200 ${copied ? 'text-green-500' : ''}`} />
-            </MotionButton>
+              <Link href="/contact">
+                <Mail className="h-3.5 w-3.5" />
+                Discuter
+              </Link>
+            </Button>
+
+            {/* Mobile menu trigger */}
+            <Button
+              variant="ghost"
+              size="icon"
+              className="h-9 w-9 md:hidden"
+              onClick={() => setOpen((v) => !v)}
+              aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
+              aria-expanded={open}
+            >
+              <AnimatePresence initial={false} mode="wait">
+                <motion.div
+                  key={open ? "x" : "menu"}
+                  initial={{ rotate: -90, opacity: 0 }}
+                  animate={{ rotate: 0, opacity: 1 }}
+                  exit={{ rotate: 90, opacity: 0 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+                </motion.div>
+              </AnimatePresence>
+            </Button>
           </div>
-          
-          {/* Réseaux sociaux */} 
-          <div className='flex items-center gap-0.5'>
-            {socialLinks.map((link) => (
-              <MotionButton 
-                key={link.name} 
-                variant='ghost' 
-                size='icon' 
-                asChild 
-                className='h-8 w-8 text-muted-foreground hover:text-primary'
-                {...iconHoverTap}
-              >
-                <Link href={link.href} target="_blank" rel="noopener noreferrer" title={link.name} aria-label={link.name}>
-                  {link.icon}
-                </Link>
-              </MotionButton>
-            ))}
-          </div>
-          
-          {/* Bouton CV */}
-          <MotionButton 
-            variant='outline' 
-            size='sm' 
-            asChild 
-            className='gap-1.5'
-            {...buttonHoverTap}
-          >
-            <Link href="/cv">
-              <FileText className='h-4 w-4' />
-              CV
-            </Link>
-          </MotionButton>
-          
-          <ThemeSwitcher />
         </div>
-        
-        {/* Menu Mobile: Boutons */} 
-        <div className='flex items-center gap-2 md:hidden'>
-          <ThemeSwitcher />
-          <MotionButton 
-            variant='ghost' 
-            size='icon' 
-            onClick={toggleMobileMenu}
-            title={mobileMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
-            aria-label={mobileMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
-            aria-expanded={mobileMenuOpen}
-            {...iconHoverTap}
-          >
-            <AnimatePresence initial={false} mode="wait">
-              <motion.div 
-                key={mobileMenuOpen ? 'x' : 'menu'} 
-                initial={{ rotate: -90, scale: 0.5, opacity: 0 }}
-                animate={{ rotate: 0, scale: 1, opacity: 1 }}
-                exit={{ rotate: 90, scale: 0.5, opacity: 0 }}
-                transition={{ duration: 0.2 }}
-              >
-                {mobileMenuOpen ? <X className='h-5 w-5' /> : <Menu className='h-5 w-5' />}
-              </motion.div>
-            </AnimatePresence>
-          </MotionButton>
-        </div>
-      </div>
-       
-      {/* Panel Mobile */} 
+      </header>
+
+      {/* Mobile menu overlay */}
       <AnimatePresence>
-        {mobileMenuOpen && (
-          <motion.div 
-            key="mobile-menu-panel"
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.3, ease: 'easeInOut' }}
-            className='md:hidden border-t border-border overflow-hidden'
-            // Ajout de styles pour s'assurer que l'arrière-plan est opaque pendant l'animation
-            style={{ backgroundColor: 'hsl(var(--background))' }} 
+        {open && (
+          <motion.div
+            key="mobile-menu"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+            className="fixed inset-0 z-40 md:hidden bg-background/95 backdrop-blur-xl pt-20"
           >
-            <div className="p-4 space-y-4"> 
-              {/* Navigation Mobile */} 
+            <motion.div
+              initial={{ y: -20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: -20, opacity: 0 }}
+              transition={{ duration: 0.25, delay: 0.05 }}
+              className="container mx-auto px-4 py-6 flex flex-col gap-3 max-h-[calc(100vh-5rem)] overflow-y-auto"
+            >
               <nav aria-label="Navigation mobile">
-                <ul className='grid grid-cols-2 gap-2'>
-                  {mainLinks.map((link) => {
-                    const isActive = pathname === link.href || 
-                                   (link.href !== '/' && pathname.startsWith(link.href));
+                <ul className="flex flex-col gap-1">
+                  {mainLinks.map((link, i) => {
+                    const Icon = link.icon;
+                    const active = isActive(link.href);
                     return (
-                      <li key={link.name}>
-                        <MotionButton 
-                          variant={isActive ? 'secondary' : 'outline'} 
-                          size='sm' 
-                          asChild
-                          className='w-full justify-start gap-2'
-                          onClick={toggleMobileMenu} // Ferme le menu au clic
-                          {...buttonHoverTap}
+                      <motion.li
+                        key={link.name}
+                        initial={{ x: -20, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ delay: 0.05 + i * 0.05 }}
+                      >
+                        <Link
+                          href={link.href}
+                          className={cn(
+                            "flex items-center gap-3 px-4 py-3 rounded-xl text-lg font-medium transition-colors",
+                            active
+                              ? "bg-primary/10 text-primary"
+                              : "text-foreground hover:bg-muted/60"
+                          )}
                         >
-                          <Link href={link.href}>
-                            {link.icon}
-                            {link.name}
-                          </Link>
-                        </MotionButton>
-                      </li>
+                          <Icon className="h-5 w-5" />
+                          {link.name}
+                        </Link>
+                      </motion.li>
                     );
                   })}
                 </ul>
               </nav>
-               
-              {/* Actions Mobile */} 
-              <div className='border rounded-md px-3 py-2 flex items-center justify-between text-sm'>
-                <div className='flex items-center gap-2 truncate'>
-                  <Mail className='h-4 w-4 flex-shrink-0 text-muted-foreground' />
-                  <span className='truncate'>{textToCopy}</span>
-                </div>
-                <MotionButton 
-                  variant='ghost' 
-                  size='icon' 
-                  onClick={handleCopy}
-                  className='h-7 w-7 flex-shrink-0 -mr-2'
-                  {...iconHoverTap}
-                  aria-label="Copier l'adresse email"
-                >
-                  <Copy className={`h-4 w-4 transition-colors duration-200 ${copied ? 'text-green-500' : ''}`} />
-                </MotionButton>
-              </div>
-               
-              <div className='grid grid-cols-2 gap-2'>
-                <MotionButton 
-                  variant='outline' 
-                  size='sm' 
-                  asChild 
-                  className='gap-1.5 w-full'
-                  {...buttonHoverTap}
-                >
-                  <Link href="/cv">
-                    <FileText className='h-4 w-4' />
-                    CV
-                  </Link>
-                </MotionButton>
-                 
-                <div className='flex justify-around items-center border rounded-md px-2'>
-                  {socialLinks.map((link) => (
-                    <MotionLink 
-                      key={link.name} 
-                      href={link.href} 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      title={link.name}
-                      aria-label={link.name}
-                      className='p-1.5 text-muted-foreground hover:text-primary'
-                      {...iconHoverTap}
+
+              <div className="border-t my-2" />
+
+              <button
+                type="button"
+                onClick={handleCopy}
+                className="flex items-center justify-between px-4 py-3 rounded-xl border bg-muted/30 hover:bg-muted/60 text-sm transition-colors text-left"
+              >
+                <span className="flex items-center gap-2 min-w-0">
+                  <Mail className="h-4 w-4 text-muted-foreground shrink-0" />
+                  <span className="truncate">{EMAIL}</span>
+                </span>
+                {copied ? (
+                  <Check className="h-4 w-4 text-emerald-500 shrink-0" />
+                ) : (
+                  <Copy className="h-4 w-4 text-muted-foreground shrink-0" />
+                )}
+              </button>
+
+              <div className="grid grid-cols-3 gap-2">
+                {socialLinks.map((link) => {
+                  const Icon = link.icon;
+                  return (
+                    <Button
+                      key={link.name}
+                      variant="outline"
+                      asChild
+                      className="h-12 gap-2 rounded-xl"
                     >
-                      {link.icon}
-                    </MotionLink>
-                  ))}
-                </div>
+                      <Link
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={link.name}
+                      >
+                        <Icon className="h-4 w-4" />
+                        <span className="text-xs">{link.name}</span>
+                      </Link>
+                    </Button>
+                  );
+                })}
               </div>
-            </div>
+
+              <Button asChild size="lg" className="rounded-xl gap-2 mt-2">
+                <Link href="/contact">
+                  <Mail className="h-4 w-4" /> Discutons de votre projet
+                </Link>
+              </Button>
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
-    </motion.header>
-  )
+    </>
+  );
 }
