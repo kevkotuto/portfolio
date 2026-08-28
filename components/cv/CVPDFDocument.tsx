@@ -219,7 +219,7 @@ interface CVData {
 const competenceLabels: Record<string, string> = {
   langages: 'Front-end',
   frameworks: 'Back-end',
-  bdd: 'Bases de donnees',
+  bdd: 'Bases de données',
   infrastructure: 'Infrastructure & DevOps',
   outils: 'Outils',
   paiement: 'Paiement',
