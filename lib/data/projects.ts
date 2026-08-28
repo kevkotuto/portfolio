@@ -148,7 +148,6 @@ export const projects: Project[] = [
     status: "production",
     year: 2025,
     url: "https://gestot.generale-ci.com",
-    logo: "/projets/logos/jtb.ico",
     confidential: true,
   },
   {
@@ -282,6 +281,7 @@ export const projects: Project[] = [
     status: "production",
     year: 2026,
     url: "https://inayahome.com",
+    logo: "/projets/logos/inayahome.png",
     repo: "https://github.com/kevkotuto/inayahome",
     confidential: false,
   },
@@ -307,6 +307,7 @@ export const projects: Project[] = [
     status: "production",
     year: 2025,
     url: "https://jtb.ci",
+    logo: "/projets/logos/jtb.ico",
     confidential: true,
   },
   {
@@ -427,9 +428,8 @@ export const projects: Project[] = [
     description: "Service de partage de fichiers avec lien expiration, protection mot de passe.",
     tech: ["Node.js", "TypeScript"],
     category: "infra",
-    status: "production",
+    status: "archived",
     year: 2025,
-    url: "https://share.generale-ci.com",
     confidential: false,
   },
   {
@@ -445,11 +445,11 @@ export const projects: Project[] = [
   },
   {
     slug: "ultron",
-    title: "Ultron — Orchestrateur d'infra",
+    title: "Ultron — Serveur de production",
     role: "Solo / DevOps",
     description:
-      "Orchestrateur maison pour gérer mon VPS : déploiements, monitoring, logs, sauvegardes des 25+ apps en prod.",
-    tech: ["Node.js", "TypeScript", "PM2", "Docker", "Nginx"],
+      "Le VPS qui héberge 25+ applications en production, et l'outillage maison qui va avec : scripts de déploiement, builds Android, sauvegardes, supervision et certificats.",
+    tech: ["Linux", "Docker", "PM2", "Nginx", "Bash", "Certbot"],
     category: "infra",
     status: "active",
     year: 2025,
@@ -465,6 +465,7 @@ export const projects: Project[] = [
     status: "production",
     year: 2025,
     url: "https://cat-imci.generale-ci.com",
+    logo: "/projets/logos/imci.png",
     confidential: true,
   },
   {
@@ -518,12 +519,20 @@ export const projects: Project[] = [
   },
   {
     slug: "co-plastic",
-    title: "Co-Plastic",
-    role: "Fullstack",
-    description: "Plateforme dédiée au plastique recyclé / économie circulaire.",
-    tech: ["Next.js", "TypeScript"],
-    category: "vitrine",
-    status: "wip",
+    title: "Co-Plastic — Site vitrine & ERP Odoo",
+    role: "Fullstack + Intégration ERP",
+    description:
+      "Site vitrine de Co-Plastic, fabricant ivoirien d'emballages plastique, et déploiement de leur ERP Odoo.",
+    longDescription:
+      "Deux volets pour le même client : un site vitrine Next.js (catalogue, pages produits, formulaire de contact) et la mise en place de leur ERP Odoo — installation, hébergement, accès distant et exploitation courante de la base.",
+    highlights: [
+      "Site vitrine Next.js 16 / React 19",
+      "Installation et hébergement de l'ERP Odoo",
+      "Exploitation de la base de production (accès SQL, corrections de données)",
+    ],
+    tech: ["Odoo 17", "Docker", "PostgreSQL", "Next.js 16", "React 19", "Tailwind 4", "Linux"],
+    category: "saas",
+    status: "production",
     year: 2026,
     confidential: true,
   },
