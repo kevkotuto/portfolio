@@ -134,12 +134,7 @@ export const educations: Education[] = [
   },
   {
     title: "BTS Informatique — Développement d'Applications",
-    school: "PIGIER CI, Abidjan",
+    school: "ISTEMA, Abidjan",
     period: "2018 — 2020",
-  },
-  {
-    title: "Baccalauréat Scientifique & Technologique",
-    school: "Collège ANADOR, Abidjan",
-    period: "2017",
   },
 ];
