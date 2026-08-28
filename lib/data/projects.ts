@@ -497,6 +497,27 @@ export const projects: Project[] = [
     confidential: true,
   },
   {
+    slug: "supervision-yeshi",
+    title: "Supervision des sites du groupe Yeshi",
+    client: "Yeshigroup",
+    role: "Exploitation / SRE",
+    description:
+      "Suivi de la disponibilité d'une vingtaine de sites du groupe : surveillance continue, alertes en cas d'indisponibilité et traitement des incidents.",
+    longDescription:
+      "Mise en place et tenue du suivi de disponibilité de plus de vingt sites du groupe. Surveillance de l'état de service, alertes déclenchées sur incident, diagnostic et remise en ligne, puis correction des causes de fond pour éviter la récidive.",
+    highlights: [
+      "20+ sites suivis en continu",
+      "Alertes automatiques sur indisponibilité",
+      "Diagnostic et remise en service lors des incidents",
+      "Actions correctives durables après incident",
+    ],
+    tech: ["Nginx", "Docker", "Linux", "Monitoring", "Alerting"],
+    category: "infra",
+    status: "active",
+    year: 2025,
+    confidential: true,
+  },
+  {
     slug: "imci-catalog",
     title: "Catalogue IMCI",
     role: "Fullstack",
