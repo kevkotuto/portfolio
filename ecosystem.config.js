@@ -9,7 +9,7 @@ module.exports = {
       exec_mode: 'fork', // Mode fork pour ne lancer qu'une seule instance
       env: {
         NODE_ENV: 'production', // Définir l'environnement en production
-        PORT: 3003, // Port sur lequel l'application sera lancée
+        PORT: 3110, // Port sur lequel l'application sera lancée
       },
     },
   ],
