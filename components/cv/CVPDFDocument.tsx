@@ -215,6 +215,18 @@ interface CVData {
   }>;
 }
 
+// Intitules lisibles des rubriques de competences (les cles viennent de buildCvPdfData)
+const competenceLabels: Record<string, string> = {
+  langages: 'Front-end',
+  frameworks: 'Back-end',
+  bdd: 'Bases de donnees',
+  infrastructure: 'Infrastructure & DevOps',
+  outils: 'Outils',
+  paiement: 'Paiement',
+  autres: 'Mobile',
+  ia: 'IA',
+};
+
 interface CVPDFDocumentProps {
   data: CVData;
   /** Chemin de la photo : URL relative dans le navigateur, chemin disque cote serveur. */
@@ -314,7 +326,7 @@ const CVPDFDocument: React.FC<CVPDFDocumentProps> = ({ data, photoSrc = '/image/
             {Object.entries(data.competences).map(([category, skills]) => (
               <View key={category} style={styles.skillCategory}>
                 <Text style={styles.skillCategoryTitle}>
-                  {category.charAt(0).toUpperCase() + category.slice(1).replace('bdd', 'BDD').replace('ia', 'IA')}:
+                  {competenceLabels[category] ?? category}:
                 </Text>
                 <View style={styles.skillsContainer}>
                   {skills.map((skill, index) => (
