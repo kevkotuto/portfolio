@@ -139,8 +139,16 @@ export const projects: Project[] = [
     client: "Upjunoo Media",
     role: "Consultant technique",
     description:
-      "Plateforme dédiée aux pros : taxi, livraison, logistique. Version pro de l'écosystème Upjunoo.",
-    tech: ["Next.js", "TypeScript", "Docker", "PostgreSQL"],
+      "Site public d'Upjunoo Pro : présentation des services de mobilité et de logistique, recrutement des chauffeurs et téléchargement des applications.",
+    longDescription:
+      "Vitrine de la branche pro d'Upjunoo, multilingue, qui expose les quatre offres — VTC, livraison, fret urbain et location — et sert de point d'entrée aux deux publics : les clients qui téléchargent l'app, et les chauffeurs qui candidatent. Le site embarque le parcours « devenir chauffeur », une FAQ, les pages légales (CGU, conditions générales, confidentialité), un formulaire de contact et des liens de téléchargement avec QR code.",
+    highlights: [
+      "Parcours de recrutement des chauffeurs intégré au site",
+      "Quatre offres présentées : VTC, livraison, fret urbain, location",
+      "Multilingue, avec pages légales et FAQ",
+      "Téléchargement des apps par lien ou QR code",
+    ],
+    tech: ["Next.js", "next-intl", "TypeScript", "Tailwind", "Lottie"],
     category: "saas",
     status: "production",
     year: 2025,
@@ -160,6 +168,8 @@ export const projects: Project[] = [
       "Commande, suivi de course en temps réel et historique",
       "Onboarding, pages légales et espace profil",
     ],
+    longDescription:
+      "Application Expo avec expo-router qui regroupe les quatre services d'Upjunoo Pro dans un seul parcours : demander une course VTC, envoyer un colis, réserver du fret urbain ou louer un véhicule. L'utilisateur suit sa commande en temps réel, retrouve son historique, échange par messagerie et gère son profil. L'app inclut l'onboarding, les pages légales et le suivi de course.",
     tech: ["Expo", "expo-router", "React Native", "TypeScript"],
     category: "mobile",
     status: "production",
@@ -196,7 +206,15 @@ export const projects: Project[] = [
     client: "Generale-CI",
     role: "Fullstack",
     description:
-      "Marketplace dédiée à la mode : produits originaux, contrefaçons, occasion. Apps client/revendeur/admin, AI service intégré.",
+      "Marketplace mode multi-vendeurs : app acheteur et espace vendeur dans la même application, avec service IA de recherche par similarité.",
+    longDescription:
+      "Application Expo à deux visages : un parcours acheteur (accueil, catégories, recherche, favoris, fiche produit, panier, commande, avis) et un espace vendeur avec ses propres onglets pour publier et suivre ses ventes. Autour, un backend et un service IA dédié, déployés en Docker, qui gèrent la recherche par similarité via des embeddings stockés dans pgvector. Messagerie intégrée entre acheteurs et vendeurs, notifications et gestion des commandes.",
+    highlights: [
+      "Deux espaces dans une seule app : acheteur et vendeur",
+      "Recherche par similarité via embeddings (pgvector)",
+      "Messagerie acheteur / vendeur et notifications",
+      "Backend et service IA séparés, orchestrés en Docker",
+    ],
     tech: ["Next.js", "Node.js", "Docker", "pgvector", "AI service", "Expo"],
     category: "ecommerce",
     status: "wip",
@@ -205,12 +223,21 @@ export const projects: Project[] = [
   },
   {
     slug: "gestot",
-    title: "Gestot — ITSM + facturation",
+    title: "Generale CI Manager — Gestion multi-sociétés",
     client: "Generale-CI",
     role: "Lead Fullstack",
     description:
-      "Outil ITSM (gestion des tickets, parc, incidents) couplé à un module de facturation. Architecture Docker avec jobs workers.",
-    tech: ["Next.js", "TypeScript", "Docker", "PostgreSQL", "Background jobs"],
+      "Plateforme de gestion multi-sociétés : facturation, ITSM, suivi de projets, paie par Mobile Money et coffre-fort de credentials.",
+    longDescription:
+      "Application interne construite par phases autour d'un socle commun : authentification, gestion de l'argent, journal d'audit et contrats partagés entre modules. Elle couvre la facturation, un ITSM léger (tickets, incidents, parc), le suivi de projets, la paie versée par Wave, et un coffre-fort de credentials chiffré. L'API est typée de bout en bout via tRPC, la persistance passe par Prisma sur PostgreSQL, et un agent installé sur les postes remonte l'information terrain. Un assistant s'appuie sur LangGraph pour les tâches de traitement.",
+    highlights: [
+      "Multi-sociétés : facturation, ITSM, projets et paie dans un même socle",
+      "API typée de bout en bout (tRPC) et journal d'audit transversal",
+      "Coffre-fort de credentials chiffré",
+      "Versement de paie par Wave Mobile Money",
+      "Agent endpoint pour la remontée du parc",
+    ],
+    tech: ["Next.js", "tRPC", "Prisma", "PostgreSQL", "LangGraph", "Docker", "Argon2"],
     category: "saas",
     status: "production",
     year: 2025,
@@ -247,6 +274,14 @@ export const projects: Project[] = [
     role: "Lead Fullstack",
     description:
       "App de tontines digitales avec gestion automatique des cycles, workers de notifications, paiements Mobile Money.",
+    longDescription:
+      "Application de tontine numérique qui reproduit le fonctionnement des tontines traditionnelles ivoiriennes : on crée ou rejoint un groupe, on choisit le montant et la périodicité, et l'app orchestre les cycles — appel des cotisations, encaissement, attribution du tour et clôture. Des workers côté serveur gèrent les échéances et les rappels, les paiements passent par Mobile Money, et chaque participant suit l'activité du groupe et son propre historique.",
+    highlights: [
+      "Création ou adhésion à un groupe de tontine",
+      "Cycles gérés automatiquement : cotisations, tours, clôture",
+      "Workers d'échéances et notifications de rappel",
+      "Paiement et versement par Mobile Money",
+    ],
     tech: ["NestJS", "Expo", "PostgreSQL", "Workers", "Wave"],
     category: "fintech",
     status: "production",
@@ -260,6 +295,14 @@ export const projects: Project[] = [
     role: "Lead Fullstack",
     description:
       "App de gestion et livraison de bouteilles de gaz B6/B12 en Côte d'Ivoire. App Expo + backend NestJS + Wave Business.",
+    longDescription:
+      "Application à deux rôles pour la distribution de gaz domestique : côté client, on commande une bouteille B6 ou B12 et on suit la livraison ; côté vendeur, on reçoit les commandes, gère son stock et confirme les livraisons. Le paiement passe par Wave Business, et le backend NestJS tient le catalogue, les commandes et les comptes.",
+    highlights: [
+      "Deux espaces distincts : client et vendeur",
+      "Commande de bouteilles B6 / B12 et suivi de livraison",
+      "Encaissement par Wave Business",
+      "Gestion du stock côté vendeur",
+    ],
     tech: ["NestJS", "Expo", "PostgreSQL", "Wave Business"],
     category: "mobile",
     status: "wip",
@@ -273,6 +316,14 @@ export const projects: Project[] = [
     role: "Solo founder / Fullstack",
     description:
       "App mobile pour organiser, étiqueter et suivre ses cartons de déménagement. QR codes, photos, recherche par contenu.",
+    longDescription:
+      "Application pensée pour le jour du déménagement : on crée un déménagement, on déclare les pièces, puis chaque carton devient un conteneur identifié par un QR code que l'on scanne pour l'ouvrir. On y associe photos et contenu, ce qui permet ensuite de retrouver un objet par recherche plutôt qu'en ouvrant les cartons. L'app fonctionne avec l'appareil photo pour le scan et prévoit la lecture d'étiquettes Bluetooth.",
+    highlights: [
+      "Un QR code par carton, scanné avec l'appareil photo",
+      "Photos et contenu associés à chaque conteneur",
+      "Recherche d'un objet sans ouvrir les cartons",
+      "Organisation par déménagement et par pièce",
+    ],
     tech: ["Expo", "NestJS", "Python", "TypeScript"],
     category: "mobile",
     status: "wip",
@@ -283,11 +334,20 @@ export const projects: Project[] = [
   },
   {
     slug: "noche-pro",
-    title: "Noche Pro — Téléprompter vocal",
+    title: "Noche Pro — Téléprompteur vocal hors-ligne",
     role: "Solo / Fullstack",
     description:
-      "Téléprompter intelligent piloté par la voix. Reconnaissance vocale, défilement adaptatif au rythme de parole.",
-    tech: ["Next.js", "TypeScript", "Web Speech API"],
+      "Téléprompteur de bureau qui s'affiche dans l'encoche du MacBook et fait défiler le texte au rythme de la parole, avec reconnaissance vocale entièrement hors-ligne.",
+    longDescription:
+      "Application de bureau macOS et Windows. Le texte s'affiche dans l'encoche du MacBook — fenêtre transparente toujours au premier plan, avec animations d'expansion façon Dynamic Island — ou en fenêtre flottante redimensionnable. La reconnaissance vocale tourne en local, sans aucun envoi réseau : moteur Sherpa-ONNX avec modèles Zipformer streaming, ou Whisper en ONNX, les modèles se téléchargeant depuis l'interface. Le défilement suit la voix par appariement approximatif entre la transcription et le script, avec détection du silence pour les pauses, ou bascule en vitesse constante réglable en mots par minute. S'y ajoutent un éditeur de scripts avec import de fichiers texte, un stockage entièrement local, et la mise à jour automatique signée.",
+    highlights: [
+      "S'affiche dans l'encoche du MacBook, ou en fenêtre flottante",
+      "Reconnaissance vocale 100 % hors-ligne (Sherpa-ONNX, Whisper)",
+      "Défilement synchronisé à la voix par appariement approximatif",
+      "Détection du silence : pause et reprise automatiques",
+      "Éditeur de scripts, stockage local, mise à jour automatique",
+    ],
+    tech: ["Electron", "React 19", "Sherpa-ONNX", "Whisper", "Zustand", "Tailwind 4"],
     category: "tool",
     status: "production",
     year: 2026,
@@ -304,6 +364,13 @@ export const projects: Project[] = [
     role: "Développeur Digital",
     description:
       "Refonte du site Bernabé Afrique et du e-commerce Mr. Bricolage CI. Stratégie digitale, dev fullstack, déploiement.",
+    longDescription:
+      "Deux sites pour le même groupe : la refonte du site institutionnel de Bernabé Afrique, et le e-commerce de Mr. Bricolage Côte d'Ivoire. Le catalogue produit n'est pas ressaisi mais tiré directement de l'ERP Microsoft Dynamics du groupe, ce qui impose de composer avec ses structures existantes plutôt qu'avec un modèle de données choisi. Mission complète : cadrage digital, développement et mise en production.",
+    highlights: [
+      "Refonte du site Bernabé Afrique et du e-commerce Mr. Bricolage CI",
+      "Catalogue alimenté depuis l'ERP Microsoft Dynamics",
+      "De la stratégie digitale à la mise en production",
+    ],
     tech: ["Next.js", "Tailwind", "Microsoft Dynamics", "REST API"],
     category: "ecommerce",
     status: "production",
@@ -319,7 +386,15 @@ export const projects: Project[] = [
     role: "Lead IA",
     description:
       "Deux chatbots LLM intégrés aux sites Bernabé et Mr. Bricolage, capables de répondre sur le catalogue produit.",
-    tech: ["LLM", "RAG", "Next.js", "Vector DB"],
+    longDescription:
+      "Deux assistants conversationnels branchés sur le catalogue produit du groupe, un pour Bernabé et un pour Mr. Bricolage. Les questions clients sont traitées par un graphe LangGraph qui va chercher la réponse dans le catalogue avant de répondre, avec conservation de l'état de conversation en PostgreSQL pour tenir le fil sur plusieurs échanges. Les documents et médias sont stockés sur Azure Blob, et les traces d'exécution sont suivies pour diagnostiquer les réponses discutables.",
+    highlights: [
+      "Deux assistants distincts, un par enseigne",
+      "Réponses ancrées dans le catalogue produit (RAG)",
+      "État de conversation persisté en PostgreSQL",
+      "Traçage des exécutions pour diagnostiquer les réponses",
+    ],
+    tech: ["LangGraph", "OpenAI", "PostgreSQL", "Azure Blob", "Next.js", "LangSmith"],
     category: "ai",
     status: "production",
     year: 2025,
@@ -360,6 +435,8 @@ export const projects: Project[] = [
       "Outil de conseil pour choisir le bon lubrifiant",
       "Parcours de demande de devis pour les clients pros",
     ],
+    longDescription:
+      "Site du distributeur avec un parcours pensé pour l'achat professionnel plutôt que pour le panier immédiat : le visiteur navigue dans le catalogue par catégorie et par marque avec des filtres, s'aide d'un conseiller pour choisir le bon lubrifiant selon son usage, puis constitue une demande de devis. Un espace d'administration gère le catalogue et les demandes entrantes.",
     tech: ["Next.js", "TypeScript", "PostgreSQL", "Tailwind"],
     category: "ecommerce",
     status: "production",
@@ -369,10 +446,18 @@ export const projects: Project[] = [
   },
   {
     slug: "maison-des-perles",
-    title: "Maison des Perles",
+    title: "Maison des Perles — E-commerce pâtisserie",
     role: "Fullstack",
-    description: "Site e-commerce de bijoux et perles avec catalogue, panier et paiement.",
-    tech: ["Next.js", "TypeScript", "Tailwind"],
+    description:
+      "Site e-commerce d'une pâtisserie artisanale ivoirienne : catalogue des créations, commande en ligne et back-office de gestion.",
+    longDescription:
+      "Boutique en ligne complète pour une pâtisserie artisanale : catalogue des créations, panier et passage de commande côté client, et back-office pour gérer produits, commandes et clients. L'authentification et les rôles séparent nettement la partie publique de l'administration.",
+    highlights: [
+      "Catalogue de pâtisseries artisanales et commande en ligne",
+      "Back-office de gestion des produits et des commandes",
+      "Séparation stricte entre site public et administration",
+    ],
+    tech: ["Next.js 15", "TypeScript", "Prisma", "PostgreSQL", "Auth.js", "Tailwind"],
     category: "ecommerce",
     status: "production",
     year: 2025,
@@ -385,6 +470,13 @@ export const projects: Project[] = [
     role: "Fullstack",
     description:
       "Site vitrine pour Inaya Home (Abidjan) : mobilier, décoration, matelas, portes, cuisines sur-mesure.",
+    longDescription:
+      "Site vitrine d'un fabricant abidjanais de mobilier sur-mesure : présentation des univers (mobilier, décoration, matelas, portes, cuisines), mise en avant des réalisations et prise de contact. Construit sur une base Next.js récente, en rendu statique, pour un site rapide et simple à héberger.",
+    highlights: [
+      "Présentation par univers : mobilier, décoration, matelas, portes, cuisines",
+      "Galerie de réalisations et parcours de prise de contact",
+      "Rendu statique, chargement rapide",
+    ],
     tech: ["Next.js 16", "Tailwind 4", "TypeScript"],
     category: "vitrine",
     status: "production",
@@ -399,6 +491,13 @@ export const projects: Project[] = [
     title: "DreamKeys Immobilier",
     role: "Fullstack",
     description: "Plateforme immobilière : recherche de biens, contact agents, visite virtuelle.",
+    longDescription:
+      "Plateforme de présentation de biens immobiliers : recherche par critères, fiches détaillées avec galerie, et mise en relation avec les agents. Le site est optimisé pour le référencement, avec sitemap et robots générés.",
+    highlights: [
+      "Recherche de biens par critères et fiches détaillées",
+      "Mise en relation avec les agents",
+      "Sitemap et robots générés pour le référencement",
+    ],
     tech: ["Next.js", "TypeScript", "Tailwind"],
     category: "vitrine",
     status: "production",
@@ -408,10 +507,19 @@ export const projects: Project[] = [
   },
   {
     slug: "jtb-ci",
-    title: "JTB CI",
+    title: "JTB — Journées Techniques de Bernabé",
+    client: "Bernabé Côte d'Ivoire",
     role: "Fullstack",
-    description: "Site Next.js déployé pour JTB Côte d'Ivoire.",
-    tech: ["Next.js", "Docker", "TypeScript"],
+    description:
+      "Site officiel des Journées Techniques de Bernabé : programme de l'événement, inscription des participants et administration des inscriptions.",
+    longDescription:
+      "Site événementiel pour les Journées Techniques de Bernabé : présentation du programme sur les trois jours, inscription en ligne des participants, et back-office pour suivre et administrer les inscriptions. Déployé en conteneur, avec sa propre chaîne de build et de mise en production documentée.",
+    highlights: [
+      "Programme de l'événement et inscription en ligne",
+      "Back-office de suivi des inscriptions",
+      "Déploiement conteneurisé documenté",
+    ],
+    tech: ["Next.js 16", "TypeScript", "Prisma", "SQLite", "NextAuth", "Docker"],
     category: "vitrine",
     status: "production",
     year: 2025,
@@ -421,10 +529,19 @@ export const projects: Project[] = [
   },
   {
     slug: "tamamedia",
-    title: "TamaMedia",
+    title: "Tama Media — Plateforme média africaine",
     role: "Fullstack",
-    description: "Plateforme média et publication d'articles.",
-    tech: ["Next.js", "TypeScript", "Python"],
+    description:
+      "Plateforme d'actualité africaine : publication d'articles, rédaction avec assistance IA, et diffusion optimisée pour les moteurs et les agrégateurs.",
+    longDescription:
+      "Site média complet avec sa salle de rédaction : espace public d'un côté, back-office éditorial de l'autre, avec comptes, rôles et workflow de publication. La diffusion est soignée — sitemap Google News, flux RSS, notification IndexNow, mode hors-ligne et page de maintenance. Des traitements IA assistent la rédaction et l'enrichissement des articles.",
+    highlights: [
+      "Salle de rédaction : comptes, rôles, workflow de publication",
+      "Sitemap Google News, flux RSS et notification IndexNow",
+      "Assistance IA à la rédaction et à l'enrichissement",
+      "Mode hors-ligne et pages légales complètes",
+    ],
+    tech: ["Next.js 15", "TypeScript", "Prisma", "PostgreSQL", "LangChain", "NextAuth"],
     category: "cms",
     status: "production",
     year: 2025,
@@ -436,6 +553,13 @@ export const projects: Project[] = [
     role: "Fullstack",
     description:
       "App iOS communautaire et e-commerce pour la marque NappyLocks (spécialiste DreadLocks).",
+    longDescription:
+      "Application iOS et site pour une marque spécialiste des dreadlocks : espace communautaire pour les porteurs de locks et boutique en ligne pour les produits d'entretien. L'app est publiée sur l'App Store.",
+    highlights: [
+      "Publiée sur l'App Store",
+      "Volet communautaire et boutique dans la même app",
+      "Marque spécialiste des dreadlocks",
+    ],
     tech: ["React Native", "Firebase", "Node.js"],
     category: "mobile",
     status: "production",
@@ -448,9 +572,18 @@ export const projects: Project[] = [
   // ── Mobile ────────────────────────────────────────────────────
   {
     slug: "agora",
-    title: "Agora — Communauté & événementiel",
+    title: "Agora — Marketplace de produits et services",
     role: "Lead Mobile + Backend",
-    description: "App communautaire et événementielle. Backend dédié et app Expo.",
+    description:
+      "Application marketplace mobile où chacun peut acheter et vendre produits et services : publication d'annonces, recherche, messagerie et commandes.",
+    longDescription:
+      "Marketplace généraliste sur mobile : l'utilisateur publie une annonce, parcourt les catégories ou lance une recherche, échange par messagerie avec le vendeur puis passe commande. L'authentification s'appuie sur des jetons JWT avec rafraîchissement, et l'app gère la perte de réseau ainsi que le dépôt de pièces jointes.",
+    highlights: [
+      "Publication d'annonces et espace vendeur",
+      "Recherche, catégories et fiches d'annonce",
+      "Messagerie intégrée entre acheteur et vendeur",
+      "Authentification JWT avec jeton de rafraîchissement",
+    ],
     tech: ["Expo", "NestJS", "Realtime"],
     category: "mobile",
     status: "production",
@@ -462,7 +595,16 @@ export const projects: Project[] = [
     slug: "palais-des-sports",
     title: "Palais des Sports",
     role: "Mobile Dev",
-    description: "App mobile pour le Palais des Sports : billetterie, événements, fidélité.",
+    description:
+      "Application de billetterie événementielle à trois rôles : spectateur, promoteur d'événement et agent de contrôle à l'entrée.",
+    longDescription:
+      "Chaque profil a son propre parcours dans la même application : le spectateur découvre les événements et achète ses billets, le promoteur crée son événement et suit ses ventes, et l'agent de contrôle scanne les billets à l'entrée avec l'appareil photo. Le billet vit dans l'app, ce qui évite l'impression.",
+    highlights: [
+      "Trois rôles : spectateur, promoteur, contrôle à l'entrée",
+      "Achat de billets et billet dématérialisé dans l'app",
+      "Scan des billets à l'entrée via l'appareil photo",
+      "Suivi des ventes côté promoteur",
+    ],
     tech: ["Expo", "React Native", "NestJS"],
     category: "mobile",
     status: "wip",
@@ -473,7 +615,14 @@ export const projects: Project[] = [
     slug: "finance-chat",
     title: "FinanceChat",
     role: "Mobile + IA",
-    description: "Assistant conversationnel pour la gestion financière personnelle.",
+    description:
+      "Assistant conversationnel de gestion financière personnelle. Projet en cours, au stade des fondations.",
+    longDescription:
+      "Exploration d'un assistant qui répond aux questions d'argent du quotidien en langage naturel. Le projet en est aux fondations : structure de navigation posée, le travail sur le moteur de conversation et le rattachement aux données financières reste à faire.",
+    highlights: [
+      "Assistant financier en langage naturel",
+      "Stade actuel : fondations de l'application mobile",
+    ],
     tech: ["Expo", "LLM", "Node.js"],
     category: "ai",
     status: "wip",
@@ -482,10 +631,19 @@ export const projects: Project[] = [
   },
   {
     slug: "spiritueux",
-    title: "Spiritueux — Marketplace alcools",
+    title: "Spiritueux — E-commerce boissons & vape",
     role: "Mobile Dev",
-    description: "App de vente et livraison de spiritueux avec catalogue et paiement.",
-    tech: ["Expo", "React Native"],
+    description:
+      "Application e-commerce iOS et Android pour vins, cigarettes électroniques et e-liquides, avec vérification d'âge à l'entrée.",
+    longDescription:
+      "Boutique mobile sur un marché réglementé : l'app impose une barrière d'âge dès le lancement, puis une authentification par téléphone avec code à usage unique ou par compte Google. Le client parcourt le catalogue et commande ; un espace d'administration gère produits et commandes. Construite sur la nouvelle architecture React Native avec des onglets natifs — SF Symbols sur iOS, ressources Material sur Android.",
+    highlights: [
+      "Barrière d'âge obligatoire avant tout accès au catalogue",
+      "Authentification par téléphone (OTP) ou compte Google",
+      "Espace d'administration du catalogue et des commandes",
+      "Nouvelle architecture React Native, onglets natifs par plateforme",
+    ],
+    tech: ["Expo SDK 54", "React Native 0.81", "NestJS", "Prisma", "PostgreSQL", "Firebase Auth"],
     category: "ecommerce",
     status: "wip",
     year: 2025,
@@ -493,9 +651,18 @@ export const projects: Project[] = [
   },
   {
     slug: "yu-card",
-    title: "Yu Card",
+    title: "Yu Card — Cartes cadeaux & électronique",
     role: "Lead Fullstack",
-    description: "Carte de fidélité digitale multi-commerces : backend, app utilisateur, dashboard.",
+    description:
+      "Plateforme mobile de vente de cartes cadeaux et de produits électroniques, avec paiement par portefeuille Wave.",
+    longDescription:
+      "Application de vente à double catalogue : cartes cadeaux dématérialisées et produits électroniques. Le client cherche, ajoute au panier, paie via son portefeuille Wave et suit ses commandes ; les avis produits alimentent les fiches. Un espace d'administration, avec ses propres onglets, gère catalogue et commandes. Le backend est un service séparé.",
+    highlights: [
+      "Cartes cadeaux dématérialisées et électronique dans la même app",
+      "Paiement par portefeuille Wave",
+      "Espace d'administration intégré",
+      "Avis produits et suivi des commandes",
+    ],
     tech: ["NestJS", "Expo", "TypeScript"],
     category: "fintech",
     status: "production",
@@ -509,6 +676,14 @@ export const projects: Project[] = [
     title: "MyTools — Boîte à outils dev",
     role: "Solo / Fullstack",
     description: "Suite d'outils utilitaires accessibles en ligne (générateurs, convertisseurs, helpers).",
+    longDescription:
+      "Suite d'outils du quotidien qui s'exécutent entièrement dans le navigateur : conversion de formats, génération de PDF et de documents, traitement d'images dont la suppression d'arrière-plan, vectorisation, compression. Rien n'est envoyé au serveur — le fichier traité ne quitte jamais la machine — et il n'y a ni compte ni inscription.",
+    highlights: [
+      "Tout s'exécute côté navigateur : aucun fichier envoyé au serveur",
+      "Sans compte ni inscription",
+      "Images, PDF, documents et conversions de formats",
+      "Suppression d'arrière-plan et vectorisation en local",
+    ],
     tech: ["Next.js", "TypeScript", "Shell"],
     category: "tool",
     status: "production",
@@ -522,6 +697,14 @@ export const projects: Project[] = [
     title: "SMS Gateway",
     role: "Lead Backend",
     description: "Passerelle SMS Dockerisée avec WebSocket, gateway SaaS frontend, multi-opérateurs.",
+    longDescription:
+      "Passerelle qui expose l'envoi de SMS comme un service pour les autres applications du parc : API pour émettre, WebSocket pour suivre l'état des envois en temps réel, et prise en charge de plusieurs opérateurs. Livrée en conteneur avec une interface d'administration.",
+    highlights: [
+      "Service d'envoi mutualisé pour les applications du parc",
+      "Suivi des envois en temps réel par WebSocket",
+      "Multi-opérateurs",
+      "Livrée en conteneur avec interface d'administration",
+    ],
     tech: ["Docker", "WebSocket", "TypeScript", "NestJS"],
     category: "infra",
     status: "production",
@@ -535,6 +718,13 @@ export const projects: Project[] = [
     title: "Share — Service de partage fichiers",
     role: "Solo / Backend",
     description: "Service de partage de fichiers avec lien expiration, protection mot de passe.",
+    longDescription:
+      "Service de partage de fichiers par lien, avec date d'expiration et protection par mot de passe. Retiré du service depuis.",
+    highlights: [
+      "Partage par lien avec expiration",
+      "Protection par mot de passe",
+      "Service arrêté",
+    ],
     tech: ["Node.js", "TypeScript"],
     category: "infra",
     status: "archived",
@@ -543,10 +733,19 @@ export const projects: Project[] = [
   },
   {
     slug: "kev-storage",
-    title: "kev_storage_service",
+    title: "Kev Storage — Service de stockage de fichiers",
     role: "Solo / Backend",
-    description: "Service de stockage objet maison utilisé par plusieurs apps en prod.",
-    tech: ["Node.js", "TypeScript", "S3-compatible"],
+    description:
+      "Service de stockage de fichiers mutualisé, utilisé par plusieurs applications en production : dépôt, permissions et transformation d'images.",
+    longDescription:
+      "API de stockage écrite pour être partagée entre projets plutôt que réimplémentée à chaque fois. Elle gère le dépôt de fichiers, l'authentification par jeton, les permissions d'accès, la limitation de débit et la transformation d'images à la volée. Documentée en OpenAPI, avec Redis pour le cache et les compteurs, et les en-têtes de sécurité posés au niveau du serveur.",
+    highlights: [
+      "Service mutualisé entre plusieurs applications en production",
+      "Authentification par jeton et permissions par fichier",
+      "Transformation d'images à la volée",
+      "API documentée en OpenAPI, limitation de débit",
+    ],
+    tech: ["Node.js", "TypeScript", "Express", "Redis", "Sharp", "JWT", "OpenAPI"],
     category: "infra",
     status: "production",
     year: 2025,
@@ -558,6 +757,14 @@ export const projects: Project[] = [
     role: "Solo / DevOps",
     description:
       "Le VPS qui héberge 25+ applications en production, et l'outillage maison qui va avec : scripts de déploiement, builds Android, sauvegardes, supervision et certificats.",
+    longDescription:
+      "Le serveur qui porte la production : une trentaine de conteneurs et de processus applicatifs, une base PostgreSQL partagée, du cache, de la recherche et du stockage objet, le tout derrière nginx avec certificats automatiques. Autour, l'outillage maison qui rend l'exploitation tenable : scripts de déploiement par application, sauvegardes et restauration, supervision, rotation des journaux et détection d'intrusion. C'est aussi la machine qui héberge le service de build Android.",
+    highlights: [
+      "25+ applications en production sur une seule machine",
+      "Scripts de déploiement dédiés par application",
+      "Sauvegardes, restauration et supervision automatisées",
+      "Certificats renouvelés automatiquement, y compris par DNS",
+    ],
     tech: ["Linux", "Docker", "PM2", "Nginx", "Bash", "Certbot"],
     category: "infra",
     status: "active",
@@ -590,6 +797,13 @@ export const projects: Project[] = [
     title: "Catalogue IMCI",
     role: "Fullstack",
     description: "Catalogue produits IMCI Bernabé avec recherche et fiches détaillées.",
+    longDescription:
+      "Catalogue produit en ligne pour IMCI, avec recherche et fiches détaillées, alimenté depuis les données de l'ERP du groupe. Il donne aux commerciaux et aux clients un accès direct à la référence produit sans passer par l'ERP.",
+    highlights: [
+      "Catalogue consultable en ligne, alimenté depuis l'ERP",
+      "Recherche et fiches produit détaillées",
+      "Accès à la référence produit sans ouvrir l'ERP",
+    ],
     tech: ["Next.js", "TypeScript"],
     category: "cms",
     status: "production",
@@ -603,6 +817,13 @@ export const projects: Project[] = [
     title: "Credoptia — API & admin",
     role: "Backend Lead",
     description: "API de scoring/credit (api-credoptia) + dashboard admin (admin-credoptia).",
+    longDescription:
+      "Deux briques complémentaires : une API de scoring crédit qui évalue les dossiers, et un tableau de bord d'administration pour les instruire et les suivre. Une partie de la logique de décision est portée par des procédures stockées côté base, au plus près des données.",
+    highlights: [
+      "API de scoring crédit et tableau de bord d'instruction",
+      "Logique de décision partiellement en procédures stockées",
+      "Suivi des dossiers de bout en bout",
+    ],
     tech: ["NestJS", "PostgreSQL", "PLpgSQL"],
     category: "fintech",
     status: "production",
@@ -615,6 +836,14 @@ export const projects: Project[] = [
     role: "Fullstack + Integration",
     description:
       "Codeunit Barcode pour Microsoft Dynamics NAV 14 + docs SOAP + client mobile Expo pour scan industriel.",
+    longDescription:
+      "Chaîne complète de scan industriel : côté ERP, une codeunit écrite pour Microsoft Dynamics NAV 14 qui expose les opérations de code-barres en SOAP ; côté terrain, une application mobile qui scanne et dialogue directement avec l'ERP. Le travail a inclus la documentation des services SOAP, indispensable pour rendre l'intégration reproductible sur une version d'ERP ancienne.",
+    highlights: [
+      "Codeunit Barcode développée pour Dynamics NAV 14",
+      "Services SOAP exposés et documentés",
+      "Application mobile de scan connectée à l'ERP",
+      "Intégration sur une version d'ERP ancienne, sans montée de version",
+    ],
     tech: ["Expo", "SOAP", "Microsoft Dynamics NAV", "TypeScript"],
     category: "mobile",
     status: "production",
@@ -650,6 +879,13 @@ export const projects: Project[] = [
     role: "Solo / Fullstack",
     description:
       "Mini ERP de bureau pour les commerces ivoiriens : gestion des ventes, du stock et des clients, en application desktop installable.",
+    longDescription:
+      "ERP de bureau volontairement réduit à l'essentiel pour de petits commerces : ventes, stock et clients, dans une application installable qui fonctionne sans connexion permanente. Le choix du desktop répond au terrain — connexion irrégulière, poste unique en boutique — là où une application web imposerait d'être en ligne.",
+    highlights: [
+      "Ventes, stock et clients dans une application installable",
+      "Fonctionne sans connexion permanente",
+      "Pensé pour de petits commerces à poste unique",
+    ],
     tech: ["Electron", "TypeScript", "SQLite"],
     category: "saas",
     status: "production",
@@ -669,7 +905,9 @@ export const projects: Project[] = [
       "Connecteurs vers incadea, Microsoft Dynamics NAV et Sage",
       "Certification des factures et suivi des rejets",
     ],
-    tech: ["Next.js", "TypeScript", "PostgreSQL", "API DGI", "Sage", "Dynamics NAV"],
+    longDescription:
+      "La Facture Normalisée Électronique impose de faire certifier chaque facture par l'API de la DGI. Le service fait le pont entre les ERP du groupe — incadea, Microsoft Dynamics NAV et Sage, dont les données vivent en SQL Server — et cette API : il récupère les factures, les transmet, récupère le retour de certification et permet de rejouer les rejets. L'application est découpée par métier, avec un espace par rôle : caisse, comptabilité, direction et administration. L'accès s'appuie sur des clés d'authentification sans mot de passe.",
+    tech: ["Next.js", "Drizzle", "SQL Server", "API DGI", "WebAuthn", "S3"],
     category: "saas",
     status: "production",
     year: 2025,
@@ -687,6 +925,8 @@ export const projects: Project[] = [
       "Mémoire vocale interrogeable d'une réunion à l'autre",
       "Génération de pré-devis à partir du contenu de l'échange",
     ],
+    longDescription:
+      "Application de réunion qui transforme l'enregistrement en matière exploitable : la parole est transcrite, les intervenants sont séparés automatiquement, et le contenu reste interrogeable d'une réunion à l'autre. À partir de ce qui s'est dit, l'app produit un pré-devis — ce qui répond au cas concret d'un rendez-vous client où l'on repart avec une proposition chiffrée plutôt qu'avec des notes.",
     tech: ["Expo", "NestJS", "Docker", "MinIO", "LLM", "TypeScript"],
     category: "ai",
     status: "production",
@@ -702,6 +942,14 @@ export const projects: Project[] = [
     role: "Lead Fullstack",
     description:
       "Plateforme d'emailing : campagnes, segments d'audience, envoi et suivi, avec workers dédiés au traitement des lots.",
+    longDescription:
+      "Plateforme d'emailing complète : import des contacts, constitution de segments, rédaction et envoi des campagnes, puis suivi des ouvertures, des clics et des désinscriptions par des liens de traçage dédiés. Un assistant aide à la rédaction des messages.",
+    highlights: [
+      "Import de contacts et constitution de segments",
+      "Envoi de campagnes et suivi ouvertures / clics / désinscriptions",
+      "Liens de traçage et pages de désinscription dédiées",
+      "Assistance IA à la rédaction des messages",
+    ],
     tech: ["Next.js", "TypeScript", "PostgreSQL", "Docker", "Workers"],
     category: "saas",
     status: "production",
@@ -741,6 +989,8 @@ export const projects: Project[] = [
       "Authentification Google et Apple, notifications push",
       "App Expo iOS et Android",
     ],
+    longDescription:
+      "Messagerie mobile avec appels audio et vidéo, adossée à un serveur de temps réel LiveKit auto-hébergé plutôt qu'à un service tiers : le trafic des appels reste sur l'infrastructure. Connexion par compte Google ou Apple, notifications push, et une déclinaison web en complément des applications iOS et Android.",
     tech: ["Expo", "React Native", "LiveKit", "Supabase", "TypeScript"],
     category: "mobile",
     status: "production",
@@ -759,6 +1009,8 @@ export const projects: Project[] = [
       "Mises à jour automatiques via Sparkle",
       "Notarisation Apple et publication en une commande",
     ],
+    longDescription:
+      "Ce que fait Windows + V sur PC, mais sur Mac : l'historique du presse-papier, rappelable à tout moment. Application SwiftUI et AppKit compilée en binaire universel pour Apple Silicon et Intel, notarisée par Apple, avec mises à jour automatiques. La publication d'une version — build, signature, notarisation, mise en ligne du flux de mise à jour — tient en une seule commande.",
     tech: ["Swift", "SwiftUI", "AppKit", "Sparkle"],
     category: "tool",
     status: "production",
@@ -793,6 +1045,14 @@ export const projects: Project[] = [
     role: "Fullstack",
     description:
       "Site e-commerce et tableau de bord d'administration pour un revendeur informatique et bureautique de Treichville : catalogue, commandes, prix en FCFA.",
+    longDescription:
+      "Boutique en ligne et back-office pour un revendeur informatique et bureautique de Treichville : catalogue, panier, commandes et tableau de bord avec ses indicateurs de vente. Interface entièrement en français et prix en francs CFA. L'authentification est une implémentation maison à base de jetons signés en cookie sécurisé.",
+    highlights: [
+      "Boutique et tableau de bord d'administration",
+      "Interface en français, prix en FCFA",
+      "Indicateurs de vente pour le gérant",
+      "Sessions par jeton signé en cookie httpOnly",
+    ],
     tech: ["Next.js 16", "React 19", "Prisma", "SQLite", "Tailwind 4"],
     category: "ecommerce",
     status: "production",
@@ -806,6 +1066,14 @@ export const projects: Project[] = [
     role: "Fullstack",
     description:
       "Site du club Toastmasters Distinction : présentation du club, calendrier des réunions, annuaire des membres, ressources et espace membre.",
+    longDescription:
+      "Site d'un club Toastmasters francophone, pensé pour convertir le visiteur curieux en invité : présentation du club, calendrier des réunions, ce qui attend un premier visiteur — sans obligation de prendre la parole — annuaire des membres et ressources. Un espace réservé est ouvert aux membres inscrits. Le site est traduit en français, anglais et arabe.",
+    highlights: [
+      "Trois langues : français, anglais, arabe",
+      "Calendrier des réunions et parcours pour les invités",
+      "Annuaire des membres et ressources du club",
+      "Espace réservé aux membres",
+    ],
     tech: ["Next.js", "TypeScript", "i18n", "Tailwind"],
     category: "vitrine",
     status: "production",
@@ -819,6 +1087,13 @@ export const projects: Project[] = [
     role: "Lead Fullstack",
     description:
       "Application de pointage et de suivi des présences du personnel, avec tableau de bord de restitution.",
+    longDescription:
+      "Application de pointage du personnel : enregistrement des arrivées et des départs, consolidation des présences par période et restitution au responsable. Elle remplace le relevé manuel par une saisie directe et un état consultable à tout moment.",
+    highlights: [
+      "Pointage des arrivées et des départs",
+      "Consolidation des présences par période",
+      "Tableau de bord de restitution pour le responsable",
+    ],
     tech: ["Next.js", "TypeScript", "PostgreSQL"],
     category: "saas",
     status: "production",
@@ -832,6 +1107,13 @@ export const projects: Project[] = [
     role: "Solo / Game dev",
     description:
       "Jeu de plateformes multiplateforme façon Mario, avec carte de progression des niveaux à la Candy Crush. Niveaux décrits en ASCII pour itérer vite.",
+    longDescription:
+      "Jeu de plateformes en 2D avec une progression par carte de niveaux, dans l'esprit des jeux à niveaux successifs. Le parti pris technique est de décrire chaque niveau en ASCII dans le code : un niveau se lit, se corrige et se teste en quelques secondes, sans passer par un éditeur graphique — ce qui change complètement la vitesse d'itération sur le level design.",
+    highlights: [
+      "Plateformer 2D avec carte de progression des niveaux",
+      "Niveaux décrits en ASCII : itération très rapide sur le level design",
+      "Export multiplateforme",
+    ],
     tech: ["Godot 4", "GDScript"],
     category: "tool",
     status: "wip",
@@ -844,6 +1126,13 @@ export const projects: Project[] = [
     role: "Solo / macOS",
     description:
       "Lanceur de projets pour macOS façon Spotlight : raccourci global, icône dans la barre de menus, ouverture directe d'un projet dans son éditeur.",
+    longDescription:
+      "Lanceur de projets pour macOS : un raccourci global ouvre une barre de recherche façon Spotlight qui ne cherche que dans les projets de développement, et les ouvre directement dans le bon éditeur. Icône dans la barre de menus, installation par un simple script de build.",
+    highlights: [
+      "Raccourci global, recherche façon Spotlight",
+      "Ouvre chaque projet dans son éditeur",
+      "Icône dans la barre de menus, build et installation en une commande",
+    ],
     tech: ["Swift", "SwiftUI", "SPM"],
     category: "tool",
     status: "active",
@@ -857,6 +1146,14 @@ export const projects: Project[] = [
     role: "Solo",
     description:
       "Conception et développement de prototypes IoT : domotique sur-mesure, capteurs ESP32, intégrations RFID.",
+    longDescription:
+      "Prototypes électroniques autour de l'ESP32 : capteurs domotiques, remontée par MQTT, et une passerelle GSM associant l'ESP32 à un module SIM900 pour émettre des SMS depuis un montage autonome — la brique matérielle qui a précédé la passerelle SMS logicielle. Les cartes sont mises à jour à distance par OTA.",
+    highlights: [
+      "Capteurs domotiques et remontée par MQTT",
+      "Passerelle GSM ESP32 + SIM900 pour l'envoi de SMS",
+      "Mise à jour des cartes à distance (OTA)",
+      "Support d'ateliers d'initiation à la robotique",
+    ],
     tech: ["ESP32", "Arduino", "C++", "MQTT"],
     category: "iot",
     status: "active",
@@ -868,6 +1165,12 @@ export const projects: Project[] = [
     title: "Takr — App native iOS",
     role: "Solo / iOS",
     description: "App iOS native en Swift (Takr) + variante Expo mobile.",
+    longDescription:
+      "Application iOS écrite nativement en Swift et SwiftUI, doublée d'une variante Expo pour comparer les deux approches sur un même produit. Projet personnel, mené autant pour l'app que pour l'exercice de comparaison.",
+    highlights: [
+      "iOS natif en Swift / SwiftUI",
+      "Variante Expo du même produit, à titre de comparaison",
+    ],
     tech: ["Swift", "SwiftUI", "Expo"],
     category: "mobile",
     status: "wip",
