@@ -77,8 +77,8 @@ export default function GitHubCard() {
             </Badge>
           </div>
           <p className="text-sm text-muted-foreground">
-            <strong className="text-foreground">{githubStats.yearContributions}+</strong>{" "}
-            contributions cette année · {githubStats.totalRepos} repos publics & privés
+            <strong className="text-foreground">{githubStats.yearContributions}</strong>{" "}
+            contributions sur 12 mois · {githubStats.totalRepos} repos publics & privés
           </p>
         </div>
 
