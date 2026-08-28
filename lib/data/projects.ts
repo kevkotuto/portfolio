@@ -259,6 +259,47 @@ export const projects: Project[] = [
     confidential: true,
   },
   {
+    slug: "generale-ci",
+    title: "Générale CI — Marketplace multi-vendeurs",
+    role: "Solo founder / Lead Fullstack",
+    description:
+      "Marketplace multi-vendeurs du Grand Abidjan : boutiques, catalogue, panier, commandes, livraison, live shopping et apps mobiles.",
+    longDescription:
+      "Plateforme complète en production : front web Next.js, backend API avec workers asynchrones, recherche Meilisearch, stockage objet MinIO, cache Redis et base PostgreSQL, le tout orchestré en Docker. Côté produit : inscription des vendeurs et tableau de bord marchand, catalogue multi-catégories (mode, électronique, beauté, maison, services), suivi de commandes et livraison sur le Grand Abidjan, contenus courts et sessions de vente en direct, plus les applications iOS et Android.",
+    highlights: [
+      "Marketplace 2-sided en production : acheteurs, vendeurs et livraison",
+      "Live shopping et contenus vidéo courts intégrés au catalogue",
+      "Recherche Meilisearch, médias sur MinIO, jobs asynchrones",
+      "Apps iOS et Android en complément du web",
+    ],
+    tech: ["Next.js", "NestJS", "PostgreSQL", "Redis", "Meilisearch", "MinIO", "Docker", "Expo"],
+    category: "ecommerce",
+    status: "production",
+    year: 2025,
+    url: "https://generale-ci.com",
+    confidential: false,
+    featured: true,
+  },
+  {
+    slug: "gedis-lub",
+    title: "Gedis-Lub — Distributeur de lubrifiants",
+    client: "Gedis",
+    role: "Lead Fullstack",
+    description:
+      "Site e-commerce d'un distributeur de lubrifiants automobiles et industriels à Abidjan : catalogue par marque, conseiller produit et demande de devis.",
+    highlights: [
+      "Catalogue filtrable par marque et par usage",
+      "Outil de conseil pour choisir le bon lubrifiant",
+      "Parcours de demande de devis pour les clients pros",
+    ],
+    tech: ["Next.js", "TypeScript", "PostgreSQL", "Tailwind"],
+    category: "ecommerce",
+    status: "production",
+    year: 2025,
+    url: "https://gedislub.com",
+    confidential: false,
+  },
+  {
     slug: "maison-des-perles",
     title: "Maison des Perles",
     role: "Fullstack",
