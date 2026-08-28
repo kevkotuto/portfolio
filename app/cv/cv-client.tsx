@@ -34,6 +34,7 @@ import { experiences, educations } from "@/lib/data/experience";
 import { skillsByCategory, categoryLabels, type SkillCategory } from "@/lib/data/skills";
 import { projects } from "@/lib/data/projects";
 import { githubStats } from "@/lib/data/github-stats";
+import { buildCvPdfData } from "@/lib/data/cv-pdf";
 
 const CATEGORY_ICONS: Record<SkillCategory, any> = {
   frontend: Code2,
@@ -56,41 +57,7 @@ export default function CVClient() {
         import("@react-pdf/renderer"),
         import("@/components/cv/CVPDFDocument"),
       ]);
-      const pdfData = {
-        nom: cvData.fullName,
-        titre: cvData.title,
-        resume: cvData.resume,
-        contact: {
-          email: cvData.contact.email,
-          telephone: cvData.contact.phone,
-          linkedin: cvData.contact.linkedin,
-          github: cvData.contact.github,
-          localisation: cvData.contact.location,
-        },
-        experience: experiences.map((exp) => ({
-          poste: exp.role,
-          entreprise: exp.company,
-          periode: exp.period,
-          details: exp.achievements,
-        })),
-        formation: educations.map((e) => ({
-          diplome: e.title,
-          institution: e.school,
-          periode: e.period,
-          details: e.details,
-        })),
-        competences: {
-          langages: (skillsByCategory.frontend ?? []).map((s) => s.name),
-          frameworks: (skillsByCategory.backend ?? []).map((s) => s.name),
-          bdd: (skillsByCategory.database ?? []).map((s) => s.name),
-          infrastructure: (skillsByCategory.devops ?? []).map((s) => s.name),
-          outils: (skillsByCategory.tools ?? []).map((s) => s.name),
-          paiement: (skillsByCategory.payment ?? []).map((s) => s.name),
-          autres: (skillsByCategory.mobile ?? []).map((s) => s.name),
-          ia: (skillsByCategory.ai ?? []).map((s) => s.name),
-        },
-        langues: cvData.languages.map((l) => ({ nom: l.name, niveau: l.level })),
-      };
+      const pdfData = buildCvPdfData();
       const blob = await pdf(<CVPDFDocument data={pdfData} />).toBlob();
       const url = URL.createObjectURL(blob);
       const link = document.createElement("a");

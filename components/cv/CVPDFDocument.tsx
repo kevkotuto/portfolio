@@ -1,5 +1,3 @@
-'use client';
-
 import React from 'react';
 import { 
   Document, 
@@ -219,9 +217,11 @@ interface CVData {
 
 interface CVPDFDocumentProps {
   data: CVData;
+  /** Chemin de la photo : URL relative dans le navigateur, chemin disque cote serveur. */
+  photoSrc?: string;
 }
 
-const CVPDFDocument: React.FC<CVPDFDocumentProps> = ({ data }) => {
+const CVPDFDocument: React.FC<CVPDFDocumentProps> = ({ data, photoSrc = '/image/pp.jpg' }) => {
   return (
     <Document>
       <Page size="A4" style={styles.page}>
@@ -230,7 +230,7 @@ const CVPDFDocument: React.FC<CVPDFDocumentProps> = ({ data }) => {
           {/* Photo de profil */}
           <View style={styles.photoSection}>
             <Image 
-              src="/image/pp.jpg" 
+              src={photoSrc} 
               style={styles.profilePhoto}
               cache={false}
             />
