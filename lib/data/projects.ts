@@ -59,6 +59,31 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    slug: "moro-app",
+    title: "Moro — App mobile de gestion financière",
+    client: "Generale-CI",
+    role: "Lead Mobile + Backend",
+    description:
+      "Application iOS et Android de gestion financière pour entrepreneurs et indépendants : projets, transactions, factures, financement et assistant IA. Publiée sur l'App Store et le Play Store.",
+    longDescription:
+      "App Expo en version 6, distribuée sur les deux stores et rangée en catégorie Finance. L'utilisateur y suit ses projets et ses transactions, émet ses factures, accède à une marketplace de prestataires, à des offres de financement et à un abonnement. Un assistant IA répond en français ou en anglais, avec saisie vocale transcrite par Whisper : la langue vient du profil utilisateur et jamais du contenu du message, pour éviter d'enfermer l'assistant dans la mauvaise langue quand la transcription dérape. Interface entièrement redimensionnée par facteur d'échelle pour tenir des petits écrans aux grands, thèmes clair et sombre.",
+    highlights: [
+      "Publiée sur l'App Store et Google Play, version 6",
+      "Projets, transactions, facturation et financement dans une seule app",
+      "Assistant IA bilingue avec dictée vocale (Whisper)",
+      "Déclinaison Moro EU pour le marché européen",
+      "Mise à l'échelle systématique de l'UI et thème clair / sombre",
+    ],
+    tech: ["Expo", "React Native", "TypeScript", "NestJS", "i18n", "Whisper", "Wave"],
+    category: "fintech",
+    status: "production",
+    year: 2026,
+    url: "https://apps.apple.com/us/app/moro/id6569222115",
+    image: "/logo/moro.png",
+    confidential: false,
+    featured: true,
+  },
+  {
     slug: "akili",
     title: "Akili — IA & fact-checking",
     client: "Akili",
