@@ -1,13 +1,17 @@
 import nodemailer from 'nodemailer';
 
 // Configuration du transporteur email
+// La messagerie du domaine est hebergee chez o2switch, pas sur le VPS qui sert
+// le site : on vise le serveur mail par son nom d'hote reel. Passer par
+// 'generale-ci.com' echouerait, l'apex pointant desormais sur le VPS, et
+// 'mail.generale-ci.com' ferait echouer la validation du certificat TLS.
 export const emailTransporter = nodemailer.createTransport({
-  host: 'generale-ci.com',
+  host: process.env.SMTP_HOST || 'chataigner.o2switch.net',
   port: 465,
   secure: true, // true pour 465, false pour les autres ports
   auth: {
-    user: 'noreply@generale-ci.com',
-    pass: process.env.EMAIL_PASSWORD || 'Ecolfa@961',
+    user: process.env.SMTP_USER || 'noreply@generale-ci.com',
+    pass: process.env.EMAIL_PASSWORD,
   },
 });
 
