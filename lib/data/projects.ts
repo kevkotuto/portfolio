@@ -504,14 +504,14 @@ export const projects: Project[] = [
     description:
       "Suivi de la disponibilité d'une vingtaine de sites du groupe : surveillance continue, alertes en cas d'indisponibilité et traitement des incidents.",
     longDescription:
-      "Mise en place et tenue du suivi de disponibilité de plus de vingt sites du groupe. Surveillance de l'état de service, alertes déclenchées sur incident, diagnostic et remise en ligne, puis correction des causes de fond pour éviter la récidive.",
+      "Mise en place et tenue du suivi de disponibilité de plus de vingt sites du groupe. Hébergement Azure, surveillance de l'état de service, alertes déclenchées sur incident, diagnostic et remise en ligne, puis correction des causes de fond pour éviter la récidive.",
     highlights: [
       "20+ sites suivis en continu",
-      "Alertes automatiques sur indisponibilité",
+      "Alertes Azure Monitor sur indisponibilité et saturation ressources",
       "Diagnostic et remise en service lors des incidents",
       "Actions correctives durables après incident",
     ],
-    tech: ["Nginx", "Docker", "Linux", "Monitoring", "Alerting"],
+    tech: ["Azure", "Azure Monitor", "Nginx", "Docker", "Linux"],
     category: "infra",
     status: "active",
     year: 2025,
