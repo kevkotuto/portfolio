@@ -1,7 +1,8 @@
 import { ViewTransitions } from "next-view-transitions";
 import PageMotion from "@/components/atelier/PageMotion";
 import "@/components/atelier/page-motion.css";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
+import { pageMetadata, siteTitle, siteDescription } from "@/lib/metadata";
 import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/atelier/Navigation";
@@ -22,47 +23,14 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
+export const viewport: Viewport = { themeColor: "#202222" };
 export const metadata: Metadata = {
+  ...pageMetadata(siteTitle, siteDescription, "/"),
   metadataBase: new URL("https://portfolio.generale-ci.com"),
-  title: {
-    default: "Kevine Ghossoub — Développeur Fullstack Senior",
-    template: "%s · Kevine Ghossoub",
-  },
-  description:
-    "Développeur fullstack senior basé à Abidjan. Je conçois et opère des produits web, mobiles et IA — Des produits conçus, développés et déployés. Stack TypeScript, Next.js, NestJS, Expo, Docker.",
-  keywords: [
-    "développeur fullstack",
-    "freelance Côte d'Ivoire",
-    "Abidjan",
-    "Next.js",
-    "NestJS",
-    "Expo",
-    "React Native",
-    "Docker",
-    "Mobile Money",
-    "Wave",
-    "Kevine Ghossoub",
-  ],
-  authors: [{ name: "Kevine Ghossoub", url: "https://github.com/kevkotuto" }],
-  creator: "Kevine Ghossoub",
-  openGraph: {
-    type: "website",
-    locale: "fr_FR",
-    url: "https://portfolio.generale-ci.com",
-    siteName: "Kevine Ghossoub — Portfolio",
-    title: "Kevine Ghossoub — Développeur Fullstack Senior",
-    description:
-      "Applications web, mobiles et de bureau. Stack TypeScript, Next.js, NestJS, Expo. Basé à Abidjan, Côte d'Ivoire.",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Kevine Ghossoub — Développeur Fullstack Senior",
-    description:
-      "Applications web, mobiles et de bureau. Stack TypeScript, Next.js, NestJS, Expo.",
-  },
-  alternates: {
-    canonical: "https://portfolio.generale-ci.com",
-  },
+  title: { default: siteTitle, template: "%s · Kevine Ghossoub" },
+  authors: [{ name: "Kevine Ghossoub Boudalha", url: "https://github.com/kevkotuto" }],
+  creator: "Kevine Ghossoub Boudalha",
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({
@@ -76,7 +44,7 @@ export default function RootLayout({
     name: "Kevine Ghossoub Boudalha",
     alternateName: "Kevine Ghossoub",
     url: "https://portfolio.generale-ci.com",
-    image: "https://portfolio.generale-ci.com/image/profil.jpg",
+    image: "https://portfolio.generale-ci.com/portraits/kevine-editorial-v1.png",
     jobTitle: "Développeur Fullstack Senior & Directeur Technologique",
     email: "kevine@generale-ci.com",
     address: {

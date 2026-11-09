@@ -1,4 +1,5 @@
+import { pageMetadata } from "@/lib/metadata";
 import type { Metadata } from 'next';
 import AboutClient from './about-client';
-export const metadata:Metadata={title:'À propos',description:'Kevine Ghossoub Boudalha : du terrain aux produits, un parcours de développeur et de créateur à Abidjan.'};
+export const metadata: Metadata = pageMetadata('À propos', 'Du terrain aux produits : le parcours, les convictions et la façon de travailler de Kevine Ghossoub Boudalha, développeur et créateur à Abidjan.', '/about');
 export default function AboutPage(){return <AboutClient/>}

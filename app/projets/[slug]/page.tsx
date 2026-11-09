@@ -1,3 +1,4 @@
+import { pageMetadata } from "@/lib/metadata";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { projects } from "@/lib/data/projects";
@@ -14,15 +15,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const project = projects.find((p) => p.slug === params.slug);
   if (!project) return { title: "Projet introuvable" };
-  return {
-    title: project.title,
-    description: project.description,
-    openGraph: {
-      title: project.title,
-      description: project.description,
-      type: "article",
-    },
-  };
+  return pageMetadata(project.title, project.description, `/projets/${project.slug}`);
 }
 
 export default function ProjetDetailPage({
