@@ -1,14 +1,12 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Header from "@/components/header/Header";
-import Footer from "@/components/footer/Footer";
+import Header from "@/components/atelier/Navigation";
+import "./atelier.css";
 import { Toaster } from "@/components/ui/toaster";
 import { ThemeProvider } from "@/components/theme/theme-provider";
-import CustomCursor from "@/components/ui/CustomCursor";
 import { cn } from "@/lib/utils";
 import ScrollToTop from "@/components/ui/ScrollToTop";
-import ScrollProvider from "@/components/providers/scroll-provider";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,7 +26,7 @@ export const metadata: Metadata = {
     template: "%s · Kevine Ghossoub",
   },
   description:
-    "Développeur fullstack senior basé à Abidjan. Je conçois et opère des produits web, mobiles et IA — 25+ apps en production, 99 repos. Stack TypeScript, Next.js, NestJS, Expo, Docker.",
+    "Développeur fullstack senior basé à Abidjan. Je conçois et opère des produits web, mobiles et IA — Des produits conçus, développés et déployés. Stack TypeScript, Next.js, NestJS, Expo, Docker.",
   keywords: [
     "développeur fullstack",
     "freelance Côte d'Ivoire",
@@ -51,13 +49,13 @@ export const metadata: Metadata = {
     siteName: "Kevine Ghossoub — Portfolio",
     title: "Kevine Ghossoub — Développeur Fullstack Senior",
     description:
-      "25+ apps en production. Stack TypeScript, Next.js, NestJS, Expo. Basé à Abidjan, Côte d'Ivoire.",
+      "Applications web, mobiles et de bureau. Stack TypeScript, Next.js, NestJS, Expo. Basé à Abidjan, Côte d'Ivoire.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Kevine Ghossoub — Développeur Fullstack Senior",
     description:
-      "25+ apps en production. Stack TypeScript, Next.js, NestJS, Expo.",
+      "Applications web, mobiles et de bureau. Stack TypeScript, Next.js, NestJS, Expo.",
   },
   alternates: {
     canonical: "https://portfolio.generale-ci.com",
@@ -123,19 +121,19 @@ export default function RootLayout({
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
-          enableSystem
+          defaultTheme="light"
+          enableSystem={false}
           disableTransitionOnChange
         >
-          <CustomCursor />
+
           <Header />
           <main className="flex-grow">
             {children}
           </main>
-          <Footer />
+
           <Toaster />
           <ScrollToTop />
-          <ScrollProvider />
+
         </ThemeProvider>
       </body>
     </html>

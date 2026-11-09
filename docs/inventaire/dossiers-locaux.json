@@ -1,0 +1,1530 @@
+[
+  {
+    "path": "~/Documents/gescom-pp",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/gescom-pp/serveur",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/distinction-tmc",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/unity/abidjan-25d",
+    "markers": [],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/event_shine",
+    "markers": [],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/ultron-build",
+    "markers": [],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/japap",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/japap/japap",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/japap/japap/ios",
+    "markers": [],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/japap/japap-scraper",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/japap/japap-admin",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/japap/japap-landingPage",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/japap/japap-web",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/japap/japap-backend",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/crechindo",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/crechindo/packages/core",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/crechindo/apps/web",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/crechindo/apps/desktop",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/crechindo/apps/mobile",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/maison/jarvis/apple",
+    "markers": [],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/maison/jarvis/hub",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/echo",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/echo/backend",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/python",
+    "markers": [],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/system-care",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/system-care/native",
+    "markers": [
+      "Cargo.toml"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/web/agrirent-hub",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/web/danane-trace-nexus",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/web/agrilearn-hub",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/vigil",
+    "markers": [],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/vigil/backend",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/vigil/agent",
+    "markers": [
+      "Cargo.toml"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/vigil/agent/agentd",
+    "markers": [
+      "Cargo.toml"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/outils",
+    "markers": [],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/outils/etiquettes-prix",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/yapasgachis/web",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/yapasgachis/backend",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/yapasgachis/backend/docs/yapasgachis-docs",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/yapasgachis/mobile",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/yapasgachis/_legacy",
+    "markers": [],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/yapasgachis/media-server",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/meshcentral",
+    "markers": [],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/portfolio-immersif",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/expo/yu_card",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/expo/upjunoo-driver-app",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/expo/upjunoo-driver-app/ios",
+    "markers": [],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/expo/_archives/moro-legacy-expo51",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/expo/_archives/moro-eu-v3",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/expo/archive/akili-ai-android",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/expo/upjunoo-app",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/expo/agora",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/expo/upjunoo-autopilot",
+    "markers": [],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/expo/trackmybox",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/expo/trackmybox/backend",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/expo/cafe-continent",
+    "markers": [],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/expo/cafe-continent/app",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/expo/cafe-continent/backend",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/expo/cafe-continent/backoffice",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/expo/generale-mode",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/expo/generale-mode/backend",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/expo/akili-apps",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/expo/tontineIvoire",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/expo/tontineIvoire/backend",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/expo/financeChat",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/expo/myb12",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/expo/myb12/backend",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/expo/akili-mobile-suite/akili-prod-android",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/expo/akili-mobile-suite/akili-ai",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/expo/akili-mobile-suite/akili-prod",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/expo/upjunoo-pro-app",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/expo/upjunoo-pro-app/monitoring/server",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/expo/spiritueux",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/expo/spiritueux/backend",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/expo/upjunoo-backend",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/expo/upjunoo-backend/automation/sentinel",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/expo/palais-des-sports",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/expo/moro",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/expo/moro/frontend/microfinance-web",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/expo/moro/frontend/moro-web",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/expo/moro/backend",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/expo/moro/ios",
+    "markers": [],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/dotnet/YG.Ecom.Main.API",
+    "markers": [],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/ivoire-chat",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/ivoire-chat/ios",
+    "markers": [],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/video-tools/capcut-mcp",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/video-tools/video-studio-mcp",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/best_Lab_app",
+    "markers": [
+      "pubspec.yaml"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/best_Lab_app/ios",
+    "markers": [],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/swift/Klippy",
+    "markers": [],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/swift/Forge",
+    "markers": [],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/nextjs/co-plastic",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/nextjs/co-plastic/api-mail",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/nextjs/one_sky",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/nextjs/bernabe-b2b",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/nextjs/whatsapp-test",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/nextjs/bernabe-insights",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/nextjs/gedis-app",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/nextjs/fne-yeshi-backups",
+    "markers": [],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/nextjs/fib-informatique",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/nextjs/fib-informatique/tools/whatsapp-catalog",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/nextjs/assistant_bernabe",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/nextjs/upjunoo-pro",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/nextjs/inayahome",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/nextjs/protect",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/nextjs/sass_b2b",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/nextjs/fne-yeshi",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/nextjs/firewall-dashboard",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/nextjs/firewall-dashboard/sync-agent",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/nextjs/firewall-dashboard/src",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/nextjs/tamamedia",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/nextjs/mytools",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/nextjs/jtb",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/nextjs/about-upjunoo",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/nextjs/akili",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/nextjs/ou-est-ma-piece",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/nextjs/inexuimus_generator",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/nextjs/maison-des-perles",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/nextjs/portfolio",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/nextjs/upjunoo",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/nextjs/editor-upjunoo",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/nextjs/sage-insights",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/nextjs/tamamedia-refonte",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/nextjs/bernabe-crm",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/nextjs/bernabe-crm/desktop",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/nextjs/bernabe-crm/server",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/nextjs/envoi",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/nextjs/dreamkeysimmobilier",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/nextjs/gestot",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/nextjs/gestot/appexpo",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/nextjs/gestot/agent",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/nextjs/gestot/agent/src-tauri",
+    "markers": [
+      "Cargo.toml"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/nextjs/buyenjoy",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/oraimo-control",
+    "markers": [],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/portfolio-kevine",
+    "markers": [],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/generale-ci",
+    "markers": [
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/generale-ci/dashboard-next",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/generale-ci/web",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/generale-ci/admin",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/generale-ci/expo-driver",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/generale-ci/expo-driver/ios",
+    "markers": [],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/generale-ci/backend",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/generale-ci/expo",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/generale-ci/expo/ios",
+    "markers": [],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/generale-ci/dashboard",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/generale-ci/wt-whatsapp",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/generale-ci/sdk",
+    "markers": [],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/generale-ci/sdk/python",
+    "markers": [
+      "pyproject.toml"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/generale-ci/sdk/js",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/generale-ci/sdk/php",
+    "markers": [
+      "composer.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/generale-ci/nextjs",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/migration-cockpit",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/migration-cockpit/src/generated/v1",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/migration-cockpit/src/generated/cockpit",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/migration-cockpit/src/generated/v2",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/node/moro_new_backend",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/node/ultron",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/node/ultron/web",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/node/ma_vie_religieuse_backend",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/node/kev_storage_service",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/node/yu-card-backend",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/akili-liquid-flow",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/genmail",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/genmail/mcp",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/react/nexus-hub",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/react/noche-pro",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/react/moro-landing-elevate",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/autres/tontineExpress/tontine-express",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/autres/tontineExpress/backend",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/autres/trade/trading-web-app",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/autres/trade/trading-bot",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/autres/trade/trading",
+    "markers": [
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/autres/lougarou",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/autres/lougarou/packages/ui",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/autres/lougarou/packages/contracts",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/autres/lougarou/packages/game-engine",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/autres/lougarou/apps/mobile",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/autres/lougarou/apps/api",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/autres/takr-ios/Takr",
+    "markers": [
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/autres/takr-ios/Takr/archive",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/autres/sms-gateway",
+    "markers": [
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/autres/sms-gateway/ws-server",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/autres/sms-gateway/web",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/autres/dev-todo/takr-mobile",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/autres/dev-todo/takr-backend",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/autres/dev-todo/docs",
+    "markers": [],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/autres/yeshigroup/yg.bricolage.website-vitrine",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/autres/yeshigroup/yg.bricolage.website",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/autres/yeshigroup/yg.bricolage.website/deployment-package",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/autres/yeshigroup/YG.Backoffice.Web",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/autres/yeshigroup/yg.bricolage.e-commerce-ci",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/autres/yeshigroup/YG_ECOM_MobileApp",
+    "markers": [],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/autres/yeshigroup/YG_ECOM_MobileApp/yg-mobile-app",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/autres/yeshigroup/YG.Backoffice.Web-kevine",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/autres/esp32",
+    "markers": [],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/autres/fne-app",
+    "markers": [],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/autres/fne-app/fne-web",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/autres/tetra",
+    "markers": [],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/autres/tetra/serveur-central",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/autres/tetra/pointage-tectra",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/Projets/autres/generale ci/generale-card",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/autres/generale ci/genera-card-admin",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/autres/credoptia/moro-eu",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/autres/credoptia/admin-credoptia",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/autres/credoptia/moro-eu-v2",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/autres/jtb-ci",
+    "markers": [],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/autres/MegaKev",
+    "markers": [],
+    "git": true
+  },
+  {
+    "path": "~/Documents/Projets/godot/candy-hop",
+    "markers": [
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/gescom-stable",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/gescom-stable/serveur",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/tetra",
+    "markers": [],
+    "git": true
+  },
+  {
+    "path": "~/Documents/tetra/serveur-central",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/tetra/pointage-tectra",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/gescom",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": true
+  },
+  {
+    "path": "~/Documents/gescom/serveur",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/gescom/apps/mobile",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/gescom/apps/mobile/ios",
+    "markers": [],
+    "git": false
+  },
+  {
+    "path": "~/Documents/gescom-pp-droit",
+    "markers": [
+      "package.json",
+      "CLAUDE.md"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/gescom-pp-droit/docs/kits/reprise-sdpf",
+    "markers": [
+      "CLAUDE.md"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/gescom-pp-droit/serveur",
+    "markers": [
+      "package.json"
+    ],
+    "git": false
+  },
+  {
+    "path": "~/Documents/sentinelle",
+    "markers": [
+      "package.json"
+    ],
+    "git": true
+  }
+]

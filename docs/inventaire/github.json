@@ -1,0 +1,1530 @@
+[
+  {
+    "description": "GESCOM — mini ERP de bureau (Electron) pour commerces ivoiriens",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "gescom",
+    "updatedAt": "2026-08-24T11:29:55Z",
+    "url": "https://github.com/kevkotuto/gescom"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "generale-ci-workspace",
+    "updatedAt": "2026-11-04T15:39:33Z",
+    "url": "https://github.com/kevkotuto/generale-ci-workspace"
+  },
+  {
+    "description": "FNE YESHI — certification FNE DGI Côte d'Ivoire (ERP incadea/NAV/Sage ↔ API DGI)",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "fne-yeshi",
+    "updatedAt": "2026-10-21T11:32:12Z",
+    "url": "https://github.com/kevkotuto/fne-yeshi"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "generale-ci-backend",
+    "updatedAt": "2026-11-02T23:11:33Z",
+    "url": "https://github.com/kevkotuto/generale-ci-backend"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "generale-ci-docs",
+    "updatedAt": "2026-11-02T23:03:50Z",
+    "url": "https://github.com/kevkotuto/generale-ci-docs"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "generale-ci-app",
+    "updatedAt": "2026-08-24T16:55:09Z",
+    "url": "https://github.com/kevkotuto/generale-ci-app"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "generale-ci-admin",
+    "updatedAt": "2026-11-02T22:57:20Z",
+    "url": "https://github.com/kevkotuto/generale-ci-admin"
+  },
+  {
+    "description": "GenMail — messagerie de la suite GESCOM (Mac + Windows)",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "genmail",
+    "updatedAt": "2026-10-29T20:40:18Z",
+    "url": "https://github.com/kevkotuto/genmail"
+  },
+  {
+    "description": "Backend API for YapaGachis - Pan-African anti-food waste marketplace",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "yapasgachis_backend",
+    "updatedAt": "2026-10-23T21:01:23Z",
+    "url": "https://github.com/kevkotuto/yapasgachis_backend"
+  },
+  {
+    "description": "Application marketplace anti-gaspillage alimentaire pour l'Afrique de l'Ouest",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "yapasgachis",
+    "updatedAt": "2026-10-03T00:14:46Z",
+    "url": "https://github.com/kevkotuto/yapasgachis"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "media-server",
+    "updatedAt": "2026-09-03T01:25:44Z",
+    "url": "https://github.com/kevkotuto/media-server"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "yapasgachis-web",
+    "updatedAt": "2026-05-21T08:54:15Z",
+    "url": "https://github.com/kevkotuto/yapasgachis-web"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "generale-ci-dashboard",
+    "updatedAt": "2026-10-23T16:36:39Z",
+    "url": "https://github.com/kevkotuto/generale-ci-dashboard"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "moro-finance",
+    "updatedAt": "2026-10-13T18:42:26Z",
+    "url": "https://github.com/kevkotuto/moro-finance"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "moro-web",
+    "updatedAt": "2026-10-13T10:03:14Z",
+    "url": "https://github.com/kevkotuto/moro-web"
+  },
+  {
+    "description": "portfolio kevine ghoussoub",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "portfolio",
+    "updatedAt": "2026-08-28T21:23:36Z",
+    "url": "https://github.com/kevkotuto/portfolio"
+  },
+  {
+    "description": "Archive YG.Bricolage.Web depuis DD externe (2026-10)",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "archive-yg.bricolage.web",
+    "updatedAt": "2026-10-13T01:02:20Z",
+    "url": "https://github.com/kevkotuto/archive-yg.bricolage.web"
+  },
+  {
+    "description": "Archive beautelic depuis DD externe (2026-10)",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "archive-beautelic",
+    "updatedAt": "2026-10-13T01:01:27Z",
+    "url": "https://github.com/kevkotuto/archive-beautelic"
+  },
+  {
+    "description": "Archive moro-eu-v3 depuis DD externe (2026-10)",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "archive-moro-eu-v3",
+    "updatedAt": "2026-10-13T01:00:55Z",
+    "url": "https://github.com/kevkotuto/archive-moro-eu-v3"
+  },
+  {
+    "description": "Archive rev-app depuis DD externe (2026-10)",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "archive-rev-app",
+    "updatedAt": "2026-10-13T01:00:30Z",
+    "url": "https://github.com/kevkotuto/archive-rev-app"
+  },
+  {
+    "description": "Archive kings-game depuis DD externe (2026-10)",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "archive-kings-game",
+    "updatedAt": "2026-10-13T01:00:06Z",
+    "url": "https://github.com/kevkotuto/archive-kings-game"
+  },
+  {
+    "description": "Archive akili-website depuis DD externe (2026-10)",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "archive-akili-website",
+    "updatedAt": "2026-10-13T00:59:38Z",
+    "url": "https://github.com/kevkotuto/archive-akili-website"
+  },
+  {
+    "description": "Archive credoptia depuis DD externe (2026-10)",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "archive-credoptia",
+    "updatedAt": "2026-10-13T00:59:16Z",
+    "url": "https://github.com/kevkotuto/archive-credoptia"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "tamamedia",
+    "updatedAt": "2025-12-17T13:55:28Z",
+    "url": "https://github.com/kevkotuto/tamamedia"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "akili-ai-android",
+    "updatedAt": "2026-10-03T00:16:23Z",
+    "url": "https://github.com/kevkotuto/akili-ai-android"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "akili-prod",
+    "updatedAt": "2026-10-03T00:16:06Z",
+    "url": "https://github.com/kevkotuto/akili-prod"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "akili-prod-android",
+    "updatedAt": "2026-10-03T00:15:53Z",
+    "url": "https://github.com/kevkotuto/akili-prod-android"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "yg.bricolage.website",
+    "updatedAt": "2025-06-19T10:22:33Z",
+    "url": "https://github.com/kevkotuto/yg.bricolage.website"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "takr-backend",
+    "updatedAt": "2026-10-03T00:15:34Z",
+    "url": "https://github.com/kevkotuto/takr-backend"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "takr-mobile",
+    "updatedAt": "2026-10-03T00:15:30Z",
+    "url": "https://github.com/kevkotuto/takr-mobile"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "Takr",
+    "updatedAt": "2026-10-03T00:15:24Z",
+    "url": "https://github.com/kevkotuto/Takr"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "trading",
+    "updatedAt": "2026-10-03T00:15:10Z",
+    "url": "https://github.com/kevkotuto/trading"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "trading-bot",
+    "updatedAt": "2026-10-03T00:15:03Z",
+    "url": "https://github.com/kevkotuto/trading-bot"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "trading-web-app",
+    "updatedAt": "2026-10-03T00:14:56Z",
+    "url": "https://github.com/kevkotuto/trading-web-app"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "tontine-express-backend",
+    "updatedAt": "2026-10-03T00:14:50Z",
+    "url": "https://github.com/kevkotuto/tontine-express-backend"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "moro",
+    "updatedAt": "2026-10-03T00:14:29Z",
+    "url": "https://github.com/kevkotuto/moro"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "upjunoo-pro-app",
+    "updatedAt": "2026-10-03T00:14:22Z",
+    "url": "https://github.com/kevkotuto/upjunoo-pro-app"
+  },
+  {
+    "description": "MyB12 — App de gestion / livraison de bouteilles de gaz B6/B12 (Côte d'Ivoire). Expo + NestJS + Wave Business.",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "myb12",
+    "updatedAt": "2026-10-03T00:14:15Z",
+    "url": "https://github.com/kevkotuto/myb12"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "tontineIvoire",
+    "updatedAt": "2026-10-03T00:14:08Z",
+    "url": "https://github.com/kevkotuto/tontineIvoire"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "akili-apps",
+    "updatedAt": "2026-10-03T00:14:00Z",
+    "url": "https://github.com/kevkotuto/akili-apps"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "generale-mode",
+    "updatedAt": "2026-10-03T00:13:53Z",
+    "url": "https://github.com/kevkotuto/generale-mode"
+  },
+  {
+    "description": "Mobile app to organize, label and track moving boxes — Expo + NestJS",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "trackmybox",
+    "updatedAt": "2026-10-03T00:13:51Z",
+    "url": "https://github.com/kevkotuto/trackmybox"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "moro-eu-v3",
+    "updatedAt": "2026-10-03T00:13:46Z",
+    "url": "https://github.com/kevkotuto/moro-eu-v3"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "upjunoo-driver-app",
+    "updatedAt": "2026-10-03T00:13:17Z",
+    "url": "https://github.com/kevkotuto/upjunoo-driver-app"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "Yu_card",
+    "updatedAt": "2026-10-03T00:13:15Z",
+    "url": "https://github.com/kevkotuto/Yu_card"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "moro-eu-v2",
+    "updatedAt": "2025-08-25T11:00:07Z",
+    "url": "https://github.com/kevkotuto/moro-eu-v2"
+  },
+  {
+    "description": "administration credoptia",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "admin-credoptia",
+    "updatedAt": "2026-10-03T00:12:43Z",
+    "url": "https://github.com/kevkotuto/admin-credoptia"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "moro_eu",
+    "updatedAt": "2024-12-30T11:17:30Z",
+    "url": "https://github.com/kevkotuto/moro_eu"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "genera-card-admin",
+    "updatedAt": "2026-10-03T00:12:36Z",
+    "url": "https://github.com/kevkotuto/genera-card-admin"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "generale-card-generaleci",
+    "updatedAt": "2026-10-03T00:12:33Z",
+    "url": "https://github.com/kevkotuto/generale-card-generaleci"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "generale-ci-driver",
+    "updatedAt": "2026-10-03T00:12:30Z",
+    "url": "https://github.com/kevkotuto/generale-ci-driver"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "pub-video",
+    "updatedAt": "2026-10-03T00:12:27Z",
+    "url": "https://github.com/kevkotuto/pub-video"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "sms-gateway-autres",
+    "updatedAt": "2026-10-03T00:12:01Z",
+    "url": "https://github.com/kevkotuto/sms-gateway-autres"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "buyenjoy",
+    "updatedAt": "2026-10-03T00:11:56Z",
+    "url": "https://github.com/kevkotuto/buyenjoy"
+  },
+  {
+    "description": "Gestot — ITSM + facturation Generale-CI",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "gestot",
+    "updatedAt": "2026-10-03T00:11:53Z",
+    "url": "https://github.com/kevkotuto/gestot"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "editor-upjunoo",
+    "updatedAt": "2026-10-03T00:11:48Z",
+    "url": "https://github.com/kevkotuto/editor-upjunoo"
+  },
+  {
+    "description": "Akili AI Chat - Production chatbot with fact-checking and multilingual support",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "akili-chatbot-prod",
+    "updatedAt": "2026-10-03T00:11:45Z",
+    "url": "https://github.com/kevkotuto/akili-chatbot-prod"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "firewall-dashboard",
+    "updatedAt": "2026-10-03T00:11:41Z",
+    "url": "https://github.com/kevkotuto/firewall-dashboard"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "fib-informatique",
+    "updatedAt": "2026-10-03T00:11:36Z",
+    "url": "https://github.com/kevkotuto/fib-informatique"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "gedis-app",
+    "updatedAt": "2026-10-03T00:11:34Z",
+    "url": "https://github.com/kevkotuto/gedis-app"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "co-plastic",
+    "updatedAt": "2026-10-03T00:11:30Z",
+    "url": "https://github.com/kevkotuto/co-plastic"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "kev_storage_service",
+    "updatedAt": "2026-10-03T00:11:28Z",
+    "url": "https://github.com/kevkotuto/kev_storage_service"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "ma_vie_religieuse_backend",
+    "updatedAt": "2026-10-03T00:11:26Z",
+    "url": "https://github.com/kevkotuto/ma_vie_religieuse_backend"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "ultron-scripts",
+    "updatedAt": "2026-10-03T00:11:21Z",
+    "url": "https://github.com/kevkotuto/ultron-scripts"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "moro_new_backend",
+    "updatedAt": "2026-10-03T00:11:19Z",
+    "url": "https://github.com/kevkotuto/moro_new_backend"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "ivoire-chat",
+    "updatedAt": "2026-10-03T00:11:16Z",
+    "url": "https://github.com/kevkotuto/ivoire-chat"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "outils-divers",
+    "updatedAt": "2026-10-03T00:11:09Z",
+    "url": "https://github.com/kevkotuto/outils-divers"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "python-scripts",
+    "updatedAt": "2026-10-03T00:11:07Z",
+    "url": "https://github.com/kevkotuto/python-scripts"
+  },
+  {
+    "description": "Echo — meeting intelligence app (transcription, diarisation, voice memory, pre-quote)",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "echo",
+    "updatedAt": "2026-05-16T13:55:38Z",
+    "url": "https://github.com/kevkotuto/echo"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "distinction-tmc",
+    "updatedAt": "2026-10-03T00:11:03Z",
+    "url": "https://github.com/kevkotuto/distinction-tmc"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "tetra",
+    "updatedAt": "2026-10-03T00:10:57Z",
+    "url": "https://github.com/kevkotuto/tetra"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "Forge",
+    "updatedAt": "2026-10-03T00:10:55Z",
+    "url": "https://github.com/kevkotuto/Forge"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "Klippy",
+    "updatedAt": "2026-10-03T00:10:53Z",
+    "url": "https://github.com/kevkotuto/Klippy"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "cafe-continent",
+    "updatedAt": "2026-09-28T17:56:15Z",
+    "url": "https://github.com/kevkotuto/cafe-continent"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "african-tts-asr",
+    "updatedAt": "2026-09-23T12:40:43Z",
+    "url": "https://github.com/kevkotuto/african-tts-asr"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "ultron-builds-archive",
+    "updatedAt": "2026-09-23T12:33:33Z",
+    "url": "https://github.com/kevkotuto/ultron-builds-archive"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "vigil",
+    "updatedAt": "2026-09-03T01:36:53Z",
+    "url": "https://github.com/kevkotuto/vigil"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "ultron-build",
+    "updatedAt": "2026-09-03T01:36:45Z",
+    "url": "https://github.com/kevkotuto/ultron-build"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "portfolio-kevine",
+    "updatedAt": "2026-09-03T01:35:33Z",
+    "url": "https://github.com/kevkotuto/portfolio-kevine"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "whatsapp-test",
+    "updatedAt": "2026-09-03T01:34:51Z",
+    "url": "https://github.com/kevkotuto/whatsapp-test"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "maison-des-perles",
+    "updatedAt": "2026-09-03T01:34:38Z",
+    "url": "https://github.com/kevkotuto/maison-des-perles"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "jtb",
+    "updatedAt": "2026-09-03T01:34:24Z",
+    "url": "https://github.com/kevkotuto/jtb"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "inexuimus_generator",
+    "updatedAt": "2026-09-03T01:33:56Z",
+    "url": "https://github.com/kevkotuto/inexuimus_generator"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "fne-yeshi-backups",
+    "updatedAt": "2026-09-03T01:33:58Z",
+    "url": "https://github.com/kevkotuto/fne-yeshi-backups"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "dreamkeysimmobilier",
+    "updatedAt": "2026-09-03T01:33:21Z",
+    "url": "https://github.com/kevkotuto/dreamkeysimmobilier"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "candy-hop",
+    "updatedAt": "2026-09-03T01:32:16Z",
+    "url": "https://github.com/kevkotuto/candy-hop"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "upjunoo-autopilot",
+    "updatedAt": "2026-09-03T01:31:33Z",
+    "url": "https://github.com/kevkotuto/upjunoo-autopilot"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "upjunoo-app",
+    "updatedAt": "2026-09-03T01:31:33Z",
+    "url": "https://github.com/kevkotuto/upjunoo-app"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "spiritueux",
+    "updatedAt": "2026-09-03T01:31:09Z",
+    "url": "https://github.com/kevkotuto/spiritueux"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "palais-des-sports",
+    "updatedAt": "2026-09-03T01:30:40Z",
+    "url": "https://github.com/kevkotuto/palais-des-sports"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "financeChat",
+    "updatedAt": "2026-09-03T01:30:31Z",
+    "url": "https://github.com/kevkotuto/financeChat"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "event_shine",
+    "updatedAt": "2026-09-03T01:28:14Z",
+    "url": "https://github.com/kevkotuto/event_shine"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "takr-docs",
+    "updatedAt": "2026-09-03T01:28:05Z",
+    "url": "https://github.com/kevkotuto/takr-docs"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "fne-app",
+    "updatedAt": "2026-09-03T01:29:08Z",
+    "url": "https://github.com/kevkotuto/fne-app"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "esp32",
+    "updatedAt": "2026-09-03T01:26:38Z",
+    "url": "https://github.com/kevkotuto/esp32"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "upconnect-backup",
+    "updatedAt": "2026-09-03T01:26:27Z",
+    "url": "https://github.com/kevkotuto/upconnect-backup"
+  },
+  {
+    "description": "RIMCO NAV 14 codeunit Barcode - SOAP docs + Expo mobile client",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "barcode-rimco",
+    "updatedAt": "2026-04-28T17:32:36Z",
+    "url": "https://github.com/kevkotuto/barcode-rimco"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "danane-trace-nexus",
+    "updatedAt": "2026-09-03T01:25:24Z",
+    "url": "https://github.com/kevkotuto/danane-trace-nexus"
+  },
+  {
+    "description": "Teleprompter intelligent pilote par la voix",
+    "homepageUrl": "https://noche.generale-ci.com",
+    "isArchived": false,
+    "name": "noche-pro",
+    "updatedAt": "2026-03-02T13:16:07Z",
+    "url": "https://github.com/kevkotuto/noche-pro"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "nexus-hub",
+    "updatedAt": "2026-09-03T01:25:29Z",
+    "url": "https://github.com/kevkotuto/nexus-hub"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "moro-landing-elevate",
+    "updatedAt": "2026-09-03T01:24:55Z",
+    "url": "https://github.com/kevkotuto/moro-landing-elevate"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "yu-card-backend",
+    "updatedAt": "2025-10-18T14:58:39Z",
+    "url": "https://github.com/kevkotuto/yu-card-backend"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "upjunoo",
+    "updatedAt": "2026-01-20T01:30:44Z",
+    "url": "https://github.com/kevkotuto/upjunoo"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "upjunoo-pro",
+    "updatedAt": "2026-04-11T12:19:59Z",
+    "url": "https://github.com/kevkotuto/upjunoo-pro"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "sass_b2b",
+    "updatedAt": "2025-11-26T19:43:04Z",
+    "url": "https://github.com/kevkotuto/sass_b2b"
+  },
+  {
+    "description": "app de signalement",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "protect-life",
+    "updatedAt": "2025-07-20T15:07:58Z",
+    "url": "https://github.com/kevkotuto/protect-life"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "one_sky",
+    "updatedAt": "2026-01-24T10:46:13Z",
+    "url": "https://github.com/kevkotuto/one_sky"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "mytools",
+    "updatedAt": "2025-12-04T11:36:58Z",
+    "url": "https://github.com/kevkotuto/mytools"
+  },
+  {
+    "description": "Site vitrine Inaya Home — mobilier, décoration, matelas, portes, cuisines sur-mesure à Abidjan. Next.js 16 + Tailwind 4.",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "inayahome",
+    "updatedAt": "2026-04-19T23:30:50Z",
+    "url": "https://github.com/kevkotuto/inayahome"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "envoi",
+    "updatedAt": "2026-09-03T01:20:44Z",
+    "url": "https://github.com/kevkotuto/envoi"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "assistant_bernabe",
+    "updatedAt": "2026-09-03T01:20:14Z",
+    "url": "https://github.com/kevkotuto/assistant_bernabe"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "about-upjunoo",
+    "updatedAt": "2026-09-03T01:22:48Z",
+    "url": "https://github.com/kevkotuto/about-upjunoo"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "generale-ci-sdk",
+    "updatedAt": "2026-07-21T17:28:40Z",
+    "url": "https://github.com/kevkotuto/generale-ci-sdk"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "upjunoo-backend",
+    "updatedAt": "2026-09-03T01:15:32Z",
+    "url": "https://github.com/kevkotuto/upjunoo-backend"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "microfinance-web",
+    "updatedAt": "2026-09-03T01:17:03Z",
+    "url": "https://github.com/kevkotuto/microfinance-web"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "akili-ai",
+    "updatedAt": "2026-01-24T17:00:42Z",
+    "url": "https://github.com/kevkotuto/akili-ai"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "agora",
+    "updatedAt": "2026-09-03T01:11:15Z",
+    "url": "https://github.com/kevkotuto/agora"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "tontine-express",
+    "updatedAt": "2026-09-03T01:09:31Z",
+    "url": "https://github.com/kevkotuto/tontine-express"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "jtb-ci",
+    "updatedAt": "2026-01-09T11:57:21Z",
+    "url": "https://github.com/kevkotuto/jtb-ci"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "akili-liquid-flow",
+    "updatedAt": "2026-09-03T01:07:46Z",
+    "url": "https://github.com/kevkotuto/akili-liquid-flow"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "moro-landing-elevate-OLD-desktop",
+    "updatedAt": "2026-09-03T01:07:41Z",
+    "url": "https://github.com/kevkotuto/moro-landing-elevate-OLD-desktop"
+  },
+  {
+    "description": "Politique de confidentialité et CGU de l'application mobile THE BEST LAB",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "bestlab-legal",
+    "updatedAt": "2026-08-23T15:43:28Z",
+    "url": "https://github.com/kevkotuto/bestlab-legal"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "akili-backend",
+    "updatedAt": "2026-04-06T19:49:59Z",
+    "url": "https://github.com/kevkotuto/akili-backend"
+  },
+  {
+    "description": "Claude Code plugin: drive interactive terminal programs (prompts, REPLs, menus) via tmux — Claude reads prompts and answers them itself.",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "claude-plugins-interactive-cli",
+    "updatedAt": "2026-06-14T20:10:47Z",
+    "url": "https://github.com/kevkotuto/claude-plugins-interactive-cli"
+  },
+  {
+    "description": "UPConnect — Branche connectivité de l'écosystème UPJUNOO!",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "upconnect",
+    "updatedAt": "2026-05-27T11:16:04Z",
+    "url": "https://github.com/kevkotuto/upconnect"
+  },
+  {
+    "description": "backend de djorcy ",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "djorcy_backend",
+    "updatedAt": "2024-11-13T18:21:47Z",
+    "url": "https://github.com/kevkotuto/djorcy_backend"
+  },
+  {
+    "description": "projet Rêvolis Application de gestion et suivi de projets",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "Revolis",
+    "updatedAt": "2025-03-26T12:44:04Z",
+    "url": "https://github.com/kevkotuto/Revolis"
+  },
+  {
+    "description": "React Dashboard made with Material UI’s components. Our pro template contains features like TypeScript version, authentication system with Firebase and Auth0 plus many other ",
+    "homepageUrl": "http://material-kit-react.devias.io",
+    "isArchived": false,
+    "name": "material-kit-react",
+    "updatedAt": "2023-09-19T20:43:00Z",
+    "url": "https://github.com/kevkotuto/material-kit-react"
+  },
+  {
+    "description": "app gestion financiere pour entrepreneur ",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "rev",
+    "updatedAt": "2026-04-11T13:03:18Z",
+    "url": "https://github.com/kevkotuto/rev"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "first-git-work",
+    "updatedAt": "2021-08-25T15:36:51Z",
+    "url": "https://github.com/kevkotuto/first-git-work"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "crow-backend",
+    "updatedAt": "2024-09-06T17:54:46Z",
+    "url": "https://github.com/kevkotuto/crow-backend"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "components-kevine",
+    "updatedAt": "2023-03-06T15:29:58Z",
+    "url": "https://github.com/kevkotuto/components-kevine"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "sms-bnb",
+    "updatedAt": "2023-11-06T14:33:59Z",
+    "url": "https://github.com/kevkotuto/sms-bnb"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "adelboudalha",
+    "updatedAt": "2026-01-24T14:13:36Z",
+    "url": "https://github.com/kevkotuto/adelboudalha"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "akili-server-final",
+    "updatedAt": "2026-04-11T13:03:17Z",
+    "url": "https://github.com/kevkotuto/akili-server-final"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "sms-gateway",
+    "updatedAt": "2026-02-05T00:01:05Z",
+    "url": "https://github.com/kevkotuto/sms-gateway"
+  },
+  {
+    "description": "Éditeur d'articles Upjunoo - CMS pour journalistes",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "coomi",
+    "updatedAt": "2026-01-24T13:29:26Z",
+    "url": "https://github.com/kevkotuto/coomi"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "api-credoptia",
+    "updatedAt": "2026-01-20T01:31:24Z",
+    "url": "https://github.com/kevkotuto/api-credoptia"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "moro-admin-coopera",
+    "updatedAt": "2025-09-15T00:07:06Z",
+    "url": "https://github.com/kevkotuto/moro-admin-coopera"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "akili-app-web",
+    "updatedAt": "2025-08-27T01:47:31Z",
+    "url": "https://github.com/kevkotuto/akili-app-web"
+  },
+  {
+    "description": "backend System agricole autonome",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "Sami",
+    "updatedAt": "2025-08-17T19:18:12Z",
+    "url": "https://github.com/kevkotuto/Sami"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "moro-new-apps",
+    "updatedAt": "2025-08-09T13:41:57Z",
+    "url": "https://github.com/kevkotuto/moro-new-apps"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "zeta",
+    "updatedAt": "2025-08-06T22:23:05Z",
+    "url": "https://github.com/kevkotuto/zeta"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "akili-web-app",
+    "updatedAt": "2024-12-01T17:33:29Z",
+    "url": "https://github.com/kevkotuto/akili-web-app"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "generale-card",
+    "updatedAt": "2025-04-15T09:14:27Z",
+    "url": "https://github.com/kevkotuto/generale-card"
+  },
+  {
+    "description": "next akili ",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "akili-dashboard",
+    "updatedAt": "2025-03-19T19:21:26Z",
+    "url": "https://github.com/kevkotuto/akili-dashboard"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "moro_eu_backend",
+    "updatedAt": "2025-01-03T23:25:05Z",
+    "url": "https://github.com/kevkotuto/moro_eu_backend"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "ebex-backend",
+    "updatedAt": "2024-11-14T10:35:27Z",
+    "url": "https://github.com/kevkotuto/ebex-backend"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "ebex-client",
+    "updatedAt": "2024-11-14T09:28:56Z",
+    "url": "https://github.com/kevkotuto/ebex-client"
+  },
+  {
+    "description": "backend pour moro europe ",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "moro-backend",
+    "updatedAt": "2024-11-08T11:54:49Z",
+    "url": "https://github.com/kevkotuto/moro-backend"
+  },
+  {
+    "description": "copy de moro pour l'europe ( app ios android) ",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "moro-eu",
+    "updatedAt": "2024-11-08T11:52:20Z",
+    "url": "https://github.com/kevkotuto/moro-eu"
+  },
+  {
+    "description": "darshboard pour la gestion des livraison par des societe de livraison ",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "generale-delivery",
+    "updatedAt": "2024-08-25T15:43:17Z",
+    "url": "https://github.com/kevkotuto/generale-delivery"
+  },
+  {
+    "description": "Backend Complet de Generale ( livraison, Marketplace, Admin ) ",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "backend-generale",
+    "updatedAt": "2024-08-24T00:38:16Z",
+    "url": "https://github.com/kevkotuto/backend-generale"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "moro-function",
+    "updatedAt": "2024-08-11T01:17:06Z",
+    "url": "https://github.com/kevkotuto/moro-function"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "nodejsTestElastic",
+    "updatedAt": "2024-06-06T00:26:12Z",
+    "url": "https://github.com/kevkotuto/nodejsTestElastic"
+  },
+  {
+    "description": "app native generale ci",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "generale-ci-native-app",
+    "updatedAt": "2024-06-05T17:47:48Z",
+    "url": "https://github.com/kevkotuto/generale-ci-native-app"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "generale-ci",
+    "updatedAt": "2024-06-05T17:41:57Z",
+    "url": "https://github.com/kevkotuto/generale-ci"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "bernabe-forms",
+    "updatedAt": "2024-03-12T08:51:09Z",
+    "url": "https://github.com/kevkotuto/bernabe-forms"
+  },
+  {
+    "description": "python eis insere image",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "py-EIS",
+    "updatedAt": "2024-03-07T09:25:17Z",
+    "url": "https://github.com/kevkotuto/py-EIS"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "userGenerale-mode",
+    "updatedAt": "2024-03-04T09:35:58Z",
+    "url": "https://github.com/kevkotuto/userGenerale-mode"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "roue-bnb",
+    "updatedAt": "2024-03-04T09:03:59Z",
+    "url": "https://github.com/kevkotuto/roue-bnb"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "generale-mode-client",
+    "updatedAt": "2024-01-07T19:14:58Z",
+    "url": "https://github.com/kevkotuto/generale-mode-client"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "apiMode",
+    "updatedAt": "2024-01-21T13:58:10Z",
+    "url": "https://github.com/kevkotuto/apiMode"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "general-mode-revendeur",
+    "updatedAt": "2023-12-19T09:53:27Z",
+    "url": "https://github.com/kevkotuto/general-mode-revendeur"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "general-mode-client",
+    "updatedAt": "2023-12-27T19:51:44Z",
+    "url": "https://github.com/kevkotuto/general-mode-client"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "ElasticGenerale",
+    "updatedAt": "2024-01-21T13:53:26Z",
+    "url": "https://github.com/kevkotuto/ElasticGenerale"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "cloudFunction",
+    "updatedAt": "2023-11-22T14:31:59Z",
+    "url": "https://github.com/kevkotuto/cloudFunction"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "camera-tensor-test",
+    "updatedAt": "2024-01-16T08:43:17Z",
+    "url": "https://github.com/kevkotuto/camera-tensor-test"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "generale-api",
+    "updatedAt": "2024-01-21T13:50:04Z",
+    "url": "https://github.com/kevkotuto/generale-api"
+  },
+  {
+    "description": "site web de bernabe ",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "bernabe-website",
+    "updatedAt": "2024-01-16T14:44:33Z",
+    "url": "https://github.com/kevkotuto/bernabe-website"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "renomageHtml",
+    "updatedAt": "2023-12-30T14:59:00Z",
+    "url": "https://github.com/kevkotuto/renomageHtml"
+  },
+  {
+    "description": "app degeneral mode pour les revendeurs ",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "generale_revendeur",
+    "updatedAt": "2023-12-25T15:51:55Z",
+    "url": "https://github.com/kevkotuto/generale_revendeur"
+  },
+  {
+    "description": "Créer une marketplace dédiée à la mode appelée \"GENERAL Mode\", offrant des produits originaux, des contrefaçons, ainsi que des articles d'occasion",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "general_mode",
+    "updatedAt": "2023-11-20T18:16:31Z",
+    "url": "https://github.com/kevkotuto/general_mode"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "goly-website",
+    "updatedAt": "2023-12-11T11:28:06Z",
+    "url": "https://github.com/kevkotuto/goly-website"
+  },
+  {
+    "description": "",
+    "homepageUrl": "https://general-server-iota.vercel.app",
+    "isArchived": false,
+    "name": "general-server",
+    "updatedAt": "2023-11-21T00:46:35Z",
+    "url": "https://github.com/kevkotuto/general-server"
+  },
+  {
+    "description": "pour evrard",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "batisaad",
+    "updatedAt": "2023-11-17T07:53:01Z",
+    "url": "https://github.com/kevkotuto/batisaad"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "general-mode-1",
+    "updatedAt": "2023-11-02T15:37:16Z",
+    "url": "https://github.com/kevkotuto/general-mode-1"
+  },
+  {
+    "description": "Une application qui permet d'envoyer un ou plusieurs SMS via fichier Excel sur une API M Target par message",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "sms-bricolage",
+    "updatedAt": "2023-08-25T11:05:47Z",
+    "url": "https://github.com/kevkotuto/sms-bricolage"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "administrateur",
+    "updatedAt": "2023-10-19T15:21:25Z",
+    "url": "https://github.com/kevkotuto/administrateur"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "admin-v2",
+    "updatedAt": "2023-10-18T21:23:32Z",
+    "url": "https://github.com/kevkotuto/admin-v2"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "adminMcbci-2",
+    "updatedAt": "2023-10-17T18:10:55Z",
+    "url": "https://github.com/kevkotuto/adminMcbci-2"
+  },
+  {
+    "description": "template de site web en ract js firebase v9 avec admin ",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "template-site-web",
+    "updatedAt": "2023-09-25T08:36:44Z",
+    "url": "https://github.com/kevkotuto/template-site-web"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "nappylocks",
+    "updatedAt": "2023-10-01T10:15:45Z",
+    "url": "https://github.com/kevkotuto/nappylocks"
+  },
+  {
+    "description": "site de vente de carte de recharge ",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "litecard",
+    "updatedAt": "2023-09-06T16:57:06Z",
+    "url": "https://github.com/kevkotuto/litecard"
+  },
+  {
+    "description": "site web client",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "quinq",
+    "updatedAt": "2023-08-29T17:59:07Z",
+    "url": "https://github.com/kevkotuto/quinq"
+  },
+  {
+    "description": "societé de panneau publicitaire comme boocking",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "lox",
+    "updatedAt": "2023-05-21T19:28:25Z",
+    "url": "https://github.com/kevkotuto/lox"
+  },
+  {
+    "description": "app de vente en ligne de carte cadeaux ",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "carte-cadeaux",
+    "updatedAt": "2023-05-17T17:09:50Z",
+    "url": "https://github.com/kevkotuto/carte-cadeaux"
+  },
+  {
+    "description": "site web nappylock en react js ",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "nappylock-site",
+    "updatedAt": "2023-05-17T16:10:09Z",
+    "url": "https://github.com/kevkotuto/nappylock-site"
+  },
+  {
+    "description": "admin pour nappylocks ",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "Nappylocks-darshboard",
+    "updatedAt": "2023-05-17T15:36:16Z",
+    "url": "https://github.com/kevkotuto/Nappylocks-darshboard"
+  },
+  {
+    "description": "",
+    "homepageUrl": "",
+    "isArchived": false,
+    "name": "Apprendre-react",
+    "updatedAt": "2022-06-19T01:02:53Z",
+    "url": "https://github.com/kevkotuto/Apprendre-react"
+  },
+  {
+    "description": "Config files for my GitHub profile.",
+    "homepageUrl": "https://github.com/kevkotuto",
+    "isArchived": false,
+    "name": "kevkotuto",
+    "updatedAt": "2021-08-25T15:23:34Z",
+    "url": "https://github.com/kevkotuto/kevkotuto"
+  }
+]

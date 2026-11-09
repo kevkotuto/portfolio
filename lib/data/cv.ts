@@ -3,7 +3,7 @@ export const cvData = {
   title: "Développeur Fullstack Senior & Directeur Technologique",
   shortTitle: "Développeur Fullstack",
   resume:
-    "Développeur fullstack senior avec 6 années d'expérience dans la conception, le développement et le déploiement d'applications web et mobiles en production. 25+ apps live sur VPS perso, 99 repos GitHub. Expert React/Next.js, NestJS, Expo, Docker. Spécialisé dans l'écosystème africain : intégrations Mobile Money (Wave, Orange, MTN), CinetPay, et conformité fiscale (FNE / DGI Côte d'Ivoire).",
+    "Développeur fullstack senior avec 6 années d'expérience dans la conception, le développement et le déploiement d'applications web et mobiles en production. Création de produits web, mobiles et desktop : Générale CI, GESCOM, GenMail, Akili, Upjunoo et Yapasgachis. Expert React/Next.js, NestJS, Expo, Docker. Spécialisé dans l'écosystème africain : intégrations Mobile Money (Wave, Orange, MTN), CinetPay, et conformité fiscale (FNE / DGI Côte d'Ivoire).",
   contact: {
     email: "kevine@generale-ci.com",
     phone: "+225 05 00 80 85 85",

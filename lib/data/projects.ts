@@ -33,6 +33,14 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+    slug: "genmail", title: "GenMail — Messagerie macOS & Windows",
+    role: "Conception et développement", description: "Messagerie multi-comptes de la suite GESCOM : Microsoft 365, Gmail, iCloud, IMAP et POP au même endroit.",
+    longDescription: "Application de bureau avec cache local SQLite, conversations entre dossiers, recherche à opérateurs, annuaire, réunions et signatures. Un mode bas débit et une boîte d’envoi avec reprises accompagnent les connexions difficiles. Intégration à GESCOM et serveur MCP pour les assistants IA.",
+    highlights: ["Application macOS et Windows", "Recherche locale et comptes multiples", "Connexion à la suite GESCOM"],
+    tech: ["Electron", "React", "TypeScript", "SQLite"], category: "tool", status: "production", year: 2026,
+    url: "https://genmail.generale-ci.com", confidential: false, featured: true,
+  },
   // ── SaaS / Plateformes complètes ──────────────────────────────
   {
     slug: "moro",
@@ -55,7 +63,7 @@ export const projects: Project[] = [
     year: 2024,
     url: "https://moro-apps.net",
     image: "/logo/5.png",
-    confidential: true,
+    confidential: false,
     featured: true,
   },
   {
@@ -219,7 +227,7 @@ export const projects: Project[] = [
     category: "ecommerce",
     status: "wip",
     year: 2024,
-    confidential: true,
+    confidential: false,
   },
   {
     slug: "gestot",
@@ -242,7 +250,7 @@ export const projects: Project[] = [
     status: "production",
     year: 2025,
     url: "https://gestot.generale-ci.com",
-    confidential: true,
+    confidential: false,
   },
   {
     slug: "yapasgachis",
@@ -399,7 +407,7 @@ export const projects: Project[] = [
     status: "production",
     year: 2025,
     url: "https://bernabe.generale-ci.com",
-    confidential: true,
+    confidential: false,
   },
   {
     slug: "generale-ci",
@@ -503,7 +511,7 @@ export const projects: Project[] = [
     status: "production",
     year: 2025,
     url: "https://dreamkeys.generale-ci.com",
-    confidential: true,
+    confidential: false,
   },
   {
     slug: "jtb-ci",
@@ -525,7 +533,7 @@ export const projects: Project[] = [
     year: 2025,
     url: "https://jtb.ci",
     logo: "/projets/logos/jtb.ico",
-    confidential: true,
+    confidential: false,
   },
   {
     slug: "tamamedia",
@@ -545,7 +553,7 @@ export const projects: Project[] = [
     category: "cms",
     status: "production",
     year: 2025,
-    confidential: true,
+    confidential: false,
   },
   {
     slug: "nappylocks",
@@ -589,7 +597,7 @@ export const projects: Project[] = [
     status: "production",
     year: 2025,
     url: "https://agora.generale-ci.com",
-    confidential: true,
+    confidential: false,
   },
   {
     slug: "palais-des-sports",
@@ -609,7 +617,7 @@ export const projects: Project[] = [
     category: "mobile",
     status: "wip",
     year: 2026,
-    confidential: true,
+    confidential: false,
   },
   {
     slug: "finance-chat",
@@ -627,7 +635,7 @@ export const projects: Project[] = [
     category: "ai",
     status: "wip",
     year: 2025,
-    confidential: true,
+    confidential: false,
   },
   {
     slug: "spiritueux",
@@ -647,7 +655,7 @@ export const projects: Project[] = [
     category: "ecommerce",
     status: "wip",
     year: 2025,
-    confidential: true,
+    confidential: false,
   },
   {
     slug: "yu-card",
@@ -667,7 +675,7 @@ export const projects: Project[] = [
     category: "fintech",
     status: "production",
     year: 2025,
-    confidential: true,
+    confidential: false,
   },
 
   // ── Outils internes / Vitrines ──────────────────────────────
@@ -749,7 +757,7 @@ export const projects: Project[] = [
     category: "infra",
     status: "production",
     year: 2025,
-    confidential: true,
+    confidential: false,
   },
   {
     slug: "ultron",
@@ -769,7 +777,7 @@ export const projects: Project[] = [
     category: "infra",
     status: "active",
     year: 2025,
-    confidential: true,
+    confidential: false,
   },
   {
     slug: "supervision-yeshi",
@@ -790,7 +798,7 @@ export const projects: Project[] = [
     category: "infra",
     status: "active",
     year: 2025,
-    confidential: true,
+    confidential: false,
   },
   {
     slug: "imci-catalog",
@@ -810,7 +818,7 @@ export const projects: Project[] = [
     year: 2025,
     url: "https://cat-imci.generale-ci.com",
     logo: "/projets/logos/imci.png",
-    confidential: true,
+    confidential: false,
   },
   {
     slug: "credoptia",
@@ -828,7 +836,7 @@ export const projects: Project[] = [
     category: "fintech",
     status: "production",
     year: 2025,
-    confidential: true,
+    confidential: false,
   },
   {
     slug: "barcode-rimco",
@@ -848,7 +856,7 @@ export const projects: Project[] = [
     category: "mobile",
     status: "production",
     year: 2026,
-    confidential: true,
+    confidential: false,
   },
 
   {
@@ -912,7 +920,7 @@ export const projects: Project[] = [
     status: "production",
     year: 2025,
     repo: "https://github.com/kevkotuto/fne-yeshi",
-    confidential: true,
+    confidential: false,
   },
   {
     slug: "echo",
@@ -955,7 +963,7 @@ export const projects: Project[] = [
     status: "production",
     year: 2025,
     url: "https://envoi.generale-ci.com",
-    confidential: true,
+    confidential: false,
   },
   {
     slug: "migration-cockpit",
@@ -976,7 +984,7 @@ export const projects: Project[] = [
     status: "production",
     year: 2026,
     url: "https://cockpit.generale-ci.com",
-    confidential: true,
+    confidential: false,
   },
   {
     slug: "ivoire-chat",
@@ -1058,7 +1066,7 @@ export const projects: Project[] = [
     status: "production",
     year: 2026,
     url: "https://fib.generale-ci.com",
-    confidential: true,
+    confidential: false,
   },
   {
     slug: "distinction-tmc",
@@ -1099,7 +1107,7 @@ export const projects: Project[] = [
     status: "production",
     year: 2026,
     url: "https://tectra.generale-ci.com",
-    confidential: true,
+    confidential: false,
   },
   {
     slug: "candy-hop",
@@ -1195,7 +1203,7 @@ export const projects: Project[] = [
     category: "saas",
     status: "production",
     year: 2026,
-    confidential: true,
+    confidential: false,
   },
 ];
 
