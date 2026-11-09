@@ -1,5 +1,6 @@
 import React from "react";
 import path from "node:path";
+import { readFile } from "node:fs/promises";
 import { renderToBuffer } from "@react-pdf/renderer";
 import CVPDFDocument from "@/components/cv/CVPDFDocument";
 import { buildCvPdfData } from "@/lib/data/cv-pdf";
@@ -12,10 +13,12 @@ export const dynamic = "force-static";
  * de /cv, mais accessible en lien direct (a joindre a une candidature).
  */
 export async function GET() {
+  // Data URI avoids URL-encoding filesystem paths containing spaces (external disks).
+  const photo = await readFile(path.join(process.cwd(), "public", "image", "pp.jpg"));
   const buffer = await renderToBuffer(
     <CVPDFDocument
       data={buildCvPdfData()}
-      photoSrc={path.join(process.cwd(), "public", "image", "pp.jpg")}
+      photoSrc={`data:image/jpeg;base64,${photo.toString("base64")}`}
     />
   );
 

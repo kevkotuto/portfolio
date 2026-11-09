@@ -259,11 +259,11 @@ export const projects: Project[] = [
     description:
       "Marketplace anti-gaspillage alimentaire pour l'Afrique de l'Ouest, sur le modèle de Too Good To Go : invendus des commerçants jusqu'à -70%, à récupérer sur place.",
     longDescription:
-      "Plateforme complète en production à Abidjan : front web Next.js (catalogue des offres du jour, carte des commerçants à proximité, panier, compte client, parcours d'inscription vendeur), applications mobiles Expo distribuées sur TestFlight et Google Play, backend NestJS et serveur média dédié pour les photos produits, le tout en Docker. Le paiement se fait par Wave ou en espèces à la récupération, et une rubrique Bons Plans étend le modèle aux hôtels, spas et restaurants.",
+      "Plateforme complète en production à Abidjan : front web Next.js (catalogue des offres du jour, carte des commerçants à proximité, panier, compte client, parcours d'inscription vendeur), applications mobiles Expo désormais en production, backend NestJS et serveur média dédié pour les photos produits, le tout en Docker. Le paiement se fait par Wave ou en espèces à la récupération, et une rubrique Bons Plans étend le modèle aux hôtels, spas et restaurants.",
     highlights: [
       "Marketplace 2-sided commerçants / consommateurs, en production",
       "Front web Next.js : offres du jour, carte des commerçants, panier",
-      "Apps mobiles Expo sur TestFlight et Google Play",
+      "Applications mobiles Expo en production",
       "Paiement Wave Mobile Money ou espèces à la récupération",
       "Serveur média dédié pour les photos produits",
     ],
@@ -1090,15 +1090,15 @@ export const projects: Project[] = [
     confidential: false,
   },
   {
-    slug: "tectra-pointage",
-    title: "Tectra — Pointage du personnel",
+    slug: "badge-pointage",
+    title: "Badge & présence — Suivi du personnel",
     role: "Lead Fullstack",
     description:
-      "Application de pointage et de suivi des présences du personnel, avec tableau de bord de restitution.",
+      "Solution de badgeage et de suivi des présences, adaptable aux besoins de différentes organisations.",
     longDescription:
       "Application de pointage du personnel : enregistrement des arrivées et des départs, consolidation des présences par période et restitution au responsable. Elle remplace le relevé manuel par une saisie directe et un état consultable à tout moment.",
     highlights: [
-      "Pointage des arrivées et des départs",
+      "Badgeage des arrivées et des départs",
       "Consolidation des présences par période",
       "Tableau de bord de restitution pour le responsable",
     ],
@@ -1106,8 +1106,7 @@ export const projects: Project[] = [
     category: "saas",
     status: "production",
     year: 2026,
-    url: "https://tectra.generale-ci.com",
-    confidential: false,
+    confidential: true,
   },
   {
     slug: "candy-hop",
