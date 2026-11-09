@@ -25,7 +25,7 @@ export const experiences: Experience[] = [
       "Intégration Microsoft Dynamics NAV (catalogue, codeunits SOAP)",
       "Chatbots LLM pour le support catalogue (Bernabé Chat & Bricolage Chat)",
       "Catalogue produits IMCI (cat-imci.generale-ci.com)",
-      "Mise en place du VPS de production (Docker, PM2, Nginx) orchestrant 25+ apps",
+      "Mise en place et administration d’une infrastructure de production (Docker, PM2, Nginx)",
     ],
     tech: ["Next.js", "NestJS", "Docker", "Nginx", "Microsoft Dynamics NAV", "PostgreSQL"],
   },
@@ -53,13 +53,15 @@ export const experiences: Experience[] = [
     current: true,
     type: "consultant",
     description:
-      "Mission de conseil et de développement sur la plateforme média Upjunoo : CMS éditorial, app pro, base d'articles.",
+      "Développement de l’écosystème Upjunoo : applications client et chauffeur, cartographie, dispatch et temps réel, ainsi que les outils éditoriaux de la plateforme média.",
     achievements: [
-      "Conception de l'architecture éditoriale (upjunoo, upjunoo-pro, articles-db, coomi)",
+      "Applications client et chauffeur développées en un mois et demi : réservation, dispatch et suivi des courses",
+      "Cartographie Mapbox, navigation et synchronisation en temps réel",
+      "Conception de l’architecture éditoriale et des outils de publication",
       "Workflow de validation et publication pour journalistes",
       "Stack Docker multi-services en production",
     ],
-    tech: ["Next.js", "TypeScript", "Docker", "PostgreSQL"],
+    tech: ["Expo", "React Native", "Mapbox", "Socket.IO", "Next.js", "TypeScript", "Docker", "PostgreSQL"],
   },
   {
     role: "Directeur Technologique (week-ends)",

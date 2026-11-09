@@ -1,10 +1,11 @@
 "use client";
 
 import { useRef, useState, type CSSProperties } from "react";
-import Link from "next/link";
+import Link from "@/components/atelier/AtelierLink";
 import Image from "next/image";
 import { motion, AnimatePresence, useScroll, useTransform, useMotionValueEvent, useReducedMotion, type MotionValue } from "motion/react";
 import { ArrowDown, ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react";
+import { RouteArtwork } from "./DispatchStory";
 import OrganicContours from "./OrganicContours";
 
 import { journeyProducts as products } from "@/lib/data/journey";
@@ -28,7 +29,7 @@ export default function ProductJourney(){
   </section>;
 }
 function ProductContent({product:p}:{product:typeof products[number]}){
- return <><div className="journey-copy"><h2>{p.name}</h2><h3>{p.title}</h3><p>{p.copy}</p><Link href={`/projets/${p.slug}`}>Découvrir le projet <ArrowUpRight size={22}/></Link></div><div className={`journey-media journey-media-${p.format}`}>{p.format==="bricolage"&&<Image className="bricolage-wordmark" src={p.logo} alt="Mr. Bricolage" width={1000} height={250}/>}<Image src={p.image} alt={p.format==="identity"?`Identité de ${p.name}`:`Interface de ${p.name}`} width={p.format==="desktop"?2000:1200} height={p.format==="promo"||p.format==="phone"?2600:1250} sizes="(max-width:800px) 85vw, 50vw"/></div></>;
+ return <><div className="journey-copy"><h2>{p.name}</h2><h3>{p.title}</h3><p>{p.copy}</p><Link href={`/projets/${p.slug}`}>Découvrir le projet <ArrowUpRight size={22}/></Link></div><div className={`journey-media journey-media-${p.format}`}>{p.format==="bricolage"&&<Image className="bricolage-wordmark" src={p.logo} alt="Mr. Bricolage" width={1000} height={250}/>}{p.format==="route"?<RouteArtwork/>:<Image src={p.image} alt={p.format==="identity"?`Identité de ${p.name}`:`Interface de ${p.name}`} width={p.format==="desktop"?2000:1200} height={p.format==="promo"||p.format==="phone"?2600:1250} sizes="(max-width:800px) 85vw, 50vw"/>}</div></>;
 }
 function BrandBackdrop({product:p,progress}:{product:typeof products[number];progress:MotionValue<number>}){
  const x=useTransform(progress,[0,1],[-40,90]);const rotate=useTransform(progress,[0,1],[-12,12]);

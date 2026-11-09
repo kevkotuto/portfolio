@@ -174,11 +174,12 @@ export const projects: Project[] = [
     highlights: [
       "Quatre services dans une seule app : VTC, livraison, fret, location",
       "Commande, suivi de course en temps réel et historique",
-      "Onboarding, pages légales et espace profil",
+      "Cartographie, recherche de lieux et estimation de trajet",
+      "Messagerie, reçus et parcours de paiement",
     ],
     longDescription:
       "Application Expo avec expo-router qui regroupe les quatre services d'Upjunoo Pro dans un seul parcours : demander une course VTC, envoyer un colis, réserver du fret urbain ou louer un véhicule. L'utilisateur suit sa commande en temps réel, retrouve son historique, échange par messagerie et gère son profil. L'app inclut l'onboarding, les pages légales et le suivi de course.",
-    tech: ["Expo", "expo-router", "React Native", "TypeScript"],
+    tech: ["Expo", "React Native", "Mapbox", "Socket.IO", "TypeScript"],
     category: "mobile",
     status: "production",
     year: 2025,
@@ -191,14 +192,15 @@ export const projects: Project[] = [
     client: "Upjunoo Media",
     role: "Consultant technique / Lead Mobile",
     description:
-      "Interface chauffeur VTC d'Upjunoo Pro : carte de navigation nuit, passage en ligne, suivi des gains et messagerie, dans l'esprit des apps chauffeur du marché.",
+      "Application chauffeur Upjunoo Pro : offres de dispatch en temps réel, guidage Mapbox, cycle de course et portefeuille. Développée avec l’application client en un mois et demi.",
     longDescription:
       "App Expo SDK 55 avec expo-router et Mapbox en dev build. Authentification par numéro puis code OTP reçu sur WhatsApp, choix de la ville d'exercice (Abidjan, Bouaké, Korhogo, San-Pédro, Yamoussoukro), puis l'app principale en thème sombre : carte plein écran avec marqueur chauffeur, calques et recentrage, panneau de statut (priorité, gains, objectif) et passage en ligne. S'y ajoutent l'écran Argent (gains du jour, bande hebdomadaire, solde), la messagerie, le profil conducteur et véhicules, le parrainage et les réglages de navigation.",
     highlights: [
-      "Carte Mapbox en thème nuit, dev build natif (hors Expo Go)",
+      "Guidage Mapbox : orientation sur la route et recalcul d’itinéraire",
       "Auth par OTP WhatsApp et sélection de la ville d'exercice",
       "Suivi des gains : jour, semaine, objectif, solde",
-      "Builds Android produits sur serveur interne plutôt que sur EAS",
+      "Dispatch Socket.IO, acceptation et suivi du cycle de course",
+      "Récupération de course active et gestion des interruptions réseau",
     ],
     tech: ["Expo", "React Native", "Mapbox", "expo-router", "TypeScript"],
     category: "mobile",
@@ -259,7 +261,7 @@ export const projects: Project[] = [
     description:
       "Marketplace anti-gaspillage alimentaire pour l'Afrique de l'Ouest, sur le modèle de Too Good To Go : invendus des commerçants jusqu'à -70%, à récupérer sur place.",
     longDescription:
-      "Plateforme complète en production à Abidjan : front web Next.js (catalogue des offres du jour, carte des commerçants à proximité, panier, compte client, parcours d'inscription vendeur), applications mobiles Expo désormais en production, backend NestJS et serveur média dédié pour les photos produits, le tout en Docker. Le paiement se fait par Wave ou en espèces à la récupération, et une rubrique Bons Plans étend le modèle aux hôtels, spas et restaurants.",
+      "Plateforme complète en production à Abidjan : front web Next.js (catalogue des offres du jour, carte des commerçants à proximité, panier, compte client, parcours d'inscription vendeur), applications mobiles Expo désormais en production, backend Express et TypeScript et serveur média dédié pour les photos produits, le tout en Docker. Le paiement se fait par Wave ou en espèces à la récupération, et une rubrique Bons Plans étend le modèle aux hôtels, spas et restaurants.",
     highlights: [
       "Marketplace 2-sided commerçants / consommateurs, en production",
       "Front web Next.js : offres du jour, carte des commerçants, panier",
@@ -267,7 +269,7 @@ export const projects: Project[] = [
       "Paiement Wave Mobile Money ou espèces à la récupération",
       "Serveur média dédié pour les photos produits",
     ],
-    tech: ["Next.js", "NestJS", "Expo", "Docker", "PostgreSQL", "Wave"],
+    tech: ["Next.js", "Express", "Expo", "Docker", "PostgreSQL", "Wave"],
     category: "ecommerce",
     status: "production",
     year: 2025,
@@ -418,7 +420,11 @@ export const projects: Project[] = [
     longDescription:
       "Plateforme complète en production : front web Next.js, backend API avec workers asynchrones, recherche Meilisearch, stockage objet MinIO, cache Redis et base PostgreSQL, le tout orchestré en Docker. Côté produit : inscription des vendeurs et tableau de bord marchand, catalogue multi-catégories (mode, électronique, beauté, maison, services), suivi de commandes et livraison sur le Grand Abidjan, contenus courts et sessions de vente en direct, plus les applications iOS et Android.",
     highlights: [
-      "Marketplace 2-sided en production : acheteurs, vendeurs et livraison",
+      "Recherche par image et conversation IA reliées au catalogue",
+      "Détection automatique de variantes et choix couleur–taille",
+      "SAV IA reliant client, vendeur, livraison et administration",
+      "Essayage de lunettes en 3D natif et essayage génératif de vêtements",
+      "Générateur de musique avec parcours de paiement et suivi de création",
       "Live shopping et contenus vidéo courts intégrés au catalogue",
       "Recherche Meilisearch, médias sur MinIO, jobs asynchrones",
       "Apps iOS et Android en complément du web",

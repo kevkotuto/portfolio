@@ -1,0 +1,29 @@
+{
+  "status": "Fonctionnalités opérationnelles confirmées par le propriétaire le 9 novembre 2026. Lecture du code local, sans test de transactions en production.",
+  "features": {
+    "recherche": [
+      "backend/src/modules/search/search.controller.ts",
+      "backend/src/modules/search/vision-search.service.ts"
+    ],
+    "variantes": [
+      "backend/src/modules/sync/gallery-variants.ts",
+      "backend/src/modules/sync/gallery-variants.service.ts"
+    ],
+    "support": [
+      "backend/src/modules/support/support-tools.ts",
+      "backend/src/modules/support/support-rules.ts"
+    ],
+    "conversation": [
+      "backend/src/modules/chat/chat.service.ts"
+    ],
+    "musique": [
+      "backend/src/modules/music/music.processor.ts",
+      "expo/src/features/music/lib/guide-voice.ts"
+    ],
+    "essayage": [
+      "backend/src/modules/tryon/tryon.service.ts",
+      "expo/modules/face-tryon"
+    ]
+  },
+  "visuals": "Les interactions de la fiche sont des explications schématiques, pas des captures de produit ni des appels aux services IA."
+}

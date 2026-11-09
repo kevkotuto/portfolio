@@ -1,0 +1,90 @@
+{
+  "echo": {
+    "src": "/atelier/brands/echo.webp",
+    "source": "/Users/adelboudalha/Documents/Projets/echo/backend/public/icon.png"
+  },
+  "klippy": {
+    "src": "/atelier/brands/klippy.webp",
+    "source": "/Users/adelboudalha/Documents/Projets/swift/Klippy/landing/assets/img/icon-1024.png"
+  },
+  "credoptia": {
+    "src": "/atelier/brands/credoptia.webp",
+    "source": "/Users/adelboudalha/Documents/Projets/autres/credoptia/admin-credoptia/public/logo.png"
+  },
+  "takr": {
+    "src": "/atelier/brands/takr.webp",
+    "source": "/Users/adelboudalha/Documents/Projets/autres/takr-ios/Takr/archive/assets/logo.png"
+  },
+  "yu-card": {
+    "src": "/atelier/brands/yu-card.webp",
+    "source": "/Users/adelboudalha/Documents/Projets/autres/generale ci/generale-card/assets/images/logo1.png"
+  },
+  "fne-yeshi": {
+    "src": "/atelier/brands/fne-yeshi.webp",
+    "source": "/Users/adelboudalha/Documents/Projets/nextjs/fne-yeshi/public/brand/logo-yeshi.png"
+  },
+  "upjunoo": {
+    "src": "/atelier/brands/upjunoo.webp",
+    "source": "/Users/adelboudalha/Documents/Projets/nextjs/about-upjunoo/public/logo.png"
+  },
+  "mytools": {
+    "src": "/atelier/brands/mytools.webp",
+    "source": "/Users/adelboudalha/Documents/Projets/nextjs/mytools/public/logo.png"
+  },
+  "tontine-ivoire": {
+    "src": "/atelier/brands/tontine-ivoire.webp",
+    "source": "/Users/adelboudalha/Documents/Projets/expo/tontineIvoire/assets/logo.png"
+  },
+  "noche-pro": {
+    "src": "/atelier/brands/noche-pro.webp",
+    "source": "/Users/adelboudalha/Documents/Projets/react/noche-pro/resources/icon.png"
+  },
+  "generale-mode": {
+    "src": "/atelier/brands/generale-mode.webp",
+    "source": "/Users/adelboudalha/Documents/Projets/expo/generale-mode/assets/images/icon.png"
+  },
+  "yapasgachis": {
+    "src": "/atelier/brands/yapasgachis.webp",
+    "source": "/Users/adelboudalha/Documents/Projets/yapasgachis/mobile/assets/logo_bg_transparent.png"
+  },
+  "upjunoo-driver": {
+    "src": "/atelier/brands/upjunoo-driver.webp",
+    "source": "/Users/adelboudalha/Documents/Projets/expo/upjunoo-driver-app/assets/logo/logo-driver-color.png"
+  },
+  "upjunoo-pro": {
+    "src": "/atelier/brands/upjunoo-pro.webp",
+    "source": "/Users/adelboudalha/Documents/Projets/nextjs/upjunoo-pro/public/images/logo/logo_fond_transparent.png"
+  },
+  "upjunoo-pro-client": {
+    "src": "/atelier/brands/upjunoo-pro-client.webp",
+    "source": "/Users/adelboudalha/Documents/Projets/expo/upjunoo-pro-app/assets/logo.png"
+  },
+  "trackmybox": {
+    "src": "/atelier/brands/trackmybox.webp",
+    "source": "/Users/adelboudalha/Documents/Projets/expo/trackmybox/assets/images/logo.png"
+  },
+  "agora": {
+    "src": "/atelier/brands/agora.webp",
+    "source": "/Users/adelboudalha/Documents/Projets/expo/agora/assets/images/icon.png"
+  },
+  "fib-informatique": {
+    "src": "/atelier/brands/fib-informatique.webp",
+    "source": "/Users/adelboudalha/Documents/Projets/nextjs/fib-informatique/public/logo-fib.png"
+  },
+  "gedis-lub": {
+    "src": "/atelier/brands/gedis-lub.webp",
+    "source": "/Users/adelboudalha/Documents/Projets/nextjs/gedis-app/public/logo.png"
+  },
+  "myb12": {
+    "src": "/atelier/brands/myb12.webp",
+    "source": "/Users/adelboudalha/Documents/Projets/expo/myb12/assets/images/icon.png"
+  },
+  "co-plastic": {
+    "src": "/atelier/brands/co-plastic.webp",
+    "source": "/Users/adelboudalha/Documents/Projets/nextjs/co-plastic/public/logo.png"
+  },
+  "ivoire-chat": {
+    "src": "/atelier/brands/ivoire-chat.webp",
+    "source": "/Users/adelboudalha/Documents/Projets/ivoire-chat/assets/images/icon.png"
+  }
+}

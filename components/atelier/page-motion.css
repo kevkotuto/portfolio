@@ -1,0 +1,25 @@
+/* One curved page reveal. No blocking curtain, no perpetual animation. */
+::view-transition-group(root){animation-duration:520ms;animation-timing-function:cubic-bezier(.22,1,.36,1)}
+::view-transition-old(root){animation:atelier-page-away 230ms ease-out both;mix-blend-mode:normal}
+::view-transition-new(root){animation:atelier-page-arrive 520ms cubic-bezier(.22,1,.36,1) both;mix-blend-mode:normal}
+::view-transition-image-pair(root){isolation:isolate}
+@keyframes atelier-page-away{to{opacity:.25;transform:translateY(-8px)}}
+@keyframes atelier-page-arrive{
+ from{clip-path:ellipse(35% 12% at var(--page-origin-x,50%) 112%)}
+ to{clip-path:ellipse(160% 170% at var(--page-origin-x,50%) 100%)}
+}
+.atelier-nav{view-transition-name:atelier-navigation}
+::view-transition-group(atelier-navigation){animation-duration:320ms;z-index:2}
+::view-transition-old(atelier-navigation),::view-transition-new(atelier-navigation){animation-duration:180ms}
+.atelier-nav nav a{position:relative;text-underline-offset:6px;transition:color 180ms ease}
+.atelier-nav nav a::after{content:'';position:absolute;bottom:-6px;left:0;right:0;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform 240ms cubic-bezier(.22,1,.36,1)}
+.atelier-nav nav a:hover::after,.atelier-nav nav a:focus-visible::after{transform:scaleX(1)}
+@media(max-width:700px){::view-transition-group(root){animation-duration:420ms}::view-transition-new(root){animation-duration:420ms}}
+@media(prefers-reduced-motion:reduce){
+ ::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}
+ .atelier-nav nav a,.atelier-nav nav a::after{transition:none}
+}
+/* Clip horizontal overflow without creating a nested scroll container:
+   chapter navigation and reading-side visuals must stick to the viewport. */
+html:has(.project-story),html:has(.project-story) body,html:has(.project-story) main,
+html:has(.editorial-page),html:has(.editorial-page) body,html:has(.editorial-page) main{overflow-x:clip}

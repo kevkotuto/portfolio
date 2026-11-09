@@ -1,6 +1,6 @@
 "use client";
 import { useState, type CSSProperties } from 'react';
-import Link from 'next/link';
+import Link from '@/components/atelier/AtelierLink';
 import { ArrowUpRight } from 'lucide-react';
 import { categoryLabels } from '@/lib/data/projects';
 import { discoveryProjects, otherProjects, storyFor } from '@/lib/data/project-stories';

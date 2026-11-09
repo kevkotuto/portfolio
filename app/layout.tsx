@@ -1,3 +1,6 @@
+import { ViewTransitions } from "next-view-transitions";
+import PageMotion from "@/components/atelier/PageMotion";
+import "@/components/atelier/page-motion.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -105,6 +108,7 @@ export default function RootLayout({
   };
 
   return (
+    <ViewTransitions>
     <html lang="fr" suppressHydrationWarning>
       <head>
         <script
@@ -126,6 +130,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
 
+          <PageMotion />
           <Header />
           <main className="flex-grow">
             {children}
@@ -137,5 +142,6 @@ export default function RootLayout({
         </ThemeProvider>
       </body>
     </html>
+    </ViewTransitions>
   );
 }
