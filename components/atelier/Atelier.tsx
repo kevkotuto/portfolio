@@ -10,6 +10,7 @@ import { ArrowDown, ArrowUpRight } from "lucide-react";
 
 const selection = [
   {slug:"akili", image:"/atelier/akili-store-actuel.png", kind:"promo", name:"Akili", type:"Intelligence artificielle", line:"Une IA qui parle à son monde.", mark:"a.", color:"#f0f0eb", detail:"Applications, conversation et vérification de l’information."},
+  {slug:"moro", image:"/atelier/moro-accueil-actuel.png", kind:"phone", name:"Moro", type:"Finances & projets", line:"Faire avancer ses projets.", mark:"m", color:"#EDF8F1", detail:"Gestion financière, projets, financement et assistant IA dans une même application."},
   {slug:"generale-ci", image:"/atelier/generale-ci.png", kind:"identity", name:"Générale CI", type:"Commerce & livraison", line:"Du panier à la porte.", mark:"G/", color:"#ffe477", detail:"Un écosystème de commerce, du web aux applications mobiles."},
   {slug:"gescom", image:"/atelier/gescom-transparent.png", kind:"identity", name:"GESCOM", type:"Logiciel métier", line:"Le quotidien du commerce, simplifié.", mark:"g_", color:"#eeeee8", detail:"Gestion commerciale de bureau, pensée pour les commerces ivoiriens."},
   {slug:"genmail", image:"/atelier/genmail.jpg", kind:"desktop", name:"GenMail", type:"Application macOS & Windows", line:"Toutes vos conversations. Un seul endroit.", mark:"↗", color:"#f1f2f3", detail:"Une messagerie multi-comptes, connectée à la suite GESCOM."},

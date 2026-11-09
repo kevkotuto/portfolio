@@ -16,3 +16,7 @@ Les fonds reprennent les identités des applications. La signature du portfolio 
 Les photographies et captures gardent leurs couleurs d'origine. Les fonds de scène sont des compositions du portfolio à partir de ces valeurs : ils ne prétendent pas être des captures de l'application.
 
 La transition de fond est déclenchée par le changement de produit et se termine en 550 ms. Le scroll déplace les contours et les filigranes ; il ne maintient plus un mélange de deux palettes à l'arrêt. L'ancien système de huit fonds dont l'opacité suivait le scroll pouvait rester gris sous du texte bleu.
+
+## Moro
+
+Ajouté au parcours principal après Akili et à la sélection. Source : `expo/moro/constants/theme.ts` : primaire #23B574, secondaire #F7921E, texte #11181C, fond #FFFFFF. Vert foncé #15764B pour les titres lisibles sur fond clair. Capture d’accueil fournie par l’utilisateur le 9 novembre 2026, conservée sans retouche dans `/atelier/moro-accueil-actuel.png`. La durée du parcours dépend maintenant du nombre de projets (120 svh par projet), afin de garder le même rythme après ajout.
