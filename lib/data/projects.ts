@@ -137,7 +137,7 @@ export const projects: Project[] = [
     year: 2025,
     url: "https://upjunoo.com",
     logo: "/projets/logos/upjunoo.png",
-    image: "/projets/upjunoo.png",
+    image: "/atelier/upjunoo-accueil-actuel.png",
     confidential: false,
     featured: true,
   },
