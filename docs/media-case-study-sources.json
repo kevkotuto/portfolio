@@ -1,0 +1,24 @@
+{
+  "reviewedAt": "2026-11-10",
+  "publicSources": [
+    "https://akilicheck.com",
+    "https://ai.akilicheck.com/login",
+    "https://tamamedia.com",
+    "https://tamamedia.com/fact-checker-akili",
+    "https://tamamedia.com/dossiers/lafrique-dans-le-monde"
+  ],
+  "codeSources": [
+    "akili server: package.json, lib/mobile/verdict.ts, lib/mobile/*, app/api/v2/*",
+    "expo/akili-mobile-suite/akili-ai/src/services/api/speech.ts",
+    "nextjs/tamamedia-refonte/prisma/schema.prisma",
+    "nextjs/tamamedia-refonte/app/api/articles/ai-writing-assistant/route.ts",
+    "nextjs/tamamedia-refonte/app/api/articles/admin/route.ts",
+    "nextjs/tamamedia-refonte/app/api/stripe/*",
+    "nextjs/tamamedia-refonte/app/api/newsletter/*"
+  ],
+  "verificationLimits": [
+    "Consultation publique et lecture du code ; aucune transaction, demande journaliste ou génération IA envoyée.",
+    "Pas de promesse de détection deepfake vidéo ni de synchronisation automatique des blogs.",
+    "Les capacités de back-office sont établies par le code, sans test de publication."
+  ]
+}

@@ -14,11 +14,48 @@ export const projectNarratives:Record<string,ProjectNarrative>={
  'upjunoo-pro-client':upjunooClient,'upjunoo-driver':upjunooDriver,
  upjunoo:{duration:upjunooClient.duration,related:[{slug:'upjunoo-pro-client',label:'Explorer l’application client'},{slug:'upjunoo-driver',label:'Explorer l’application chauffeur'}],chapters:[{title:'Deux applications, une opération commune.',body:'Le client cherche un service et suit sa réservation. Le chauffeur reçoit une offre et réalise la course. Ces deux points de vue ont leur propre application, avec une identité commune, des parcours différents et une coordination par la cartographie, le dispatch et le temps réel.'},...upjunooDriver.chapters.slice(0,2)]},
  'upjunoo-pro':{...upjunooClient,related:[{slug:'upjunoo-pro-client',label:'Application client'},{slug:'upjunoo-driver',label:'Application chauffeur'}]},
- akili:{chapters:[
- {title:'Vérifier, puis comprendre.',body:'Le produit réunit conversation, analyse de contenus et fact-checking. Les réponses peuvent contenir des liens vers leurs sources, accessibles dans la conversation. Les retours de l’utilisateur et les demandes de vérification s’inscrivent aussi dans un parcours qui peut faire intervenir des journalistes.'},
- {title:'Une même application, plusieurs contextes.',body:'Les langues, la région et les suggestions utiles sont des éléments de l’expérience. Le travail documenté couvre le français, l’anglais, l’arabe, l’espagnol, le bambara et le dioula. Les cartes de suggestions distinguent leur titre court de la demande réellement envoyée au service.'},
- {title:'Relier le mobile aux services réels.',body:'L’intégration a porté sur le tableau de bord, les signalements, les notifications et les contenus, avec des états explicites lorsque rien n’est disponible. Les médias demandent une attention particulière : un fichier doit pouvoir être retrouvé par le service d’analyse, pas seulement affiché sur le téléphone.'},
- ]},
+ akili:{
+  "chapters": [
+    {
+      "title": "Le doute arrive avant la recherche.",
+      "body": "Une capture circule dans un groupe, une citation paraît suspecte, un chiffre se répète. Akili part de cette situation quotidienne : permettre de poser la question avec le contenu que l’on a déjà, sans demander de maîtriser les techniques de vérification. Le site présente le service, le web ouvre la conversation et les applications iOS et Android permettent de retrouver ses échanges. WhatsApp constitue une autre porte d’entrée, au plus près de la circulation des messages."
+    },
+    {
+      "title": "Un verdict ne suffit pas.",
+      "body": "La réponse doit expliquer ce qui a été vérifié et donner accès aux références utilisées. Dans la conversation, les liens des sources sont rendus cliquables pour permettre au lecteur de poursuivre sa recherche. Les verdicts sont aussi structurés en trois catégories — vrai, partiel et infox — et associés à l’historique. Le défi est de résumer sans effacer la nuance : une information partiellement vraie ne doit pas devenir vraie simplement parce que le mot apparaît dans la réponse."
+    },
+    {
+      "title": "Écrire, montrer, parler.",
+      "body": "Le parcours mobile prend en charge la saisie, les pièces jointes et les services vocaux. Pour une image, afficher la pièce jointe sur le téléphone ne suffit pas : le service d’analyse doit pouvoir accéder à son URL. Pour la voix, transcription et synthèse permettent de passer du message audio au texte, puis de lire une réponse à voix haute. Ces échanges demandent une gestion explicite de l’envoi, de l’attente et des erreurs, avec des formats adaptés aux différents services."
+    },
+    {
+      "title": "Laisser une place au journaliste.",
+      "body": "Une réponse peut être contestée ou demander un approfondissement. Le retour utilisateur et la demande de vérification relient alors la conversation au travail des journalistes. Akili est pensé comme une interface entre l’assistance automatique et l’expertise éditoriale : le lecteur signale son besoin, le dossier est transmis, puis une réponse peut revenir dans le parcours. Cette continuité compte autant que la première réponse ; l’objectif est d’aider à comprendre, pas de présenter l’IA comme une autorité infaillible."
+    },
+    {
+      "title": "Une langue, un contexte, une entrée utile.",
+      "body": "Le mobile comporte des traductions en français, anglais, arabe, espagnol, bambara et dioula. La langue et la région orientent les contenus et les suggestions. L’accueil et la conversation n’ont pas le même besoin : une suggestion de sujet à explorer et une demande prête à envoyer doivent pouvoir avoir un titre court différent du texte transmis au service. Le site public propose également une entrée Europe, à côté du positionnement africain du produit."
+    },
+    {
+      "title": "Retrouver le fil, même après avoir quitté l’écran.",
+      "body": "L’historique conserve les conversations et leurs verdicts. Les notifications prolongent l’échange lorsqu’une réponse arrive en arrière-plan. Côté mobile, les états sont répartis entre conversation, médias, compte, préférences et contenus éditoriaux. Le travail porte aussi sur les situations moins visibles : restauration de session, renouvellement de l’accès, fichier en cours d’envoi ou liste vide. L’utilisateur doit comprendre ce qui est disponible, ce qui charge et ce qui demande une action."
+    },
+    {
+      "title": "De la question à la lecture.",
+      "body": "Akili donne aussi accès à des articles et à des décryptages. Tama Média apporte une continuité éditoriale avec ses contenus de vérification : la conversation répond à une question, tandis qu’un article permet d’en explorer le contexte. Le site public et l’application ont leurs propres chemins d’accès aux contenus. Ce lien entre les produits est présenté comme un parcours de lecture, sans confondre leurs flux techniques ni promettre une synchronisation automatique de toutes les publications."
+    },
+    {
+      "title": "Un produit complet derrière le chat.",
+      "body": "La version serveur examinée repose sur Next.js, les services du Vercel AI SDK et Firebase Admin avec Firestore. Le mobile utilise Expo, React Native, TypeScript et Zustand. Des API organisent les conversations, les fichiers, les signalements, les suggestions, les contenus et les notifications ; l’administration permet de les gérer. Mon travail relie ces surfaces pour que la même intention — vérifier une information — reste compréhensible du premier message jusqu’à la consultation des sources ou au relais humain."
+    }
+  ],
+  "related": [
+    {
+      "slug": "tamamedia",
+      "label": "Le prolongement éditorial : Tama Média"
+    }
+  ]
+},
  moro:{chapters:[
  {title:'Lire sa situation avant de décider.',body:'Le quotidien commence par les revenus, les dépenses, les transactions et les projets. La même plateforme rapproche l’application mobile, l’espace business et les services associés. L’objectif est de rendre l’information financière consultable, puis exploitable dans la gestion de ses activités.'},
  {title:'Respecter les mots du métier.',body:'Une coopérative et une formation ne sont pas le même produit : les GIE désignent les groupements d’intérêt économique, alors qu’EDUFI est un programme de formation. Cette distinction se retrouve dans les parcours et les libellés. Concevoir l’interface demande aussi de comprendre ces usages.'},
@@ -44,11 +81,48 @@ export const projectNarratives:Record<string,ProjectNarrative>={
  {title:'L’animation commerciale devient interactive.',body:'Une opération de cartes à gratter a ajouté une interaction tactile et souris au catalogue. Le gain ne se décide pas dans le navigateur : le serveur contrôle les créneaux et le stock disponible. L’expérience visuelle et les contraintes de l’opération doivent fonctionner ensemble.'},
  {title:'La qualité se joue aussi dans les parcours.',body:'Les pages de listing, la recherche et les liens produits ont leurs propres cas limites. Le travail continue après la mise en ligne, pour corriger les incohérences de navigation et garder une expérience cohérente entre les différentes entrées du catalogue.'},
  ]},
- tamamedia:{chapters:[
- {title:'Donner une hiérarchie à l’information.',body:'La refonte documentée sépare quatre ensembles : le socle commun, l’accueil, les articles et les rubriques. L’objectif est de faire reconnaître les contenus et leurs relations tout en gardant une navigation éditoriale cohérente.'},
- {title:'La rédaction fait partie du produit.',body:'Recherche, compte lecteur, espace abonnés et administration doivent rester accessibles. Le travail comprend aussi des verdicts de fact-checking saisis dans l’administration et un écran de contrôle de la qualité éditoriale. Il ne se limite donc pas à la page d’accueil.'},
- {title:'Refondre sans casser le reste.',body:'Les styles de la nouvelle expérience sont isolés pour préserver les autres pages et le back-office. La mémoire distingue une refonte testée en préproduction de la version publique : ces deux étapes ne sont pas confondues avec une livraison définitive de tous les changements.'},
- ]},
+ tamamedia:{
+  "chapters": [
+    {
+      "title": "Le sujet mérite plus qu’un fil d’actualité.",
+      "body": "Tama Média est un collectif de journalistes africains qui privilégie l’enquête, le terrain et l’explication. Le produit doit servir cette profondeur : distinguer les formats, donner de la place aux auteurs et permettre de revenir sur un sujet. L’accueil public organise aujourd’hui enquêtes, reportages, explications, entretiens et fact-checking. Le travail consiste à transformer une matière éditoriale abondante en un journal que l’on peut parcourir, comprendre et lire dans la durée."
+    },
+    {
+      "title": "Trouver une histoire, puis suivre le dossier.",
+      "body": "La navigation sépare les formats journalistiques des thèmes abordés. La recherche propose une entrée par sujet, pays ou auteur ; les dossiers rassemblent plusieurs épisodes autour d’une question commune. Le lecteur peut ainsi passer d’une actualité à une série, puis à un autre angle sur le même sujet. Dans le modèle de contenu, les articles, catégories, mots-clés, relations et dossiers sont distincts : cette organisation rend les rapprochements possibles sans réduire tout le journal à une liste chronologique."
+    },
+    {
+      "title": "Lire longtemps doit rester simple.",
+      "body": "Un article rassemble un titre, un chapô, un auteur, un temps de lecture et des médias. Les contenus peuvent être libres ou réservés aux abonnés ; l’espace lecteur comprend également l’enregistrement d’articles. Il faut rendre ces différences compréhensibles sans casser la lecture. L’architecture associe le contenu à ses traductions, à ses catégories et à ses éléments de référencement, pour conserver une information cohérente entre la page de lecture, les résultats de recherche et les aperçus partagés."
+    },
+    {
+      "title": "La salle de rédaction est l’autre moitié du site.",
+      "body": "Derrière le journal, le back-office gère les articles, les médias, les comptes et les droits. L’éditeur TipTap accompagne la mise en forme ; le modèle prévoit brouillons, publication, archivage et dates de programmation. La sélection de la une, le classement dans les rubriques et le rattachement aux dossiers sont des choix éditoriaux. Le développement doit permettre à la rédaction de les faire évoluer sans intervention technique à chaque changement de sujet."
+    },
+    {
+      "title": "Assister l’écriture, garder la décision.",
+      "body": "L’assistant de rédaction travaille avec le contexte de l’article : proposer des titres, un plan, une introduction, un extrait ou des pistes de référencement. Les suggestions de titre, d’extrait et de SEO ne sont pas appliquées automatiquement ; le rédacteur choisit ce qu’il retient. Cette séparation entre proposition et application préserve le contrôle éditorial. Le rôle de l’outil est de faciliter le travail dans l’éditeur, tout en laissant à l’équipe la responsabilité du contenu publié."
+    },
+    {
+      "title": "Un journal se lit, s’écoute et se regarde.",
+      "body": "La plateforme donne une place propre aux podcasts et à Tama Média TV. Les contenus audio et vidéo ont leurs modèles et leurs pages, au lieu d’être de simples pièces jointes à un article. Le site met aussi en avant des écoutes en mandenkan et en fulfulde. Cette variété impose de garder des repères communs — thème, auteur, navigation — tout en respectant la manière dont chaque format est consommé."
+    },
+    {
+      "title": "La relation continue après la visite.",
+      "body": "L’abonnement, les contenus premium, les favoris et la newsletter prolongent le lien avec les lecteurs. Le code comprend la gestion des offres, le parcours Stripe et les notifications de paiement ; la newsletter possède des mécanismes d’inscription et de désinscription. Côté diffusion, flux RSS, sitemap et données de référencement permettent aux contenus de circuler au-delà de l’accueil. L’enjeu est de construire une relation durable, avec des parcours distincts pour lire, revenir et soutenir le média."
+    },
+    {
+      "title": "Deux produits, un même souci de vérification.",
+      "body": "Les Vérificateurs donnent une forme journalistique au fact-checking ; Akili en propose une entrée conversationnelle. Sur le site, une présentation dédiée explique comment soumettre une information et retrouver ses sources, avec un relais journaliste lorsque nécessaire. La plateforme éditoriale repose sur Next.js, TypeScript, PostgreSQL, Prisma et NextAuth, avec une exploitation Docker. La réalisation réunit ainsi expérience publique, outils de rédaction et services de diffusion autour du travail réel d’un média."
+    }
+  ],
+  "related": [
+    {
+      "slug": "akili",
+      "label": "Le volet conversationnel : Akili"
+    }
+  ]
+},
  yapasgachis:{chapters:[
  {title:'Des invendus, plusieurs acteurs.',body:'La plateforme met en relation commerces et consommateurs, mais prévoit aussi des parcours pour les associations et les offres de bons plans. Publier, découvrir, réserver et récupérer une offre sont les étapes d’une même histoire.'},
  {title:'Le produit existe sur plusieurs supports.',body:'Le web, les applications mobiles désormais en production, le backend et le service média sont des ensembles distincts. Le backend actuel utilise Express et TypeScript, avec Prisma, PostgreSQL et Redis. Les images produits sont gérées par un service dédié.'},
