@@ -1,6 +1,8 @@
 "use client";
 import "./project-stories.css";
 import { RouteArtwork } from './DispatchStory';
+import ProductPreview from "./ProductPreview";
+import { productPreviews, previewKey } from "@/lib/data/product-previews";
 import AkiliPreview from "./AkiliPreview";
 import Image from 'next/image';
 import { motion, useReducedMotion } from 'motion/react';
@@ -10,6 +12,7 @@ import type { ProjectStory } from '@/lib/data/project-stories';
 export default function ProjectArtwork({story}:{story:ProjectStory}){
  const reduced=useReducedMotion();
  if(story.format==='interactive')return <div className="story-art story-art-interactive"><AkiliPreview/></div>;
+ if(story.slug&&productPreviews[previewKey(story.slug)])return <div className="story-art story-art-interactive"><ProductPreview slug={story.slug}/></div>;
  if(story.image)return <div className={`story-art story-art-image story-art-${story.format}`}><Image src={story.image} alt={`Visuel du projet ${story.name}`} width={1400} height={story.format==='phone'||story.format==='promo'?2800:1000} sizes="(max-width:800px) 90vw, 55vw"/></div>;
  return <div className={`story-art story-art-${story.art}`} aria-hidden="true">
  {story.art==='route'?<RouteArtwork/>:story.art==='badge'?<div className="art-badge"><motion.div initial={false} whileInView={reduced?{}:{rotate:[-6,0],y:[20,0]}} transition={{duration:1}}><span className="art-badge-slot"/><svg viewBox="0 0 180 100"><circle cx="55" cy="35" r="17" fill="currentColor"/><path d="M20 87C20 48 90 48 90 87M119 25Q155 50 119 75M131 15Q180 50 131 85" fill="none" stroke="currentColor" strokeWidth="5"/></svg><strong>Badge & présence</strong><small>ARRIVÉE → PRÉSENCE → SUIVI</small></motion.div></div>:

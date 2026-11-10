@@ -2,7 +2,7 @@ import { journeyProducts } from './journey';
 import { projects, type Project } from './projects';
 
 export type StoryArt = 'route' | 'badge' | 'voice' | 'script' | 'dispatch' | 'clipboard' | 'architecture' | 'system' | 'commerce' | 'conversation';
-export type ProjectStory = { name:string; headline:string; premise:string; background:string; ink:string; accent:string; art:StoryArt; image?:string; format?:string; brandVerified:boolean };
+export type ProjectStory = { slug?:string; name:string; headline:string; premise:string; background:string; ink:string; accent:string; art:StoryArt; image?:string; format?:string; brandVerified:boolean };
 const extras:Record<string,Partial<ProjectStory>> = {
   echo:{headline:'Ne rien perdre\nde ce qui se dit.',premise:'Une réunion ne devrait pas se terminer avec un enregistrement que personne ne réécoute. Echo transforme la parole en matière exploitable, jusqu’au pré-devis.',background:'#FAFAF9',ink:'#0A0A0A',accent:'#C83F10',art:'voice',brandVerified:true},
   'noche-pro':{name:'Noche Pro',headline:'Le texte suit\nvotre voix.',premise:'Lire un script sans courir après le prompteur : le défilement doit accompagner la parole, ses pauses et ses reprises. Et fonctionner sans connexion.',background:'#0D0D0F',ink:'#F2F2F5',accent:'#818CF8',art:'script',brandVerified:true},
@@ -47,7 +47,7 @@ export function storyFor(p:Project):ProjectStory{
  const key=aliases[p.slug]??p.slug;
  const brand=journeyProducts.find(b=>b.slug===(key==='upjunoo'?'upjunoo-pro-client':key));
  const palette=sourcePalettes[key];
- return {name:p.title.split(' — ')[0],headline:p.title.split(' — ')[1]??p.title,premise:p.description,background:'#FAFAF6',ink:'#202222',accent:'#705C13',art:categoryArt[p.category],brandVerified:false,
+ return {slug:p.slug,name:p.title.split(' — ')[0],headline:p.title.split(' — ')[1]??p.title,premise:p.description,background:'#FAFAF6',ink:'#202222',accent:'#705C13',art:categoryArt[p.category],brandVerified:false,
  ...(palette?{background:palette[0],ink:palette[1],accent:palette[2],brandVerified:true}:{}),
  ...(brand?{name:brand.name,background:brand.bg,ink:brand.ink,accent:brand.accent,image:brand.image,format:brand.format,brandVerified:true}:{}),...extras[key],...(key==='upjunoo'?{name:'Upjunoo'}:{}),...(p.slug==='upjunoo-pro-client'?{name:'Upjunoo · Client'}:{}),...(p.slug==='upjunoo-driver'?{name:'Upjunoo · Chauffeur',headline:'Recevoir la course.\nGarder le cap.',premise:'Le travail du chauffeur réunit disponibilité, réception des offres, guidage, course et portefeuille. Une application dédiée, reliée au client et au dispatch.',background:'#102E33',ink:'#F4FBFA',accent:'#FACC15',image:'/atelier/upjunoo-driver-navigation.png',format:'phone',art:'route' as StoryArt}: {})};
 }

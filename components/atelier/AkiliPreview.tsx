@@ -15,7 +15,7 @@ const steps = [
 export default function AkiliPreview(){
  const [active,setActive]=useState(0);const id=useId();const step=steps[active];const Icon=step.icon;
  return <section className="akili-preview" aria-label="Explorer le fonctionnement d’Akili">
-  <header className="akili-preview-brand"><Image src="/atelier/akili-logo.png" alt="" width={44} height={44}/><strong>Akili</strong><span>Vérifier avant de partager</span></header>
+  <header className="akili-preview-brand"><Image src="/logo/akili.png" alt="" width={44} height={44}/><strong>Akili</strong><span>Vérifier avant de partager</span></header>
   <div className="akili-preview-steps" aria-label="Les étapes du parcours">{steps.map((s,i)=><button key={s.label} type="button" aria-pressed={active===i} aria-controls={id} onClick={()=>setActive(i)}><span>0{i+1}</span>{s.label}</button>)}</div>
   <div id={id} className="akili-preview-panel" aria-live="polite">
    <div className="akili-preview-symbol"><Icon size={34} strokeWidth={1.5}/><span>{step.detail}</span></div>
