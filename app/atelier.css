@@ -42,3 +42,6 @@
 
 /* Moro : fond clair de l’application, vert et orange réservés aux accents. */
 .journey-stage[data-project="moro"] .journey-copy h2{color:#15764B}.journey-stage[data-project="moro"] .journey-copy>a{border-bottom-color:#F7921E}.journey-stage[data-project="moro"] .journey-brand-watermark{opacity:.035}.journey-stage[data-project="moro"] .journey-organic{color:#23B574;opacity:.12}
+
+/* Sur téléphone, laisser la lecture et les interfaces prendre leur hauteur naturelle. */
+@media(max-width:800px){.journey-natural .journey-static{display:flex;flex-direction:column;align-items:stretch;gap:32px;padding:48px 6%;overflow:clip}.journey-natural .journey-copy h2{font-size:46px}.journey-natural .journey-copy h3{font-size:30px}.journey-natural .journey-copy>p{font-size:17px}.journey-natural .journey-media{height:auto;min-height:0;max-height:none;width:100%}.journey-natural .journey-media>img{max-height:650px;max-width:100%;width:auto;height:auto}.journey-natural .journey-media-phone>img{width:min(100%,340px)}.journey-natural .journey-media-identity>img{width:65%;max-height:280px}.journey-natural .journey-media-interactive{display:block}.journey-natural .journey-media-desktop>img{transform:none}.journey-natural .journey-static+.journey-static{border-top:1px solid #20222212}}

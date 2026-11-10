@@ -11,7 +11,7 @@ const covers: Record<string, {label:string; motif:string; layout?:string; bg?:st
  genmail:{label:'Tous vos échanges. Un bureau.',motif:'envelope',layout:'screen'},
  moro:{label:'FINANCES · PROJETS · FINANCEMENT',motif:'orbit',layout:'brand'},
  'moro-app':{label:'Le quotidien, en clair.',motif:'ledger',layout:'phone'},
- akili:{label:'Questionner. Vérifier. Comprendre.',motif:'sun',layout:'phone'},
+ akili:{label:'Questionner. Vérifier. Comprendre.',motif:'sun',layout:'brand'},
  upjunoo:{label:'UN ÉCOSYSTÈME EN MOUVEMENT',motif:'city',layout:'wordmark'},
  'upjunoo-pro':{label:'COURSES / LIVRAISON / FRET',motif:'roads',layout:'wordmark'},
  'upjunoo-pro-client':{label:'La ville à portée de main.',motif:'pin',layout:'phone'},
@@ -124,7 +124,7 @@ const drawings: Record<string,string> = {
  check:'M170 190L260 275L450 80M150 90H260M150 125H220',
  recycle:'M230 115L300 60L370 160M345 110L370 160L315 160M400 195L435 285H305M350 260L305 285L350 310M240 285H150L215 175M215 225V175H165',
 };
-const logos:Record<string,string>={...assets,moro:'/logo/moro.png',gescom:'/atelier/gescom-transparent.png',tamamedia:'/atelier/tamamedia.svg',nappylocks:'/logo/1.png','imci-catalog':'/projets/logos/imci.png','ivoire-chat':'/atelier/brands/ivoire-chat.webp'};
+const logos:Record<string,string>={...assets,akili:'/atelier/akili-logo.png',moro:'/logo/moro.png',gescom:'/atelier/gescom-transparent.png',tamamedia:'/atelier/tamamedia.svg',nappylocks:'/logo/1.png','imci-catalog':'/projets/logos/imci.png','ivoire-chat':'/atelier/brands/ivoire-chat.webp'};
 
 export function catalogCoverRatio(slug:string){
  const layout=covers[slug]?.layout;
